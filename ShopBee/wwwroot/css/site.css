@@ -1558,7 +1558,13 @@ i.home-product-item__like-icon-fill {
     font-size: 1.4rem;
     text-align: center;
 }
-
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
 #login-model-checkbox:checked ~ .login-modal {
     display: flex;
 }

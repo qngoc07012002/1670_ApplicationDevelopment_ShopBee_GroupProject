@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\base.css"
     },
     {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\grid.css",
       "PackagePath": "staticwebassets\\css\\grid.css"
     },
@@ -8431,6 +8435,10 @@
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\shopee.svg",
       "PackagePath": "staticwebassets\\img\\shopee.svg"
+    },
+    {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\action.js",
+      "PackagePath": "staticwebassets\\js\\action.js"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
