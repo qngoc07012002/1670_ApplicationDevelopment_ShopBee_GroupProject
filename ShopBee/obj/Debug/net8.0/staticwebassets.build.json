@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JTv4DxEihBGNaSUC794/zwD38worR4wFDQhwOQyrmzc=",
+  "Hash": "kQnzsbFvAY4dcHiRvGREcZ8cmaTRLMp1KcFZm34R004=",
   "Source": "ShopBee",
   "BasePath": "_content/ShopBee",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\base.css"
+    },
+    {
+      "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
       "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\grid.css",
@@ -40124,6 +40143,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\shopee.svg"
+    },
+    {
+      "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\action.js",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "js/action.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\action.js"
     },
     {
       "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",

@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,12 +70,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/AdminSite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluU2l0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/PHUC/APP_DEV/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_ValidationScriptsPartial.cshtml]
