@@ -66,7 +66,7 @@ namespace ShopBee.Areas.Admin.Controllers
 
         #region API CALLS
         [HttpGet]
-        public IActionResult GetAll(int id)
+        public IActionResult GetAll()
         {
             List<Category> obj = _unitOfWork.Category.GetAll().ToList();
             return Json(new { data = obj });

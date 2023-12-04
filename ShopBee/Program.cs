@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using ShopBee.Data;
 using ShopBee.Repository;
 using ShopBee.Repository.IRepository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +12,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -26,10 +27,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.MapRazorPages();
 app.UseRouting();
-
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",

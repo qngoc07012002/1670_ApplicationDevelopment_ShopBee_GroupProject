@@ -1,5 +1,5 @@
 var dataTable;
-$(function () {
+$(document).ready(function () {
     loadDataTable();
 });
 function loadDataTable() {
@@ -30,14 +30,14 @@ function loadDataTable() {
     dataTable = $('#tblDataCategory').DataTable({
         "ajax": { url: '/Admin/Category/getall' },
         "columns": [
-            { data: 'name', "width": "40%" },
-            {
-                data: 'id',
+            { data: 'id', "width": "20%" },
+            { data: 'name', "width": "60%" },
+            {data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                        <a href="category/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
-                        <a onClick=Delete('/admin/category/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div > `
+                    <a href="category/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
+                    <a onClick=Delete('/admin/category/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                    </div >`
                 }
             },
         ]
