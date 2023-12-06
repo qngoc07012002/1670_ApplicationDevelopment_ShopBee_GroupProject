@@ -504,3 +504,4 @@ E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Deb
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.pdb
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.genruntimeconfig.cache
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ref\ShopBee.dll
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
