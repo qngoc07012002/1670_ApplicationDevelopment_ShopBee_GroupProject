@@ -26,7 +26,13 @@ namespace ShopBee.Models
 
         [Required]
         public GenderType Gender { get; set; }
+        public string Phone { get; set; }
+        public string Adress { get; set; }
+        [Required]
+        public string avtURL { get; set; }
+        [Required]
+        public DateOnly? CreateDate { get; set; }
 
-
+        public DateOnly? ModifyDate { get; set; }
     }
 }

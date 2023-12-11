@@ -11,16 +11,16 @@ namespace ShopBee.Models
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Book Name")]
+        [DisplayName("Book Tittle")]
         public string? Name { get; set; }
-        
-        [Required]
+        [ValidateNever]
         public int? StoreID { get; set; }
         [ForeignKey("StoreID")]
         [ValidateNever]
         public Store? Store { get; set; }
         
         [Required]
+        [ValidateNever]
         public int? CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
@@ -41,15 +41,16 @@ namespace ShopBee.Models
         [Required]
         [DisplayName("Author")]
         public string? Author { get; set; }
+
         [DisplayName("Description")]
         public string? Description { get; set; }
 
         [ValidateNever]
         public string? ImgUrl { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateOnly? CreateDate { get; set; }
 
-        public DateTime? ModifyDate { get; set; }
+        public DateOnly? ModifyDate { get; set; }
         
     }
 }

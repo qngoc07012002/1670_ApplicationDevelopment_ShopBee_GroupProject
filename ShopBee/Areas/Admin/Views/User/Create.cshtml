@@ -1,0 +1,70 @@
+﻿@model UserVM
+
+<form method="POST">
+    <div class="boder p-3 mt-4">
+        <div class="row pb-2">
+            <h1> @(Model.User.Id == 0 ? "Create" : "Edit") a Book</h1>
+        </div>
+        <div class="p-0" asp-validation-summary="All"></div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Email" class="p-0"></label>
+            <input asp-for="User.Email" class="form-control" />
+            <span asp-validation-for="User.Email" class="text-danger"></span>
+        </div> 
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Password" class="p-0"></label>
+            <input asp-for="User.Password" class="form-control" />
+            <span asp-validation-for="User.Password" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Name" class="p-0"></label>
+            <input asp-for="User.Name" class="form-control" />
+            <span asp-validation-for="User.Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Gender" class="p-0"></label>
+            <input asp-for="User.Gender" class="form-control" />
+            <span asp-validation-for="User.Gender" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Phone" class="p-0"></label>
+            <input asp-for="User.Phone" class="form-control" />
+            <span asp-validation-for="User.Phone" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Adress" class="p-0"></label>
+            <input asp-for="User.Adress" class="form-control" />
+            <span asp-validation-for="User.Adress" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="User.avtURL"></label>
+            <img class="col-2" src="@Model.User.avtURL" />
+            <input type="file" name="file" class="form-control">
+        </div>
+        <div class="row mb-3">
+            <label for="eventDate">Select date:</label>
+            <input asp-for="User.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" required>
+        </div>
+
+        
+        <div class="btn group" role="group">
+            @if (Model.User.Id == 0)
+            {
+                <button type="submit" class="btn btn-primary">Create</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-primary">Update</button>
+            }
+
+            <a asp-controller="User" asp-action="Index" class="btn btn-primary">
+                Back to List
+            </a>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
