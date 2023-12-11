@@ -4,10 +4,8 @@
 <form method="post" enctype="multipart/form-data">
     <div class="border p-3 mt-4">
         <input asp-for="Book.Id" hidden />
-
         <div class="row">
             <div class="col-10">
-
                 <div class="mb-3 row p-1">
                     <label asp-for="Book.Name" class="p-0"></label>
                     <input asp-for="Book.Name" class="form-control" />
@@ -15,15 +13,13 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label asp-for="Book.Store"></label>
-                    <span asp-validation-for="Book.Store" class="text-danger"></span>
-                    <select asp-for="@Model.Book.StoreID" asp-items="@Model.MyStores" class="form-control border-0 shadow"></select>
+                    <label asp-for="Book.StoreID"></label>
+                    <select asp-for="@Model.Book.StoreID" asp-items="@Model.MyStores" class="form-select form-control "></select>
 
                 </div>
                 <div class="row mb-3">
-                    <label asp-for="Book.Category"></label>
-                    <span asp-validation-for="Book.Category" class="text-danger"></span>
-                    <select asp-validation-for="Book.CategoryId" asp-items="@Model.MyCategories" class="text-danger form-control"></select>
+                    <label asp-for="Book.CategoryId"></label>
+                    <select asp-for="@Model.Book.CategoryId" asp-items="@Model.MyCategories" class="text-danger form-select form-control"></select>
 
                 </div>
                 <div class="row mb-3">
@@ -60,14 +56,13 @@
 
                 <div class="row mb-3">
                     <label for="eventDate">Create date:</label>
-                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" required>
+                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
                 </div>
                 <div class="row mb-3">
                     <label for="eventDate">Modify date:</label>
-                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" required>
+                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
                 </div>
-            
-                <div class="row" role="group">
+                <div class="row mb-3" role="group">
                     @if (Model.Book.Id == 0)
                     {
                         <button type="submit" class="btn btn-primary">Create</button>
@@ -82,6 +77,8 @@
                     </a>
                 </div>
             </div>
+        </div>
+
     </div>
 </form>
 

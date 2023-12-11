@@ -12,19 +12,19 @@ namespace ShopBee.Models
 
         [Required]
         [DisplayName("Book Tittle")]
-        public string? Name { get; set; }
+        public string Name { get; set; }
         [ValidateNever]
-        public int? StoreID { get; set; }
+
+        
+        public int StoreID { get; set; }
         [ForeignKey("StoreID")]
         [ValidateNever]
-        public Store? Store { get; set; }
-        
-        [Required]
-        [ValidateNever]
-        public int? CategoryId { get; set; }
+        public Store Store { get; set; }
+
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
-        public Category? Category { get; set; }
+        public Category Category { get; set; }
 
         [Required]
         [DisplayName("Price $")]
@@ -40,10 +40,10 @@ namespace ShopBee.Models
 
         [Required]
         [DisplayName("Author")]
-        public string? Author { get; set; }
+        public string Author { get; set; }
 
         [DisplayName("Description")]
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
         [ValidateNever]
         public string? ImgUrl { get; set; }

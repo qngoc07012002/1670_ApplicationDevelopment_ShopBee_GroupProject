@@ -21,7 +21,7 @@ namespace ShopBee.Areas.Admin.Controllers
 		}
 		public IActionResult Index()
 		{
-			List<Book> books = _unitOfWork.Book.GetAll("Book").ToList();
+			List<Book> books = _unitOfWork.Book.GetAll().ToList();
 			return View(books);
 		}
 		public IActionResult CreateUpdate(int? id)
@@ -68,7 +68,7 @@ namespace ShopBee.Areas.Admin.Controllers
 				if (file != null)
 				{
 					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-					string bookPath = Path.Combine(wwwRootPath, "img\bookUrl");
+					string bookPath = Path.Combine(wwwRootPath, "img\\bookUrl");
 					if (!string.IsNullOrEmpty(bookVM.Book.ImgUrl))
 					{
 						//Delete old image
@@ -99,21 +99,22 @@ namespace ShopBee.Areas.Admin.Controllers
 			}
 			else
 			{
-				BookVM bookVMNew = new BookVM()
-				{
-					MyCategories = _unitOfWork.Category.GetAll().
-								Select(u => new SelectListItem
-								{
-									Text = u.Name,
-									Value = u.Id.ToString()
-								}),
-					Book = new Book()
-				};
-				return View(bookVMNew);
+
+				bookVM.MyCategories = _unitOfWork.Category.GetAll().
+							Select(u => new SelectListItem
+							{
+								Text = u.Name,
+								Value = u.Id.ToString()
+							});
+				bookVM.MyStores = _unitOfWork.Store.GetAll().
+							Select(u => new SelectListItem
+							{
+								Text = u.Name,
+								Value = u.Id.ToString()
+							});
+                 
 			}
-
-
-
+				return View(bookVM);
 		}
 		public IActionResult Delete(int? id)
 		{

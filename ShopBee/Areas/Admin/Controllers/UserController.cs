@@ -49,7 +49,7 @@ namespace ShopBee.Areas.Admin.Controllers
             }
         }
         [HttpPost]
-        public IActionResult CreateUpdate(UserVM userVM, IFormFile? file)
+        public IActionResult Create(UserVM userVM, IFormFile? file)
         {
 
             if (ModelState.IsValid)
@@ -58,7 +58,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 if (file != null)
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    string userPath = Path.Combine(wwwRootPath, "img\avtUrl");
+                    string userPath = Path.Combine(wwwRootPath, "img\\avtUrl");
                     if (!string.IsNullOrEmpty(userVM.User.avtURL))
                     {
                         //Delete old image

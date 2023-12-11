@@ -12,9 +12,10 @@
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="row mb-3">
-            <label for="eventDateTime">Select date and time:</label>
-            <input asp-for="CreateDate" type="datetime-local" id="eventDateTime" name="eventDateTime" class="text-danger" required>
+            <label for="eventDate">Select date:</label>
+            <input asp-for="CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" required>
         </div>
+        
         <div class="row">
             <button type="submit" class="btn btn-outline-primary form-control" style="width:150px">Create</button>
             <div class ="col-6 col-md-3">

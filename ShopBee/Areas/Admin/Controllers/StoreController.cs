@@ -42,7 +42,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 return NotFound();
             }
             Store? storeFromDb = _unitOfWork.Store.Get(u => u.Id == id);
-            
+
             if (storeFromDb == null)
             {
                 return NotFound();
