@@ -40,10 +40,10 @@ namespace ShopBee.Models
 
         [Required]
         [DisplayName("Author")]
-        public string Author { get; set; }
+        public string? Author { get; set; }
 
         [DisplayName("Description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [ValidateNever]
         public string? ImgUrl { get; set; }

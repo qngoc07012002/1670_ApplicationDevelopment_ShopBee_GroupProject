@@ -13,13 +13,13 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label asp-for="Book.StoreID"></label>
+                    <label asp-for="Book.Store"></label>
                     <select asp-for="@Model.Book.StoreID" asp-items="@Model.MyStores" class="form-select form-control "></select>
 
                 </div>
                 <div class="row mb-3">
                     <label asp-for="Book.CategoryId"></label>
-                    <select asp-for="@Model.Book.CategoryId" asp-items="@Model.MyCategories" class="text-danger form-select form-control"></select>
+                    <select asp-for="@Model.Book.CategoryId" asp-items="@Model.MyCategories" class=" form-select form-control"></select>
 
                 </div>
                 <div class="row mb-3">

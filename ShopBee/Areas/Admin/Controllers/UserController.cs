@@ -23,7 +23,7 @@ namespace ShopBee.Areas.Admin.Controllers
             List<User> objUserList = _unitOfWork.User.GetAll().ToList();
             return View(objUserList);
         }
-        public IActionResult Create(int? id)
+        public IActionResult CreateUpdate(int? id)
         {
             UserVM userVM = new UserVM()
             {
@@ -49,7 +49,7 @@ namespace ShopBee.Areas.Admin.Controllers
             }
         }
         [HttpPost]
-        public IActionResult Create(UserVM userVM, IFormFile? file)
+        public IActionResult CreateUpdate(UserVM userVM, IFormFile? file)
         {
 
             if (ModelState.IsValid)

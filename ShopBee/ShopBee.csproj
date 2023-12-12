@@ -32,9 +32,9 @@
     <Folder Include="wwwroot\css\customer\" />
     <Folder Include="wwwroot\css\store\" />
     <Folder Include="wwwroot\img\admin\" />
-    <Folder Include="wwwroot\img\customer\" />
     <Folder Include="wwwroot\img\avtUrl\" />
     <Folder Include="wwwroot\img\bookUrl\" />
+    <Folder Include="wwwroot\img\customer\" />
     <Folder Include="wwwroot\img\store\" />
     <Folder Include="wwwroot\js\admin\" />
     <Folder Include="wwwroot\js\customer\" />

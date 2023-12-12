@@ -86,12 +86,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/CreateUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGVVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Index.cshtml]

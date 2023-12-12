@@ -11,10 +11,8 @@ function loadDataTable() {
             { data: 'password', "width": "60%" },
             { data: 'name', "width": "60%" },
             { data: 'gender', "width": "60%" },
+            { data: 'Adress', "width": "60%" },
             { data: 'phone', "width": "60%" },
-            { data: 'address', "width": "60%" },
-            
-            
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {

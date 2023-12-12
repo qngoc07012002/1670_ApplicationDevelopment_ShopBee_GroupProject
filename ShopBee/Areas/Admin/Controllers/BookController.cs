@@ -112,31 +112,31 @@ namespace ShopBee.Areas.Admin.Controllers
 								Text = u.Name,
 								Value = u.Id.ToString()
 							});
-                 
-			}
-				return View(bookVM);
+                return View(bookVM);
+            }
+				
 		}
-		public IActionResult Delete(int? id)
-		{
-			if (id == null || id == 0)
-			{
-				return NotFound();
-			}
-			Book? book = _unitOfWork.Book.Get(book => book.Id == id);
-			if (book == null)
-			{
-				return NotFound();
-			}
-			return View(book);
-		}
-		[HttpPost]
-		public IActionResult Delete(Book book)
-		{
-			_unitOfWork.Book.Remove(book);
-			_unitOfWork.Save();
-			TempData["success"] = "Book deleted succesfully";
-			return RedirectToAction("Index");
-		}
+        #region API CALLS
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Book> obj = _unitOfWork.Book.GetAll().ToList();
+            return Json(new { data = obj });
+        }
 
-	}
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var bookDelete = _unitOfWork.Book.Get(u => u.Id == id);
+            if (bookDelete == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+
+            _unitOfWork.Book.Remove(bookDelete); _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+        }
+        #endregion
+
+    }
 }

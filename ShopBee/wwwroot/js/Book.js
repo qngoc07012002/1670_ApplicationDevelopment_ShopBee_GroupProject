@@ -9,7 +9,7 @@ function loadDataTable() {
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
             { data: 'store.name', "width": "60%" },
-            { data: 'category', "width": "60%" },
+            { data: 'category.name', "width": "60%" },
             { data: 'price', "width": "60%" },
             { data: 'discountPrice', "width": "60%" },
             { data: 'stock', "width": "60%" },
