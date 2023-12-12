@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-﻿<!DOCTYPE html>
-=======
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor Accessor
 <partial name="_Notification" />
 <!DOCTYPE html>
->>>>>>> ttphuc
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -14,11 +10,7 @@
     <title>HOME - Shopbee</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<<<<<<< HEAD
-
-=======
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
->>>>>>> ttphuc
     <link rel="shortcut icon" href="~/img/ShopBee.svg" type="image/x-icon">
     <link rel="stylesheet" href="~/css/normalize.min.css">
     <link rel="stylesheet" href="~/css/base.css" />
@@ -148,16 +140,11 @@
                         <li class="header__navbar-item header__navbar-user">
                             <img src="https://i.pinimg.com/736x/13/2e/a7/132ea72d2bc3b85d90409c9e8f2d0f4a.jpg" alt=""
                                  class="header__navbar-user-img">
-<<<<<<< HEAD
-                            <span class="header__navbar-user-name">Đăng Khoa</span>
-
-=======
                             
                             @{
                                 var userRoles = Accessor.HttpContext.Session.GetString("UserName");
                                 <span class="header__navbar-user-name">@userRoles</span>
                             }
->>>>>>> ttphuc
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">
                                     <a href="">Tài khoản của tôi</a>

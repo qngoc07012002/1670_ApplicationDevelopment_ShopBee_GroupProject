@@ -26,17 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee
 build_property._RazorSourceGeneratorDebug = 
 
-<<<<<<< HEAD
-=======
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/CreateUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xDcmVhdGVVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
->>>>>>> ttphuc
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,53 +42,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
-=======
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Order/CreateUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcQ3JlYXRlVXBkYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Order/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_Layout_Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRfQWRtaW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/CreateUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGVVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
->>>>>>> ttphuc
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -116,7 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -127,22 +72,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
-=======
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_Layout_Customer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9MYXlvdXRfQ3VzdG9tZXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
->>>>>>> ttphuc
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/_ViewImports.cshtml]
@@ -153,25 +82,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
-=======
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_Layout_Store.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9MYXlvdXRfU3RvcmUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
->>>>>>> ttphuc
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -179,7 +89,6 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-<<<<<<< HEAD
 
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
@@ -212,5 +121,3 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-=======
->>>>>>> ttphuc

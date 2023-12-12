@@ -54,10 +54,10 @@ namespace ShopBee.Repository
 
         public void Remove(T entity)
         {
-			dbSet.Remove(entity);
-		}
+            throw new NotImplementedException();
+        }
 
-		public void RemoveRange(IEnumerable<T> entities)
+        public void RemoveRange(IEnumerable<T> entities)
         {
             throw new NotImplementedException();
         }

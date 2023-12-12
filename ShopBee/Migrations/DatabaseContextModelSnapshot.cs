@@ -41,8 +41,8 @@ namespace ShopBee.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<DateOnly?>("CreateDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -53,8 +53,8 @@ namespace ShopBee.Migrations
                     b.Property<string>("ImgUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly?>("ModifyDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime?>("ModifyDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -64,6 +64,7 @@ namespace ShopBee.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("StoreID")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -72,7 +73,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("StoreID");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Cart", b =>
@@ -97,7 +98,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Carts", (string)null);
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Category", b =>
@@ -115,7 +116,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Order", b =>
@@ -126,8 +127,8 @@ namespace ShopBee.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("CreateDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Method")
                         .IsRequired()
@@ -150,7 +151,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ShopBee.Models.OrderDetail", b =>
@@ -164,17 +165,8 @@ namespace ShopBee.Migrations
                     b.Property<int?>("BookId")
                         .HasColumnType("int");
 
-                    b.Property<DateOnly?>("Date")
-                        .HasColumnType("date");
-
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -182,7 +174,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderDetails", (string)null);
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Role", b =>
@@ -199,7 +191,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles", (string)null);
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Store", b =>
@@ -210,20 +202,15 @@ namespace ShopBee.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly?>("CreateDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Stores", (string)null);
+                    b.ToTable("Stores");
                 });
 
             modelBuilder.Entity("ShopBee.Models.User", b =>
@@ -234,23 +221,12 @@ namespace ShopBee.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Adress")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateOnly?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("date");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Gender")
                         .HasColumnType("int");
-
-                    b.Property<DateOnly?>("ModifyDate")
-                        .HasColumnType("date");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -261,17 +237,9 @@ namespace ShopBee.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("avtURL")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ShopBee.Models.UserRole", b =>
@@ -294,7 +262,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserRoles", (string)null);
+                    b.ToTable("UserRoles");
                 });
 
             modelBuilder.Entity("ShopBee.Models.Book", b =>
@@ -307,7 +275,9 @@ namespace ShopBee.Migrations
 
                     b.HasOne("ShopBee.Models.Store", "Store")
                         .WithMany()
-                        .HasForeignKey("StoreID");
+                        .HasForeignKey("StoreID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Category");
 
@@ -357,15 +327,6 @@ namespace ShopBee.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("ShopBee.Models.Store", b =>
-                {
-                    b.HasOne("ShopBee.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ShopBee.Models.UserRole", b =>

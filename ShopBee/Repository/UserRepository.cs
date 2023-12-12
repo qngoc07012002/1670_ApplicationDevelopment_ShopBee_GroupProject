@@ -6,15 +6,31 @@ namespace ShopBee.Repository
 {
     public class UserRepository : Repository<User>, IUserRepository
     {
-        private readonly DatabaseContext _dbContext;
-        public UserRepository(DatabaseContext dbContext) : base(dbContext)
+        private DatabaseContext _db;
+        public UserRepository(DatabaseContext db) : base(db)
         {
-            _dbContext = dbContext;
+            _db = db;
         }
 
-        public void Update(User user)
+        public User Login(string email, string password)
         {
-            _dbContext.Users.Update(user);
+            User? account = _db.Users.FirstOrDefault(m => m.Email == email && m.Password == password);
+            return account;
+
+        }
+
+        public void Register(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool CheckRole(int userId, int roleId)
+        {
+            var count = _db.UserRoles.Count(m=> m.UserId == userId && m.RoleId == roleId);
+            if (count == 0) {
+                return false;
+            }
+             else return true;
         }
     }
 }

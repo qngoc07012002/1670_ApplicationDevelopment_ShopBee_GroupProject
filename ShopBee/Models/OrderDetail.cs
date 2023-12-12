@@ -18,8 +18,5 @@ namespace ShopBee.Models
         [ForeignKey("OrderId")]
         [ValidateNever]
         public Order Order { get; set; }
-        public int Quantity { get; set; }
-        public double TotalPrice { get; set; }
-        public DateOnly? Date {  get; set; }
     }
 }

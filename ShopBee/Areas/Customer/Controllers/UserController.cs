@@ -1,10 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using ShopBee.Authentication;
+using ShopBee.Models;
+using ShopBee.Repository;
+using ShopBee.Repository.IRepository;
+
 
 namespace ShopBee.Areas.Customer.Controllers
 {
+
     [Area("Customer")]
+    //[RoleAuthentication()]
     public class UserController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
+        public UserController(IUnitOfWork db)
+        {
+            _unitOfWork = db;
+        }
         public IActionResult Index()
         {
             return View();
@@ -16,16 +30,35 @@ namespace ShopBee.Areas.Customer.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
-            if (email.ToLower() == "admin" && password.ToLower() == "admin")
+            User user = _unitOfWork.User.Login(email, password);
+            if (user != null)
             {
-                return RedirectToAction("Index", "Home", new { area = "Admin" });
+                HttpContext.Session.SetString("UserName", user.Name);
+                HttpContext.Session.SetInt32("UserId", user.Id);
+                TempData["success"] = "Login Successfully";
+                return RedirectToAction("Index", "Home", new { area = "Customer" });
+            } else
+            {
+                TempData["error"] = "Invalid Account";
+                return View();
             }
-            else return RedirectToAction("Index");
+            /*else if (email.ToLower() == "customer" && password.ToLower() == "customer")
+            {
+                HttpContext.Session.SetString("UserRoles", "Customer");
+
+            }*/
+           ;
         }
 
         public IActionResult Register()
         {
             return View();
         }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
     }
 }

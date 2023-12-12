@@ -1,8 +1,10 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ShopBee.Data;
 using ShopBee.Repository;
 using ShopBee.Repository.IRepository;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using ShopBee.Authentication;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,13 +13,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<IBookRepository, BookRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IStoreRepository, StoreRepository>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddRazorPages();
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<AdminAuthentication>();
+
+builder.Services.AddRazorPages();
+builder.Services.AddSession();
+builder.Services.AddTransient<AdminAuthentication>();
+builder.Services.AddTransient<CustomerAuthentication>();
+builder.Services.AddTransient<StoreAuthentication>();
+builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,9 +39,21 @@ app.MapRazorPages();
 app.UseRouting();
 app.UseAuthorization();
 app.UseAuthentication();
-
-app.MapControllerRoute(
+app.UseSession();
+/*app.MapControllerRoute(
     name: "default",
-    pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=User}/{action=Login}/{id?}");*/
+
+ app.UseEndpoints(endpoints =>
+ {
+    endpoints.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+
+    app.MapControllerRoute(
+    name: "default",
+    pattern: "{area=Customer}/{controller=User}/{action=Login}/{id?}");
+ });
 
 app.Run();
