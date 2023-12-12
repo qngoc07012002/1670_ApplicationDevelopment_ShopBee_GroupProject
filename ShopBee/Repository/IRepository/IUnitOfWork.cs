@@ -1,17 +1,17 @@
-﻿namespace ShopBee.Repository.IRepository
+﻿using ShopBee.Models;
+
+namespace ShopBee.Repository.IRepository
 {
     public interface IUnitOfWork
     {
-        public ICategoryRepository Category { get; }
-        public IBookRepository Book { get; }
-        public IStoreRepository Store { get; }
-        public IOrderRepository Order { get; }
+        public IRepository<Category> Category { get; }
+        public IRepository<Book> Book { get; }
+        public IRepository<Store> Store { get; }
+        public IRepository<Order> Order { get; }
+        public IRepository<Role> Role { get; }
         public IUserRepository User { get; }
-        public IRoleRepository Role { get; }
-        public ICartRepository Cart { get; }
 
         void Save();
-
 
     }
 }

@@ -12,6 +12,14 @@
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Status" class="p-0"></label>
+            <select asp-for="Status" class="form-control">
+                <option value="1">Active</option>
+                <option value="0">Pending</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
         <div class="row">
             <button type="submit" class="btn btn-outline-primary form-control" style="width:150px">Update</button>
             <div class="col-6 col-md-3">

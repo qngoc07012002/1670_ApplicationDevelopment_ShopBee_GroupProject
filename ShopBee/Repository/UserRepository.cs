@@ -12,10 +12,6 @@ namespace ShopBee.Repository
         {
             _db = db;
         }
-        public void Update(User user)
-        {
-            _db.Users.Update(user);
-        }
 
         public User Login(string email, string password)
         {
@@ -31,11 +27,12 @@ namespace ShopBee.Repository
 
         public bool CheckRole(int userId, int roleId)
         {
-            var count = _db.UserRoles.Count(m=> m.UserId == userId && m.RoleId == roleId);
-            if (count == 0) {
+            var count = _db.UserRoles.Count(m => m.UserId == userId && m.RoleId == roleId);
+            if (count == 0)
+            {
                 return false;
             }
-             else return true;
+            else return true;
         }
     }
 }

@@ -21,8 +21,7 @@ namespace ShopBee.Areas.Admin.Controllers
 		}
 		public IActionResult Index()
 		{
-			List<Book> books = _unitOfWork.Book.GetAll().ToList();
-			return View(books);
+			return View();
 		}
 		public IActionResult CreateUpdate(int? id)
 		{
@@ -68,7 +67,7 @@ namespace ShopBee.Areas.Admin.Controllers
 				if (file != null)
 				{
 					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-					string bookPath = Path.Combine(wwwRootPath, "img\\bookImg");
+					string bookPath = Path.Combine(wwwRootPath, "img/bookImg");
 					if (!string.IsNullOrEmpty(bookVM.Book.ImgUrl))
 					{
 						//Delete old image
@@ -82,16 +81,19 @@ namespace ShopBee.Areas.Admin.Controllers
 					{
 						file.CopyTo(fileStream);
 					}
-					bookVM.Book.ImgUrl = @"\img\bookImg\" + fileName;
+					bookVM.Book.ImgUrl = @"/img/bookImg/" + fileName;
 				}
 				if (bookVM.Book.Id == 0)
 				{
-					_unitOfWork.Book.Add(bookVM.Book);
+                    bookVM.Book.CreateDate = DateTime.Today;
+                    bookVM.Book.ModifyDate = DateTime.Today;
+                    _unitOfWork.Book.Add(bookVM.Book);
 					TempData["success"] = "Book created succesfully";
 				}
 				else
 				{
-					_unitOfWork.Book.Update(bookVM.Book);
+                    bookVM.Book.ModifyDate = DateTime.Today;
+                    _unitOfWork.Book.Update(bookVM.Book);
 					TempData["success"] = "Book updated succesfully";
 				}
 				_unitOfWork.Save();
