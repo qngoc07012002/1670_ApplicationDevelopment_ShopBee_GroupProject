@@ -1,0 +1,65 @@
+﻿@model OrderVM
+
+<h1> @(Model.Order.Id == 0 ? "Create" : "Edit") a Order</h1>
+<form method="post" enctype="multipart/form-data">
+    <div class="border p-3 mt-4">
+        <input asp-for="Order.Id" hidden />
+        <div class="row">
+            <div class="col-10">
+                
+
+                <div class="row mb-3">
+                    <label asp-for="Order.UserId"></label>
+                    <select asp-for="@Model.Order.UserId" asp-items="@Model.MyBooks" class="form-select form-control "></select>
+                </div>
+                
+                <div class="row mb-3">
+                    <label asp-for="Order.Quantity"></label>
+                    <span asp-validation-for="Order.Quantity" class="text-danger"></span>
+                    <input asp-for="Order.Quantity" class="form-control">
+
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="Order.TotalPrice" class="control-label">Discount Price $</label>
+                    <input asp-for="Order.TotalPrice" class="form-control" />
+                    <span asp-validation-for="Order.TotalPrice" class="text-danger"></span>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="Order.Method" class="control-label">Stock</label>
+                    <input asp-for="Order.Method" class="form-control" />
+                    <span asp-validation-for="Order.Method" class="text-danger"></span>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="Order.Status"></label>
+                    <input asp-for="Order.Status" class="form-control" />
+                    <span asp-validation-for="Order.Status" class="text-danger"></span>
+                </div>
+                <div class="row mb-3">
+                    <label for="eventDate">Create date:</label>
+                    <input asp-for="Order.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger">
+                </div>
+                <div class="row mb-3" role="group">
+                    @if (Model.Order.Id == 0)
+                    {
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    }
+
+                    <a asp-controller="Order" asp-action="Index" class="btn btn-primary">
+                        Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

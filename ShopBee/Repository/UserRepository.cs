@@ -1,4 +1,5 @@
-﻿using ShopBee.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using ShopBee.Data;
 using ShopBee.Models;
 using ShopBee.Repository.IRepository;
 
@@ -10,6 +11,10 @@ namespace ShopBee.Repository
         public UserRepository(DatabaseContext db) : base(db)
         {
             _db = db;
+        }
+        public void Update(User user)
+        {
+            _db.Users.Update(user);
         }
 
         public User Login(string email, string password)

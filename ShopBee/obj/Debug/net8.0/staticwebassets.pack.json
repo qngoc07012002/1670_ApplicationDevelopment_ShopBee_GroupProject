@@ -17,12 +17,20 @@
       "PackagePath": "staticwebassets\\css\\grid.css"
     },
     {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css",
       "PackagePath": "staticwebassets\\css\\normalize.min.css"
     },
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css.map",
       "PackagePath": "staticwebassets\\css\\normalize.min.css.map"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\responsive.css",
@@ -35,14 +43,6 @@
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\customer\\css\\login.css",
-      "PackagePath": "staticwebassets\\customer\\css\\login.css"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\customer\\css\\register.css",
-      "PackagePath": "staticwebassets\\customer\\css\\register.css"
     },
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\favicon.ico",
@@ -8433,30 +8433,6 @@
       "PackagePath": "staticwebassets\\font\\fontawesome-free-6.1.1\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\appstore.png",
-      "PackagePath": "staticwebassets\\img\\appstore.png"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\googleplay.png",
-      "PackagePath": "staticwebassets\\img\\googleplay.png"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\logo.png",
-      "PackagePath": "staticwebassets\\img\\logo.png"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\no_cart.png",
-      "PackagePath": "staticwebassets\\img\\no_cart.png"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\qr_code.png",
-      "PackagePath": "staticwebassets\\img\\qr_code.png"
-    },
-    {
-      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\shopee.svg",
-      "PackagePath": "staticwebassets\\img\\shopee.svg"
-    },
-    {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\action.js",
       "PackagePath": "staticwebassets\\js\\action.js"
     },
@@ -8471,6 +8447,10 @@
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\table.js",
+      "PackagePath": "staticwebassets\\js\\table.js"
     },
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\LICENSE",
