@@ -8000,11 +8000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
+      "projectUniqueName": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject-dvxhieu\\ShopBee\\ShopBee.csproj",
       "projectName": "ShopBee",
-      "projectPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
+      "projectPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject-dvxhieu\\ShopBee\\ShopBee.csproj",
       "packagesPath": "C:\\Users\\phucc\\.nuget\\packages\\",
-      "outputPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\obj\\",
+      "outputPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject-dvxhieu\\ShopBee\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
