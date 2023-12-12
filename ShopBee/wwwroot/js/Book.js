@@ -8,9 +8,9 @@ function loadDataTable() {
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
-            { data: 'store.name', "width": "60%" },
-            { data: 'category.name', "width": "60%" },
-            { data: 'price', "width": "60%" },
+            { data: 'storeid', "width": "60%" },
+            { data: 'categoryid', "width": "60%" },
+            { data: 'actualprice', "width": "60%" },
             { data: 'discountPrice', "width": "60%" },
             { data: 'stock', "width": "60%" },
             { data: 'author', "width": "60%" },
@@ -19,7 +19,7 @@ function loadDataTable() {
                 data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="book/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
+                    <a href="book/createupdate?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
                     <a onClick=Delete('/admin/book/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }

@@ -8429,6 +8429,14 @@
       "PackagePath": "staticwebassets\\img\\appstore.png"
     },
     {
+      "Id": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\4bae8bfa-8631-4342-aae1-5e87869d684c.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\4bae8bfa-8631-4342-aae1-5e87869d684c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\fc008f65-f2c6-4a73-8c45-664d96da50f3.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\fc008f65-f2c6-4a73-8c45-664d96da50f3.jpg"
+    },
+    {
       "Id": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\googleplay.png",
       "PackagePath": "staticwebassets\\img\\googleplay.png"
     },
