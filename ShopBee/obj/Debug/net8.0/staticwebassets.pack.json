@@ -8465,6 +8465,10 @@
       "PackagePath": "staticwebassets\\js\\jquery.js"
     },
     {
+      "Id": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
       "Id": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

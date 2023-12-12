@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZXXiwiN1O/Yx9RdpXMvq005OKYIWpmRap1YMYGU1sig=",
+  "Hash": "/L+EhAbSoM5BJzubiwrYit086EAIXNDaPsHG3GizN+4=",
   "Source": "ShopBee",
   "BasePath": "_content/ShopBee",
   "Mode": "Default",
@@ -40276,6 +40276,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\jquery.js"
+    },
+    {
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\order.js",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
