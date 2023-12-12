@@ -28,10 +28,25 @@
     <Folder Include="Areas\Store\Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Migrations\" />
+<<<<<<< HEAD
     <Folder Include="wwwroot\customer\css\" />
     <Folder Include="wwwroot\admin\" />
     <Folder Include="wwwroot\shared\" />
     <Folder Include="wwwroot\store\" />
+=======
+    <Folder Include="Views\" />
+    <Folder Include="wwwroot\css\admin\" />
+    <Folder Include="wwwroot\css\customer\" />
+    <Folder Include="wwwroot\css\store\" />
+    <Folder Include="wwwroot\img\admin\" />
+    <Folder Include="wwwroot\img\avtUrl\" />
+    <Folder Include="wwwroot\img\bookUrl\" />
+    <Folder Include="wwwroot\img\customer\" />
+    <Folder Include="wwwroot\img\store\" />
+    <Folder Include="wwwroot\js\admin\" />
+    <Folder Include="wwwroot\js\customer\" />
+    <Folder Include="wwwroot\js\store\" />
+>>>>>>> ttphuc
   </ItemGroup>
 
   <ItemGroup>

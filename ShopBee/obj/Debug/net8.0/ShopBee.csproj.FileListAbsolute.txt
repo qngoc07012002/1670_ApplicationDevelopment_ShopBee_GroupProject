@@ -6,6 +6,7 @@ D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_S
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\ShopBee.runtimeconfig.json
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\ShopBee.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\ShopBee.pdb
+<<<<<<< HEAD
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.GeneratedMSBuildEditorConfig.editorconfig
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.AssemblyInfoInputs.cache
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.AssemblyInfo.cs
@@ -27,6 +28,8 @@ D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_S
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.pdb
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.genruntimeconfig.cache
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ref\ShopBee.dll
+=======
+>>>>>>> ttphuc
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\Azure.Core.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\Azure.Identity.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\Humanizer.dll
@@ -250,7 +253,24 @@ D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_S
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.csproj.AssemblyReference.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.AssemblyInfoInputs.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.AssemblyInfo.cs
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.csproj.CoreCompileInputs.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.MvcApplicationPartsAssemblyInfo.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.RazorAssemblyInfo.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.RazorAssemblyInfo.cs
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.sourcelink.json
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets.build.json
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets.development.json
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets\msbuild.ShopBee.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets\msbuild.build.ShopBee.props
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ShopBee.props
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ShopBee.props
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\scopedcss\bundle\ShopBee.styles.css
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.csproj.CopyComplete
+<<<<<<< HEAD
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\appsettings.Development.json
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\appsettings.json
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\ShopBee.staticwebassets.runtime.json
@@ -505,3 +525,10 @@ E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Deb
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.genruntimeconfig.cache
 E:\PHUC\APP_DEV\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ref\ShopBee.dll
 D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+=======
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.dll
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\refint\ShopBee.dll
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.pdb
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ShopBee.genruntimeconfig.cache
+D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\obj\Debug\net8.0\ref\ShopBee.dll
+>>>>>>> ttphuc

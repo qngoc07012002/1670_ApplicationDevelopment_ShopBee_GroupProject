@@ -37,6 +37,7 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\customer\\css\\login.css",
       "PackagePath": "staticwebassets\\customer\\css\\login.css"
     },
@@ -45,6 +46,8 @@
       "PackagePath": "staticwebassets\\customer\\css\\register.css"
     },
     {
+=======
+>>>>>>> ttphuc
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -8437,6 +8440,37 @@
       "PackagePath": "staticwebassets\\img\\appstore.png"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\4bae8bfa-8631-4342-aae1-5e87869d684c.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\4bae8bfa-8631-4342-aae1-5e87869d684c.jpg"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\5b200155-a79b-4a3d-9fff-bebfa11c72f4.jpeg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\5b200155-a79b-4a3d-9fff-bebfa11c72f4.jpeg"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\6565e220-f67e-4a3f-8656-3faebe9d686f.gif",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\6565e220-f67e-4a3f-8656-3faebe9d686f.gif"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\69388968-0831-42f4-abeb-a242003c7a74.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\69388968-0831-42f4-abeb-a242003c7a74.jpg"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\6e32976b-fa84-4ce1-a07f-869b2f4364f8.png",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\6e32976b-fa84-4ce1-a07f-869b2f4364f8.png"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\d78788dc-d04c-4dcd-98bc-eb541d79095a.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\d78788dc-d04c-4dcd-98bc-eb541d79095a.jpg"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookUrl\\fc008f65-f2c6-4a73-8c45-664d96da50f3.jpg",
+      "PackagePath": "staticwebassets\\img\\bookUrl\\fc008f65-f2c6-4a73-8c45-664d96da50f3.jpg"
+    },
+    {
+>>>>>>> ttphuc
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\googleplay.png",
       "PackagePath": "staticwebassets\\img\\googleplay.png"
     },
@@ -8469,10 +8503,32 @@
       "PackagePath": "staticwebassets\\js\\jquery.js"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+>>>>>>> ttphuc
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\store.js",
+      "PackagePath": "staticwebassets\\js\\store.js"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\table.js",
+      "PackagePath": "staticwebassets\\js\\table.js"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
+    },
+    {
+>>>>>>> ttphuc
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

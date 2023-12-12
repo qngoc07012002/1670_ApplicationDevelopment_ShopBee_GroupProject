@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Book Management";
+}
+@model List<Book>
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="py-2">Book Managment</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="CreateUpdate" asp-controller="Book" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i>  Create New Book
+                </a>
+            </div>
+        </div>
+        <table id="tblDataBookAdmin" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>
+                        Book Name
+                    </th>
+                    <th>
+                        Store Owner
+                    </th>
+                    <th>
+                        Category Name
+                    </th>
+                    <th>
+                        Actual Price
+                    </th>
+                    <th>
+                        Discount Price
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/table.js"></script>
+}
