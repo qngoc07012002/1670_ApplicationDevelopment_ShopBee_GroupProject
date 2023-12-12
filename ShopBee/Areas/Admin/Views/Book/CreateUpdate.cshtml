@@ -3,8 +3,9 @@
 <h1> @(Model.Book.Id == 0 ? "Create" : "Edit") a Book</h1>
 <form method="post" enctype="multipart/form-data">
     <div class="border p-3 mt-4">
-        <input asp-for="Book.Id" hidden />
         <div class="row">
+            <input asp-for="Book.Id" hidden />
+            <input asp-for="Book.CreateDate" hidden />
             <div class="col-10">
                 <div class="mb-3 row p-1">
                     <label asp-for="Book.Name" class="p-0"></label>
@@ -52,15 +53,6 @@
                     <label asp-for="Book.ImgUrl"></label>
                     <img class="col-2" src="@Model.Book.ImgUrl"  />
                     <input type="file" name="file" class="form-control">
-                </div>
-
-                <div class="row mb-3">
-                    <label for="eventDate">Create date:</label>
-                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
-                </div>
-                <div class="row mb-3">
-                    <label for="eventDate">Modify date:</label>
-                    <input asp-for="Book.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
                 </div>
                 <div class="row mb-3" role="group">
                     @if (Model.Book.Id == 0)

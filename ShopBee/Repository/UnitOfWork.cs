@@ -1,6 +1,7 @@
 ﻿using ShopBee.Data;
 using ShopBee.Repository.IRepository;
 using ShopBee.Repository;
+using ShopBee.Models;
 
 namespace ShopBee.Repository
 {
@@ -8,27 +9,25 @@ namespace ShopBee.Repository
     {
         private DatabaseContext _db;
 
-        public ICategoryRepository Category { get; private set; }
-        public IBookRepository Book { get; private set; }
-        public IStoreRepository Store { get; private set; }
-        public IOrderRepository Order { get; private set; }
+        public IRepository<Category> Category { get; private set; }
+        public IRepository<Book> Book { get; private set; }
+        public IRepository<Store> Store { get; private set; }
+        public IRepository<Order> Order { get; private set; }
+        public IRepository<Role> Role { get; private set; }
+        public IRepository<Cart> Cart { get; private set; }
         public IUserRepository User { get; private set; }
-        public IRoleRepository Role { get; private set; }
-        public ICartRepository Cart { get; private set; }
 
         public UnitOfWork(DatabaseContext db)
         {
             _db = db;
-            Category = new CategoryRepository(_db);
-            Book = new BookRepository(_db);
-            Store = new StoreRepository(_db);
-            Order = new OrderRepository(_db);
+            Category = new Repository<Category>(_db);
+            Book = new Repository<Book>(_db);
+            Store = new Repository<Store>(_db);
             User = new UserRepository(_db);
-            Role = new RoleRepository(_db);
-            Cart = new CartRepository(_db);
+            Order = new Repository<Order>(_db);
+            Role = new Repository<Role>(_db);
+            Cart = new Repository<Cart>(_db);
         }
-
-
 
         public void Save()
         {

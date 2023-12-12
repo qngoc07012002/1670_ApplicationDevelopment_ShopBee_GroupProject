@@ -73,7 +73,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("StoreID");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Cart", b =>
@@ -98,7 +98,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Carts");
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Category", b =>
@@ -116,7 +116,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Order", b =>
@@ -151,7 +151,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.OrderDetail", b =>
@@ -174,7 +174,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("OrderDetails", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Role", b =>
@@ -191,7 +191,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Store", b =>
@@ -210,7 +210,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Stores");
+                    b.ToTable("Stores", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.User", b =>
@@ -239,7 +239,7 @@ namespace ShopBee.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.UserRole", b =>
@@ -262,7 +262,7 @@ namespace ShopBee.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("UserRoles", (string)null);
                 });
 
             modelBuilder.Entity("ShopBee.Models.Book", b =>

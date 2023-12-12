@@ -21,6 +21,6 @@ namespace ShopBee.Models
 
         public string Method { get; set; }
         public string Status { get; set; }
-        public DateOnly CreateDate { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }

@@ -7,7 +7,6 @@
     <title>Admin Management</title>
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <!----css3---->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/custom.css" />
@@ -39,21 +38,25 @@
                             <i class="material-icons">aspect_ratio </i><span >Category</span>
                         </a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="material-icons">apps</i><span>widgets</span>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Book" asp-action="Index">
+                            <i class="material-icons">aspect_ratio </i><span>Book</span>
                         </a>
-                        <ul class="collapse list-unstyled menu" id="pageSubmenu2">
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
-                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Store" asp-action="Index">
+                            <i class="material-icons">aspect_ratio </i><span>Store</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Order" asp-action="Index">
+                            <i class="material-icons">aspect_ratio </i><span>Order</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="User" asp-action="Index">
+                            <i class="material-icons">aspect_ratio </i><span>User</span>
+                        </a>
                     </li>
                     <li class="">
                         <a href="#"><i class="material-icons">date_range</i><span>copy</span></a>
@@ -121,10 +124,9 @@
             <partial name="_Notification" />
             @RenderBody()
         </main>
-        </div>
+    </div>
     <script src="https://cdn.tiny.cloud/1/ypwamkar0k7empicnohfcfoeo34m3w4w7x05sxstrqa1jqdr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" asp-append-version="true"></script>
     <script src="~/js/bootstrap.min.js"></script>
@@ -143,7 +145,7 @@
         });
     </script>
     @await RenderSectionAsync("Scripts", required: false)
-    <footer class="footer">
+    <footer class="">
         <div class="text-center">
             &copy; 2023 - Shopbee - Made by <a href="https://fb.com/">Group 2 <i class="bi bi-emoji-sunglasses"></i></a>
         </div>

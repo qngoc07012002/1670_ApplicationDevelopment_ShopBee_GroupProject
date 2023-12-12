@@ -58,7 +58,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 if (file != null)
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    string userPath = Path.Combine(wwwRootPath, "img\\avtUrl");
+                    string userPath = Path.Combine(wwwRootPath, "img/userAvt");
                     if (!string.IsNullOrEmpty(userVM.User.avtURL))
                     {
                         //Delete old image
@@ -72,15 +72,18 @@ namespace ShopBee.Areas.Admin.Controllers
                     {
                         file.CopyTo(fileStream);
                     }
-                    userVM.User.avtURL = @"\img\avtUrl\" + fileName;
+                    userVM.User.avtURL = @"/img/userAvt/" + fileName;
                 }
                 if (userVM.User.Id == 0)
                 {
+                    userVM.User.CreateDate = DateTime.Today;
+                    userVM.User.ModifyDate = DateTime.Today;
                     _unitOfWork.User.Add(userVM.User);
                     TempData["success"] = "User created succesfully";
                 }
                 else
                 {
+                    userVM.User.ModifyDate = DateTime.Today;
                     _unitOfWork.User.Update(userVM.User);
                     TempData["success"] = "User updated succesfully";
                 }

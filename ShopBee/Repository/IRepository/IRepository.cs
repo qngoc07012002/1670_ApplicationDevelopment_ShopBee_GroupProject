@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using ShopBee.Models;
+using System.Linq.Expressions;
 
 namespace ShopBee.Repository.IRepository
 {
@@ -9,5 +10,7 @@ namespace ShopBee.Repository.IRepository
         void Add(T entity); 
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
+
+        void Update(T entity);
     }
 }
