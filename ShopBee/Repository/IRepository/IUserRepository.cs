@@ -1,11 +1,14 @@
 ﻿using ShopBee.Models;
-using ShopBee.Repository.IRepository;
-
+using System.Linq.Expressions;
 namespace ShopBee.Repository.IRepository
 {
     public interface IUserRepository : IRepository<User>
     {
-        void Update(User user);
+        User Login(string email, string password);
+        void Register(User user);
 
+        bool CheckRole(int userId, int roleId);
+
+        string GetUserRoles(int userId);
     }
 }

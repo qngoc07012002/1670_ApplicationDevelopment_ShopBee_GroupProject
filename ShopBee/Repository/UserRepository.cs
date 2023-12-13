@@ -1,4 +1,5 @@
-﻿using ShopBee.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using ShopBee.Data;
 using ShopBee.Models;
 using ShopBee.Repository.IRepository;
 
@@ -6,15 +7,43 @@ namespace ShopBee.Repository
 {
     public class UserRepository : Repository<User>, IUserRepository
     {
-        private readonly DatabaseContext _dbContext;
-        public UserRepository(DatabaseContext dbContext) : base(dbContext)
+        private DatabaseContext _db;
+        public UserRepository(DatabaseContext db) : base(db)
         {
-            _dbContext = dbContext;
+            _db = db;
         }
 
-        public void Update(User user)
+        public User Login(string email, string password)
         {
-            _dbContext.Users.Update(user);
+            User? account = _db.Users.FirstOrDefault(m => m.Email == email && m.Password == password);
+            return account;
+
+        }
+
+        public void Register(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool CheckRole(int userId, int roleId)
+        {
+            var count = _db.UserRoles.Count(m => m.UserId == userId && m.RoleId == roleId);
+            if (count == 0)
+            {
+                return false;
+            }
+            else return true;
+        }
+
+        public string GetUserRoles(int userId)
+        {
+            var userRoles = (from ur in _db.UserRoles
+                             join r in _db.Roles on ur.RoleId equals r.Id
+                             where ur.UserId == userId
+                             select r.NomalizedName).ToList();
+
+            return string.Join(", ", userRoles);
+
         }
     }
 }

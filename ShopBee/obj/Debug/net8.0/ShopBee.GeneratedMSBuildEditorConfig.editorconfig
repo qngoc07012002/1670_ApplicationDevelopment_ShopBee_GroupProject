@@ -17,143 +17,147 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShopBee
 build_property.RootNamespace = ShopBee
-build_property.ProjectDir = C:\Users\MSI\Documents\GitHub\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\
+build_property.ProjectDir = D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MSI\Documents\GitHub\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee
+build_property.MSBuildProjectDirectory = D:\Learning\IT_ApplicationDevelopment_1670\Project\1670_ApplicationDevelopment_ShopBee_GroupProject\ShopBee
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/CreateUpdate.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/CreateUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xDcmVhdGVVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Create.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Edit.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Home/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Order/CreateUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcQ3JlYXRlVXBkYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Order/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_Layout_Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRfQWRtaW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Create.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Edit.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/Store/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/CreateUpdate.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/UserRole/CreateUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclJvbGVcQ3JlYXRlVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/UserRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclJvbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/CreateUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGVVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewStart.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Home/Index.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Home/Privacy.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_Layout_Customer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9MYXlvdXRfQ3VzdG9tZXIuY3NodG1s
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/_ViewImports.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/_ViewStart.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Customer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_Layout_Store.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9MYXlvdXRfU3RvcmUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_Notification.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewImports.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Documents/GitHub/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewStart.cshtml]
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Areas/Store/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvcmVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Layout_Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Layout_Customer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Layout_Store.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfU3RvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Learning/IT_ApplicationDevelopment_1670/Project/1670_ApplicationDevelopment_ShopBee_GroupProject/ShopBee/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

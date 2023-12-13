@@ -43,14 +43,6 @@
             <img class="col-2" src="@Model.User.avtURL" style="border-radius:5px; border:1px; solid: #bbb9b9; width=100%" />
             <input type="file" name="file" class="form-control">
         </div>
-        <div class="row mb-3">
-            <label for="eventDate">Select date:</label>
-            <input asp-for="User.CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
-        </div>
-        <div class="row mb-3">
-            <label for="eventDate">Modify date:</label>
-            <input asp-for="User.ModifyDate" type="date" id="eventDate" name="eventDate" class="text-danger" >
-        </div>
         <div class="btn group" role="group">
             @if (Model.User.Id == 0)
             {

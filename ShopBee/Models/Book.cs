@@ -11,7 +11,7 @@ namespace ShopBee.Models
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Book Tittle")]
+        [DisplayName("Book Name")]
         public string Name { get; set; }
         [ValidateNever]
 
@@ -48,9 +48,9 @@ namespace ShopBee.Models
         [ValidateNever]
         public string? ImgUrl { get; set; }
 
-        public DateOnly? CreateDate { get; set; }
+        public DateTime? CreateDate { get; set; }
 
-        public DateOnly? ModifyDate { get; set; }
+        public DateTime? ModifyDate { get; set; }
         
     }
 }

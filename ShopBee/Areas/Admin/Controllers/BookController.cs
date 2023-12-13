@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Authorization;
 using ShopBee.Models.ViewModels;
 using ShopBee.Models;
 using ShopBee.Repository.IRepository;
+using ShopBee.Authentication;
 
 namespace ShopBee.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	
-	public class BookController : Controller
+    [AdminAuthentication()]
+    public class BookController : Controller
 	{
 		//private readonly ApplicationDBContext _dbContext;
 		private readonly IUnitOfWork _unitOfWork;
@@ -21,8 +22,7 @@ namespace ShopBee.Areas.Admin.Controllers
 		}
 		public IActionResult Index()
 		{
-			List<Book> books = _unitOfWork.Book.GetAll().ToList();
-			return View(books);
+			return View();
 		}
 		public IActionResult CreateUpdate(int? id)
 		{
@@ -68,7 +68,7 @@ namespace ShopBee.Areas.Admin.Controllers
 				if (file != null)
 				{
 					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-					string bookPath = Path.Combine(wwwRootPath, "img\\bookUrl");
+					string bookPath = Path.Combine(wwwRootPath, "img/bookImg");
 					if (!string.IsNullOrEmpty(bookVM.Book.ImgUrl))
 					{
 						//Delete old image
@@ -82,16 +82,19 @@ namespace ShopBee.Areas.Admin.Controllers
 					{
 						file.CopyTo(fileStream);
 					}
-					bookVM.Book.ImgUrl = @"\img\bookUrl\" + fileName;
+					bookVM.Book.ImgUrl = @"/img/bookImg/" + fileName;
 				}
 				if (bookVM.Book.Id == 0)
 				{
-					_unitOfWork.Book.Add(bookVM.Book);
+                    bookVM.Book.CreateDate = DateTime.Today;
+                    bookVM.Book.ModifyDate = DateTime.Today;
+                    _unitOfWork.Book.Add(bookVM.Book);
 					TempData["success"] = "Book created succesfully";
 				}
 				else
 				{
-					_unitOfWork.Book.Update(bookVM.Book);
+                    bookVM.Book.ModifyDate = DateTime.Today;
+                    _unitOfWork.Book.Update(bookVM.Book);
 					TempData["success"] = "Book updated succesfully";
 				}
 				_unitOfWork.Save();
@@ -120,7 +123,7 @@ namespace ShopBee.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Book> obj = _unitOfWork.Book.GetAll().ToList();
+            List<Book> obj = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").ToList();
             return Json(new { data = obj });
         }
 
