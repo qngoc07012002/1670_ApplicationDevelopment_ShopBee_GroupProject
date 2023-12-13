@@ -71,13 +71,12 @@ function loadDataTable() {
     dataTable = $('#tblDataOrderAdmin').DataTable({
         "ajax": { url: '/Admin/Order/getall' },
         "columns": [
-            { data: 'id', "width": "20%" },
-            { data: 'store.name', "width": "60%" },
-            { data: 'quantity', "width": "60%" },
-            { data: 'totalprice', "width": "60%" },
-            { data: 'method', "width": "60%" },
-            { data: 'status', "width": "60%" },
-            { data: 'createdate', "width": "60%" },
+            { data: 'user.name', "width": "30%" },
+            { data: 'totalPrice', "width": "20%" },
+            { data: 'method', "width": "10%" },
+            { data: 'createDate', "width": "10%" },
+            { data: 'status', "width": "20%" },
+            
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
@@ -104,6 +103,21 @@ function loadDataTable() {
                     return `<div class="w-25 btn-group"  role="group"> 
                     <a href="user/CreateUpdate?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
                     <a onClick=Delete('/admin/user/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                    </div >`
+                }
+            },
+        ]
+    });
+    dataTable = $('#tblDataUserRoleAdmin').DataTable({
+        "ajax": { url: '/Admin/UserRole/getall' },
+        "columns": [
+            { data: 'user.email', "width": "40%" },
+            { data: 'role.nomalizedName', "width": "40%" },
+            {
+                data: 'id', "width": "20%",
+                "render": function (data) {
+                    return `<div class="w-25 btn-group"  role="group"> 
+                    <a onClick=Delete('/Admin/UserRole/Delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }
             },

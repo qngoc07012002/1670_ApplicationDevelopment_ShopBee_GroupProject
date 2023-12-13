@@ -9,6 +9,7 @@ namespace ShopBee.Repository.IRepository
         public IRepository<Store> Store { get; }
         public IRepository<Order> Order { get; }
         public IRepository<Role> Role { get; }
+        public IRepository<UserRole> UserRole { get; }
         public IUserRepository User { get; }
 
         void Save();

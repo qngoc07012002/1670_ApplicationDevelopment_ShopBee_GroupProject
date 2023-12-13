@@ -14,6 +14,7 @@ namespace ShopBee.Repository
         public IRepository<Store> Store { get; private set; }
         public IRepository<Order> Order { get; private set; }
         public IRepository<Role> Role { get; private set; }
+        public IRepository<UserRole> UserRole { get; private set; }
         public IRepository<Cart> Cart { get; private set; }
         public IUserRepository User { get; private set; }
 
@@ -23,10 +24,14 @@ namespace ShopBee.Repository
             Category = new Repository<Category>(_db);
             Book = new Repository<Book>(_db);
             Store = new Repository<Store>(_db);
-            User = new UserRepository(_db);
             Order = new Repository<Order>(_db);
             Role = new Repository<Role>(_db);
+            UserRole = new Repository<UserRole>(_db);
             Cart = new Repository<Cart>(_db);
+
+
+            //Options
+            User = new UserRepository(_db);
         }
 
         public void Save()
