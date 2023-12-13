@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopBee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+515db3d6da5dfdfe1dbb6130ec73a060dd285de1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5baf0d40c46079f265cf12e514a7591670026f30")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopBee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopBee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -109,6 +109,21 @@ function loadDataTable() {
             },
         ]
     });
+    dataTable = $('#tblDataUserRoleAdmin').DataTable({
+        "ajax": { url: '/Admin/UserRole/getall' },
+        "columns": [
+            { data: 'user.email', "width": "40%" },
+            { data: 'role.nomalizedName', "width": "40%" },
+            {
+                data: 'id', "width": "20%",
+                "render": function (data) {
+                    return `<div class="w-25 btn-group"  role="group"> 
+                    <a onClick=Delete('/Admin/UserRole/Delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                    </div >`
+                }
+            },
+        ]
+    });
 }
 
 
