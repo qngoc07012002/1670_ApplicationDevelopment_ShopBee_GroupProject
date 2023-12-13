@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ShopBee.Authentication;
 using ShopBee.Models;
 using ShopBee.Repository;
 using ShopBee.Repository.IRepository;
 
 namespace ShopBee.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [AdminAuthentication()]
     public class UserRoleController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

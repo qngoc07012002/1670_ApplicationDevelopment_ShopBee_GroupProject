@@ -35,9 +35,12 @@ namespace ShopBee.Areas.Customer.Controllers
             {
                 HttpContext.Session.SetString("UserName", user.Name);
                 HttpContext.Session.SetInt32("UserId", user.Id);
+                var userRoles = _unitOfWork.User.GetUserRoles(user.Id);
+                HttpContext.Session.SetString("UserRoles", userRoles);
                 TempData["success"] = "Login Successfully";
                 return RedirectToAction("Index", "Home", new { area = "Customer" });
-            } else
+            }
+            else
             {
                 TempData["error"] = "Invalid Account";
                 return View();
@@ -53,6 +56,14 @@ namespace ShopBee.Areas.Customer.Controllers
         public IActionResult Register()
         {
             return View();
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserId");
+            HttpContext.Session.Remove("UserName");
+            HttpContext.Session.Remove("UserRoles");
+            return RedirectToAction("Index", "Home", new { area = "Customer" });
         }
 
         public IActionResult AccessDenied()

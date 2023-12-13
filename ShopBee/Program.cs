@@ -53,7 +53,7 @@ app.UseSession();
 
     app.MapControllerRoute(
     name: "default",
-    pattern: "{area=Customer}/{controller=User}/{action=Login}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
  });
 
 app.Run();

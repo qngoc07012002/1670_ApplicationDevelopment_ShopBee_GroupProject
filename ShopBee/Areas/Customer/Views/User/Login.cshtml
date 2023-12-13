@@ -1,11 +1,13 @@
-﻿<partial name="_Notification" />
-<head>
+﻿<head>
     <meta charset="UTF-8">
+    <title>Login - Shopbee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/login.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 </head>
+
 <body>
+    <partial name="_Notification" />
     <div class="login-container">
         <h2>Login</h2>
         <form class="login-form" method="post">
@@ -21,6 +23,7 @@
                 <button type="submit">Login</button>
             </div>
         </form>
+        Don't have and account yet? <a asp-area="Customer" asp-controller="User" asp-action="Register">Register</a>
     </div>
 </body>
 

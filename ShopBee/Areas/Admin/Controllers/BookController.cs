@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Authorization;
 using ShopBee.Models.ViewModels;
 using ShopBee.Models;
 using ShopBee.Repository.IRepository;
+using ShopBee.Authentication;
 
 namespace ShopBee.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	
-	public class BookController : Controller
+    [AdminAuthentication()]
+    public class BookController : Controller
 	{
 		//private readonly ApplicationDBContext _dbContext;
 		private readonly IUnitOfWork _unitOfWork;

@@ -7,14 +7,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOME - Shopbee</title>
+    <title>Home - Shopbee</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-    <link rel="shortcut icon" href="~/img/ShopBee.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="~/css/normalize.min.css">
     <link rel="stylesheet" href="~/css/base.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*  <link rel="stylesheet" href="~/css/site.css" /> *@
     <link rel="stylesheet" href="~/css/grid.css" />
     <link rel="stylesheet" href="~/css/responsive.css" />
     <link rel="stylesheet" href="~/font/fontawesome-free-6.1.1/css/all.min.css">
@@ -29,7 +29,9 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
                             <a href="https://banhang.ShopBee.vn/"
-                               class="header__navbar-item-link header__navbar-item--separate">Kênh người bán</a>
+                               class="header__navbar-item-link header__navbar-item--separate">
+                                <a asp-area="Customer" asp-controller="User" asp-action="Register" class="text-white">Kênh Người Bán</a>
+                            </a>
                         </li>
                         <li class="header__navbar-item">
                             <a href="https://ShopBee.vn/m/sell-on-ShopBee"
@@ -38,128 +40,57 @@
                                 ShopBee
                             </a>
                         </li>
-                       
+
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--has-notify">
-                            <a href="#" class="header__navbar-item-link">
-                                <i class="header__navbar-icon far fa-bell"></i>
-                                Thông báo
-                            </a>
 
-                            <!-- Header Notification  -->
-                            <div class="header__notify">
-                                <header class="header__notify-header">
-                                    <h3>Thông báo mới nhận</h3>
-                                </header>
-                                <ul class="header__notify-list">
-                                    <li class="header__notify-item header__notify-item--viewed">
-                                        <a href="" class="header__notify-link">
-                                            <img src="https://www.vietskin.vn/wp-content/uploads/2020/08/image-skincare-9.jpg"
-                                                 alt="" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">
-                                                    Xác thực chính hãng nguồn gốc các sản
-                                                    phẩm Ohui
-                                                </span>
-                                                <span class="header__notify-description">
-                                                    Xác thực chính hãng nguồn gốc
-                                                    các sản phẩm Ohui
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify-item">
-                                        <a href="" class="header__notify-link">
-                                            <img src="https://luanvanviet.com/wp-content/uploads/2020/08/hinh-anh-san-pham-la-gi-4.jpg"
-                                                 alt="" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">
-                                                    Sale Sốc bộ dưỡng Ohui The First Tái
-                                                    tạo trẻ hóa da SALE OFF 70%
-                                                </span>
-                                                <span class="header__notify-description">
-                                                    Siêu sale duy nhất 3 ngày 11 -
-                                                    13/12/2022
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify-item">
-                                        <a href="" class="header__notify-link">
-                                            <img src="http://d20aeo683mqd6t.cloudfront.net/vi/articles/title_images/000/040/760/medium/Hadalabo-5822.jpg?2021"
-                                                 alt="" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">
-                                                    DA NHẠY CẢM THÌ CÓ DÙNG ĐƯỢC SECRET
-                                                    KHÔNG?
-                                                </span>
-                                                <span class="header__notify-description">
-                                                    "Da mình nhạy cảm thì có dùng
-                                                    được Secret không?"
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify-item">
-                                        <a href="" class="header__notify-link">
-                                            <img src="https://www.thmilk.vn/wp-content/uploads/2021/03/RICE_464x297.jpg"
-                                                 alt="" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">
-                                                    BỘ SƯU TẬP PHIÊN BẢN GIỚI HẠN MÙA LỆ
-                                                    HỘI 2021
-                                                </span>
-                                                <span class="header__notify-description">
-                                                    BỘ SƯU TẬP PHIÊN BẢN GIỚI HẠN
-                                                    MÙA LỆ HỘI 2021
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <footer class="header__notify-footer">
-                                    <a href="#" class="header__notify-footer-btn">
-                                        Xem tất cả
-                                    </a>
-                                </footer>
-                            </div>
-                        </li>
                         <li class="header__navbar-item">
                             <a href="https://help.ShopBee.vn/vn/s" class="header__navbar-item-link">
                                 <i class="header__navbar-icon far fa-circle-question"></i>
                                 Hỗ trợ
                             </a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate">
-                            Đăng ký
-                        </li>
-                        <li class="header__navbar-item header__navbar-item--bold">
-                            Đăng nhập
-                        </li> -->
-                        <li class="header__navbar-item header__navbar-user">
-                            <img src="https://i.pinimg.com/736x/13/2e/a7/132ea72d2bc3b85d90409c9e8f2d0f4a.jpg" alt=""
-                                 class="header__navbar-user-img">
-                            
-                            @{
-                                var userRoles = Accessor.HttpContext.Session.GetString("UserName");
-                                <span class="header__navbar-user-name">@userRoles</span>
+                        @{
+                            var userId = Accessor.HttpContext.Session.GetString("UserId");
+                            if (userId == null)
+                            {
+                                <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate">
+                                    <a asp-area="Customer" asp-controller="User" asp-action="Register" class="text-white">Đăng ký</a>
+                                </li>
+                                <li class="header__navbar-item header__navbar-item--bold">
+                                    <a asp-area="Customer" asp-controller="User" asp-action="Login" class="text-white">Đăng nhập</a>
+                                </li>
+                            } else
+                            {
+
+                                <li class="header__navbar-item header__navbar-user">
+                                    <img src="https://i.pinimg.com/736x/13/2e/a7/132ea72d2bc3b85d90409c9e8f2d0f4a.jpg" alt=""
+                                         class="header__navbar-user-img">
+
+                                    @{
+                                        var userName = Accessor.HttpContext.Session.GetString("UserName");
+
+                                        <span class="header__navbar-user-name">@userName</span>
+                                    }
+                                    <ul class="header__navbar-user-menu">
+                                        <li class="header__navbar-user-item">
+                                            <a href="">Tài khoản của tôi</a>
+                                        </li>
+                                        <li class="header__navbar-user-item">
+                                            <a href="">Địa chỉ của tôi</a>
+                                        </li>
+                                        <li class="header__navbar-user-item">
+                                            <a href="">Đơn mua</a>
+                                        </li>
+                                        <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                            <a asp-area="Customer" asp-controller="User" asp-action="Logout">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             }
-                            <ul class="header__navbar-user-menu">
-                                <li class="header__navbar-user-item">
-                                    <a href="">Tài khoản của tôi</a>
-                                </li>
-                                <li class="header__navbar-user-item">
-                                    <a href="">Địa chỉ của tôi</a>
-                                </li>
-                                <li class="header__navbar-user-item">
-                                    <a href="">Đơn mua</a>
-                                </li>
-                                <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                    <a href="">Đăng xuất</a>
-                                </li>
-                            </ul>
-                        </li>
+                        }
+                     
+                       
                     </ul>
                 </nav>
 
@@ -171,11 +102,9 @@
 
                     <div class="header__logo hide-on-tablet">
                         <a href="./" class="header__logo-link">
-                            <svg viewBox="0 0 192 65"
-                                 class="header__logo-img Shopee-svg-icon header-with-search__Shopee-logo icon-Shopee-logo">
-                                <g fill-rule="evenodd">
-                                    <path>LOGO SHOPBEE</path>
-                                </g>
+                            <img src="~/img/customer/logo.png" width="200" height="90" />
+
+                            <svg viewBox="0 0 12000 100">
                             </svg>
                         </a>
                     </div>
@@ -198,7 +127,7 @@
                                                  alt="Sale">
                                         </a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -206,28 +135,6 @@
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
 
-                        <!-- Header search suggest 
-                        <ul class="header__search-suggest-list hide-on-mobile-tablet">
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Dép</a>
-                            </li>
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Áo Phông</a>
-                            </li>
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Váy</a>
-                            </li>
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Áo Khoác</a>
-                            </li>
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Áo Thun</a>
-                            </li>
-                            <li class="header__search-suggest-list-item">
-                                <a href="#" class="header__search-suggest-link">Túi xách nữ</a>
-                            </li>
-                        </ul>
-                        -->
                     </div>
 
                     <!-- Cart layout -->
@@ -330,7 +237,7 @@
 
         </header>
     </div>
- 
+
     <main role="main">
         @RenderBody()
     </main>

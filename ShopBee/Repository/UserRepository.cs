@@ -34,5 +34,16 @@ namespace ShopBee.Repository
             }
             else return true;
         }
+
+        public string GetUserRoles(int userId)
+        {
+            var userRoles = (from ur in _db.UserRoles
+                             join r in _db.Roles on ur.RoleId equals r.Id
+                             where ur.UserId == userId
+                             select r.NomalizedName).ToList();
+
+            return string.Join(", ", userRoles);
+
+        }
     }
 }

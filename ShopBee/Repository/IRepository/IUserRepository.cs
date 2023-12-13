@@ -8,5 +8,7 @@ namespace ShopBee.Repository.IRepository
         void Register(User user);
 
         bool CheckRole(int userId, int roleId);
+
+        string GetUserRoles(int userId);
     }
 }
