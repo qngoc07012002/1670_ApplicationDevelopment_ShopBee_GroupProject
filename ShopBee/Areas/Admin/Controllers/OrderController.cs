@@ -19,15 +19,14 @@ namespace ShopBee.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Order> objOrderList = _unitOfWork.Order.GetAll().ToList();
-            return View(objOrderList);
+            return View();
         }
         
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Order> obj = _unitOfWork.Order.GetAll().ToList();
+            List<Order> obj = _unitOfWork.Order.GetAll(includeProperties: "User").ToList();
             return Json(new { data = obj });
         }
 

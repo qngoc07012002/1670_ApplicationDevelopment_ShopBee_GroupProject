@@ -71,13 +71,12 @@ function loadDataTable() {
     dataTable = $('#tblDataOrderAdmin').DataTable({
         "ajax": { url: '/Admin/Order/getall' },
         "columns": [
-            { data: 'id', "width": "20%" },
-            { data: 'store.name', "width": "60%" },
-            { data: 'quantity', "width": "60%" },
-            { data: 'totalprice', "width": "60%" },
-            { data: 'method', "width": "60%" },
-            { data: 'status', "width": "60%" },
-            { data: 'createdate', "width": "60%" },
+            { data: 'user.name', "width": "30%" },
+            { data: 'totalPrice', "width": "20%" },
+            { data: 'method', "width": "10%" },
+            { data: 'createDate', "width": "10%" },
+            { data: 'status', "width": "20%" },
+            
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
