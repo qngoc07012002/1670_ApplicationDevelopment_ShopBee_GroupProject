@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 function loadDataTable() {
     dataTable = $('#tblDataCategory').DataTable({
-        "ajax": { url: '/Admin/Category/getall' },
+        "ajax": { url: '/admin/category/getall' },
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "30%" },
@@ -30,7 +30,7 @@ function loadDataTable() {
         ]
     });
     dataTable = $('#tblDataStoreAdmin').DataTable({
-        "ajax": { url: '/Admin/Store/getall' },
+        "ajax": { url: '/admin/store/getall' },
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
