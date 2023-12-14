@@ -36,11 +36,19 @@
     <Folder Include="Controllers\" />
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\img\bookImg\" />
-    <Folder Include="wwwroot\img\admin\" />
     <Folder Include="wwwroot\img\store\" />
     <Folder Include="wwwroot\img\userAvt\" />
     <Folder Include="wwwroot\shared\" />
     <Folder Include="wwwroot\store\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\cssAdmin\bootstrap-grid.css.map" />
+    <None Include="wwwroot\cssAdmin\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\cssAdmin\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\cssAdmin\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\cssAdmin\bootstrap.css.map" />
+    <None Include="wwwroot\cssAdmin\bootstrap.min.css.map" />
   </ItemGroup>
 
   <ItemGroup>
