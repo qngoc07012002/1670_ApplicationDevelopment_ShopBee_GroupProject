@@ -119,7 +119,7 @@ namespace ShopBee.Areas.Admin.Controllers
             }
 				
 		}
-        #region API CALLS
+        
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -139,7 +139,7 @@ namespace ShopBee.Areas.Admin.Controllers
             _unitOfWork.Book.Remove(bookDelete); _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
-        #endregion
+    
 
     }
 }
