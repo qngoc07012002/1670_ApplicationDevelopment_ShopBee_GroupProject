@@ -57,8 +57,8 @@ function loadDataTable() {
             { data: 'stock', "width": "20%" },
             { data: 'author', "width": "30%" },
             { data: 'description', "width": "60%" },
-            { data: 'createDate.Date', "width": "60%" },
-            { data: 'modifyDate.Date', "width": "60%" },
+            { data: 'createDate', "width": "60%" },
+            { data: 'modifyDate', "width": "60%" },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopBee.Authentication;
 using ShopBee.Models;
+using ShopBee.Repository.IRepository;
 using System.Diagnostics;
 
 namespace ShopBee.Areas.Customer.Controllers
@@ -9,11 +10,10 @@ namespace ShopBee.Areas.Customer.Controllers
     //[RoleAuthentication()]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(IUnitOfWork db)
         {
-            _logger = logger;
+            _unitOfWork = db;
         }
 
         public IActionResult Index()
@@ -41,15 +41,11 @@ namespace ShopBee.Areas.Customer.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult GetAllBook()
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            List<Book> obj = _unitOfWork.Book.GetAll().ToList();
+            return Json(obj);
         }
     }
 }
