@@ -8168,24 +8168,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phucc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
       "projectName": "ShopBee",
-      "projectPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
-      "packagesPath": "C:\\Users\\phucc\\.nuget\\packages\\",
-      "outputPath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\obj\\",
+      "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\GitHub\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\phucc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8193,7 +8188,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

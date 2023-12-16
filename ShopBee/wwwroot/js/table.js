@@ -53,10 +53,12 @@ function loadDataTable() {
             { data: 'store.name', "width": "60%" },
             { data: 'category.name', "width": "60%" },
             { data: 'actualPrice', "width": "60%" },
-            { data: 'discountPrice', "width": "60%" },
-            { data: 'stock', "width": "60%" },
-            { data: 'author', "width": "60%" },
+            { data: 'discountPrice', "width": "20%" },
+            { data: 'stock', "width": "20%" },
+            { data: 'author', "width": "30%" },
             { data: 'description', "width": "60%" },
+            { data: 'createDate.Date', "width": "60%" },
+            { data: 'modifyDate.Date', "width": "60%" },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
