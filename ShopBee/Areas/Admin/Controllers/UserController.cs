@@ -78,14 +78,14 @@ namespace ShopBee.Areas.Admin.Controllers
                 }
                 if (userVM.User.Id == 0)
                 {
-                    userVM.User.CreateDate = DateTime.Today;
-                    userVM.User.ModifyDate = DateTime.Today;
+                    userVM.User.CreateDate = DateTime.Today.Date;
+                    userVM.User.ModifyDate = DateTime.Today.Date;
                     _unitOfWork.User.Add(userVM.User);
                     TempData["success"] = "User created succesfully";
                 }
                 else
                 {
-                    userVM.User.ModifyDate = DateTime.Today;
+                    userVM.User.ModifyDate = DateTime.Today.Date;
                     _unitOfWork.User.Update(userVM.User);
                     TempData["success"] = "User updated succesfully";
                 }

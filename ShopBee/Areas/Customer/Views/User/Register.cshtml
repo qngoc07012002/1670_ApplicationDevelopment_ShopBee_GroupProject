@@ -9,38 +9,39 @@
 
     <div class="register-container">
         <h2>Register</h2>
-        <form class="register-form" method="post">
+        <form class="register-form" method="post" enctype="multipart/form-data">
             <div class="form-group">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input asp-for="Email" type="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input asp-for="Password" type="password" required>
             </div>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" asp-for="Name" required>
             </div>
             <div class="form-group">
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" asp-for="Phone" required>
             </div>
             <div class="form-group">
                 <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required>
+                <input type="text" asp-for="Adress" required>
             </div>
             <div class="form-group">
                 <label for="image">Image:</label>
-                <input type="file" id="image" name="image" accept="image/*" required>
+                <input type="file" id="file" name="file" accept="image/*" required>
+
             </div>
             <div class="form-group">
                 <button type="submit">Register</button>
@@ -53,4 +54,71 @@
 
 @{
     Layout = null;
+}
+
+@*      @model UserVM
+
+<form method="POST" enctype="multipart/form-data">
+    <div class="boder p-3 mt-4" style="padding-bottom:100px">
+        <input asp-for="User.Id" hidden />
+
+        <div class="row pb-2">
+            <h1> @(Model.User.Id == 0 ? "Create" : "Edit") a User</h1>
+        </div>
+        <div class="p-0" asp-validation-summary="All"></div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Email" class="p-0"></label>
+            <input asp-for="User.Email" class="form-control" />
+            <span asp-validation-for="User.Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Password" class="p-0"></label>
+            <input asp-for="User.Password" class="form-control" />
+            <span asp-validation-for="User.Password" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Name" class="p-0"></label>
+            <input asp-for="User.Name" class="form-control" />
+            <span asp-validation-for="User.Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Gender" class="p-0"></label>
+            <input asp-for="User.Gender" class="form-control" />
+            <span asp-validation-for="User.Gender" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Phone" class="p-0"></label>
+            <input asp-for="User.Phone" class="form-control" />
+            <span asp-validation-for="User.Phone" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="User.Adress" class="p-0"></label>
+            <input asp-for="User.Adress" class="form-control" />
+            <span asp-validation-for="User.Adress" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="User.avtURL"></label>
+            <img class="col-2" src="@Model.User.avtURL" style="border-radius:5px; border:1px; solid: #bbb9b9; width=100%" />
+            <input type="file" name="file" class="form-control">
+        </div>
+        <div class="btn group" role="group">
+            @if (Model.User.Id == 0)
+            {
+                <button type="submit" class="btn btn-primary">Create</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-primary">Update</button>
+            }
+
+            <a asp-controller="User" asp-action="Index" class="btn btn-primary">
+                Back to List
+            </a>
+        </div>
+    </div>
+</form> *@
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
 }

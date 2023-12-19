@@ -86,14 +86,14 @@ namespace ShopBee.Areas.Admin.Controllers
 				}
 				if (bookVM.Book.Id == 0)
 				{
-                    bookVM.Book.CreateDate = DateTime.Today;
-                    bookVM.Book.ModifyDate = DateTime.Today;
+                    bookVM.Book.CreateDate = DateTime.Today.Date;
+                    bookVM.Book.ModifyDate = DateTime.Today.Date;
                     _unitOfWork.Book.Add(bookVM.Book);
 					TempData["success"] = "Book created succesfully";
 				}
 				else
 				{
-                    bookVM.Book.ModifyDate = DateTime.Today;
+                    bookVM.Book.ModifyDate = DateTime.Today.Date;
                     _unitOfWork.Book.Update(bookVM.Book);
 					TempData["success"] = "Book updated succesfully";
 				}
@@ -119,7 +119,7 @@ namespace ShopBee.Areas.Admin.Controllers
             }
 				
 		}
-        #region API CALLS
+        
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -139,7 +139,7 @@ namespace ShopBee.Areas.Admin.Controllers
             _unitOfWork.Book.Remove(bookDelete); _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
-        #endregion
+    
 
     }
 }

@@ -13,7 +13,7 @@ namespace ShopBee.Models
         [ForeignKey("UserId")]
         [ValidateNever]
         public User User { get; set; }
-        public DateOnly? CreateDate { get; set; }
+        public DateTime CreateDate { get; set; }
 
     }
 }
