@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ShopBee.Authentication;
 using ShopBee.Models;
+using ShopBee.Models.ViewModels;
 using ShopBee.Repository;
 using ShopBee.Repository.IRepository;
 
@@ -21,10 +22,6 @@ namespace ShopBee.Areas.Customer.Controllers
             _unitOfWork = db;
             _webhost = webhost;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
         public IActionResult Login()
         {
             return View();
@@ -40,7 +37,6 @@ namespace ShopBee.Areas.Customer.Controllers
                 HttpContext.Session.SetString("UserAvt", user.avtURL);
                 var userRoles = _unitOfWork.User.GetUserRoles(user.Id);
                 HttpContext.Session.SetString("UserRoles", userRoles);
-                TempData["success"] = "Login Successfully";
                 return RedirectToAction("Index", "Home", new { area = "Customer" });
             }
             else
@@ -102,6 +98,84 @@ namespace ShopBee.Areas.Customer.Controllers
             HttpContext.Session.Remove("UserRoles");
             HttpContext.Session.Remove("UserAvt");
             return RedirectToAction("Index", "Home", new { area = "Customer" });
+        }
+
+        public IActionResult EditProfile()
+        {
+            int userId = int.Parse(HttpContext.Session.GetString("UserId"));
+            User user = _unitOfWork.User.Get(b => b.Id == userId);
+            return View(user);
+        }
+        [HttpPost]
+        public IActionResult EditProfile(IFormFile? file, int gender, User user, string password)
+        {
+            if (!_unitOfWork.User.CheckPassword(user.Id, password))
+            {
+                TempData["error"] = "Wrong Password";
+            } else
+            {
+                string wwwRoothPath = _webhost.WebRootPath;
+                if (file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string bookPath = Path.Combine(wwwRoothPath, "img/userAvt");
+                  
+                        // Delete Old Image
+                        var oldImagePath = Path.Combine(wwwRoothPath, user.avtURL.TrimStart('/'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+
+                    using (var fileStream = new FileStream(Path.Combine(bookPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    user.avtURL = @"/img/userAvt/" + fileName;
+                }
+                if (gender == 0)
+                {
+                    user.Gender = Models.User.GenderType.Male;
+                }
+                else if (gender == 1)
+                {
+                    user.Gender = Models.User.GenderType.Female;
+                }
+                _unitOfWork.User.Update(user);
+                HttpContext.Session.SetString("UserAvt", user.avtURL);
+                _unitOfWork.Save();
+                TempData["success"] = "Change Successfully";
+            }
+            
+            return View(user);
+        }
+
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult ChangePassword(string currentPassword,string newPassword, string confirmNewPassword)
+        {
+            if (newPassword != confirmNewPassword)
+            {
+                TempData["error"] = "Password Doesn't Match";
+            } else
+            {
+                int userId = int.Parse(HttpContext.Session.GetString("UserId"));
+                if (!_unitOfWork.User.CheckPassword(userId, currentPassword))
+                {
+                    TempData["error"] = "Invalid Password";
+                } else
+                {
+                    User user = _unitOfWork.User.Get(b => b.Id == userId);
+                    user.Password = newPassword;
+                    _unitOfWork.User.Update(user);
+                    _unitOfWork.Save();
+                    TempData["success"] = "Update Password Successfully";
+                }
+            }
+            return View();
         }
 
         public IActionResult AccessDenied()

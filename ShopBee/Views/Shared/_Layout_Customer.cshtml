@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor Accessor
-<partial name="_Notification" />
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +10,13 @@
     <title>Shobee</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="~/css/base.css">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/grid.css">
-    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" href="~/css/customer/base.css">
+    <link rel="stylesheet" href="~/css/customer/style.css">
+    <link rel="stylesheet" href="~/css/customer/grid.css">
+    <link rel="stylesheet" href="~/css/customer/responsive.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 
 </head>
 <body>
@@ -51,7 +53,7 @@
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-item-link">
                                 <i class="header__nav-icon far fa-question-circle"></i>
-                                Hỗ trợ
+                                Support
                             </a>
                         </li>
                         @{
@@ -59,10 +61,10 @@
                             if (userId == null)
                             {
                                 <li class="header__nav-item header__nav-item--bold header__nav-item--separate">
-                                    <a asp-area="Customer" asp-controller="User" asp-action="Register" class="header__nav-item-link">Đăng ký</a>
+                                    <a asp-area="Customer" asp-controller="User" asp-action="Register" class="header__nav-item-link">Sign Up</a>
                                 </li>
                                 <li class="header__nav-item header__nav-item--bold header__nav-item--separate">
-                                    <a asp-area="Customer" asp-controller="User" asp-action="Login" class="header__nav-item-link">Đăng nhập</a>
+                                    <a asp-area="Customer" asp-controller="User" asp-action="Login" class="header__nav-item-link">Sign In</a>
                                 </li>
                             }
                             else
@@ -74,17 +76,21 @@
                                     <a href="#" class="header__nav-item-link header__nav-item--bold">@userName</a>
                                     <ul class="header__nav-user-menu">
                                         <li class="header__nav-user-item">
-                                            <a href="#">Tài khoản của tôi</a>
+                                            <a href="#">Order</a>
                                         </li>
                                         <li class="header__nav-user-item">
-                                            <a href="#">Đơn mua</a>
+                                            <a asp-area="Customer" asp-controller="User" asp-action="EditProfile">My Account</a>
                                         </li>
                                         <li class="header__nav-user-item">
-                                            <a asp-area="Customer" asp-controller="User" asp-action="Logout">Logout</a>
+                                            <a asp-area="Customer" asp-controller="User" asp-action="ChangePassword">Change Password</a>
                                         </li>
+                                       
+                                    
                                     </ul>
+                                    
                                 </li>
-
+                                <a asp-area="Customer" asp-controller="User" asp-action="Logout">  <i class='fas fa-sign-in-alt' style='font-size:24px; color: white'></i></a>
+                              
                             }
                         }
                     </ul>
@@ -95,7 +101,8 @@
                         <i class="header__mobile-search-icon fas fa-search"></i>
                     </label>
                     <div class="header__logo">
-                        <a href="#" class="header__logo-link">
+                      
+                        <a asp-area="Customer" asp-controller="Home" asp-action="Index"  class="header__logo-link">
                             <img src="~/img/customer/logo/logo-full-white.png" class="header__logo-img">
                         </a>
                     </div>
@@ -135,147 +142,7 @@
                         <i class="header__cart-icon fas fa-shopping-cart"></i>
                         <div class="header__cart-count">4</div>
 
-                        <div class="header__cart-list no-cart">
-                            <img src="./assets/img/sp/no-cart.png" class="header__no-cart-img">
-                            <p class="header__no-cart-text">Chưa có sản phẩm</p>
-                        </div>
-
-                        <div class="header__cart-list has-cart">
-                            <h4 class="header__cart-heading">Sản phẩm đã chọn</h4>
-                            <ul class="header__cart-list-item">
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/1.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Thanh Thanh 2000 1m57 46kg 88-62-89</h3>
-                                            <p class="header__cart-item-price">2.000.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 2</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/2.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Hồng Ánh 1998 1m62 48kg 89-64-91</h3>
-                                            <p class="header__cart-item-price">2.500.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 1</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/3.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Quỳnh Như 1999 1m65 49kg 90-62-89</h3>
-                                            <p class="header__cart-item-price">2.800.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 1</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/4.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Kim Ngân 2001 1m55 45kg 86-60-87</h3>
-                                            <p class="header__cart-item-price">3.200.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 3</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/5.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Thanh Thanh 2000 1m57 46kg 88-62-89</h3>
-                                            <p class="header__cart-item-price">2.000.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 2</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/6.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Hồng Ánh 1998 1m62 48kg 89-64-91</h3>
-                                            <p class="header__cart-item-price">2.500.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 1</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/7.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Quỳnh Như 1999 1m65 49kg 90-62-89</h3>
-                                            <p class="header__cart-item-price">2.800.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 1</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/buy/8.PNG" class="header__cart-item-img">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-heading">
-                                            <h3 class="header__cart-item-name">Kim Ngân 2001 1m55 45kg 86-60-87</h3>
-                                            <p class="header__cart-item-price">3.200.000đ</p>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <p class="header__cart-item-number">x 3</p>
-                                            <div class="header__cart-item-close">
-                                                Xoá
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="header__cart-footer">
-                                <a href="#" class="btn btn--primary header__cart-see-cart">Xem giỏ hàng</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -295,6 +162,7 @@
             </ul>
         </header>
         <main role="main">
+            <partial name="_Notification" />
             @RenderBody()
         </main>
     </div>
