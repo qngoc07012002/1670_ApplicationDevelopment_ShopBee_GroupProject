@@ -1,4 +1,6 @@
-﻿@inject IHttpContextAccessor Accessor
+﻿@inject IHttpContextAccessor Accessor﻿;
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +55,15 @@
                     <div class="sidebar_user_info">
                         
                         <div class="user_profle_side">
-                            <div class="user_img"><img class="img-responsive" src="~/img/admin/logo-shobee.png" alt="#" /></div>
+                            <div class="user_img">
+                                
+                                @{
+                                    
+                                    var userAvt = Accessor.HttpContext.Session.GetString("UserAvt");
+                                    <img src="@userAvt" class="img-responsive">
+                                }
+                                
+                                </div>
                             <div class="user_info">
                                 @{
                                     var userName = Accessor.HttpContext.Session.GetString("UserName");

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopBee.Authentication;
 using ShopBee.Models;
+using ShopBee.Models.ViewModels;
 using ShopBee.Repository.IRepository;
 
 namespace ShopBee.Areas.Admin.Controllers
@@ -16,25 +18,50 @@ namespace ShopBee.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Store> objStoreList = _unitOfWork.Store.GetAll().ToList();
-            return View(objStoreList);
+            return View();
         }
         public IActionResult Create()
         {
-            return View();
+            StoreVM storeVM = new StoreVM()
+            {
+                MyUsers = _unitOfWork.User.GetAll().
+                 Select(u => new SelectListItem
+                 {
+                     Text = u.Name,
+                     Value = u.Id.ToString()
+                 }),
+
+
+                Store = new Store()
+
+            };
+            return View(storeVM);
+
         }
         [HttpPost]
-        public IActionResult Create(Store obj)
+        public IActionResult Create(StoreVM storeVM)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Store.Add(obj);
+                storeVM.Store.CreateDate = DateTime.Today.Date;
+                _unitOfWork.Store.Add(storeVM.Store);
                 _unitOfWork.Save();
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
+            else
+            {
 
-            return View();
+                storeVM.MyUsers = _unitOfWork.User.GetAll().
+                            Select(u => new SelectListItem
+                            {
+                                Text = u.Name,
+                                Value = u.Id.ToString()
+                            });
+                return View(storeVM);
+            }
+
+
         }
 
         public IActionResult Edit(int? id)
@@ -43,20 +70,34 @@ namespace ShopBee.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Store? storeFromDb = _unitOfWork.Store.Get(u => u.Id == id);
+            StoreVM storeVM = new StoreVM()
+            {
+                MyUsers = _unitOfWork.User.GetAll().
+                 Select(u => new SelectListItem
+                 {
+                     Text = u.Name,
+                     Value = u.Id.ToString()
+                 }),
 
-            if (storeFromDb == null)
+
+                Store = new Store()
+
+            };
+            storeVM.Store = _unitOfWork.Store.Get(store => store.Id == id);
+
+            if (storeVM == null)
             {
                 return NotFound();
             }
-            return View(storeFromDb);
+            return View(storeVM);
         }
         [HttpPost]
-        public IActionResult Edit(Store obj)
+        public IActionResult Edit(StoreVM storeVM)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Store.Update(obj);
+                storeVM.Store.CreateDate = DateTime.Today;
+                _unitOfWork.Store.Update(storeVM.Store);
                 _unitOfWork.Save();
                 TempData["success"] = "Store edited successfully";
                 return RedirectToAction("Index");
@@ -69,7 +110,7 @@ namespace ShopBee.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Store> obj = _unitOfWork.Store.GetAll().ToList();
+            List<Store> obj = _unitOfWork.Store.GetAll(includeProperties: "User").ToList();
             return Json(new { data = obj });
         }
 
