@@ -30,7 +30,7 @@ namespace ShopBee.Areas.Admin.Controllers
                      Text = u.Name,
                      Value = u.Id.ToString()
                  }),
-                
+
 
                 Store = new Store()
 
@@ -61,7 +61,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 return View(storeVM);
             }
 
-            
+
         }
 
         public IActionResult Edit(int? id)

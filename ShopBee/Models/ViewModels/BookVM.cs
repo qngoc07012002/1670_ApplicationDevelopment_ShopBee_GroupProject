@@ -5,8 +5,8 @@ namespace ShopBee.Models.ViewModels
 {
     public class BookVM
     {
-        
-       
+
+
         public Book Book { get; set; }
         [ValidateNever]
         public IEnumerable<SelectListItem> MyCategories { get; set; }

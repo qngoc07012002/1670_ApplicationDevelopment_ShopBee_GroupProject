@@ -81,7 +81,7 @@
     right: 0;
     margin-top: 8px;
     width: 150px;
-    height: 120px;
+    height: 130px;
     background-color: var(--white-color);
     list-style: none;
     z-index: 1000;
@@ -808,7 +808,15 @@ border-color: red green blue yellow */
     color: var(--text-color);
     font-size: 1.5rem;
     padding: 0 0 10px;
+    text-decoration: none;
 }
+    .category-group-title:hover {
+        color: #ee4d2d;
+        font-size: 1.5rem;
+        padding: 0 0 10px;
+        text-decoration: none;
+    }
+
 
 .category-group-list {
     list-style: none;

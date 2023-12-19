@@ -45,5 +45,15 @@ namespace ShopBee.Repository
             return string.Join(", ", userRoles);
 
         }
+
+        public bool CheckPassword(int userId, string password)
+        {
+            var count = _db.Users.Count(m => m.Id == userId && m.Password == password);
+            if (count == 0)
+            {
+                return false;
+            }
+            else return true;
+        }
     }
 }

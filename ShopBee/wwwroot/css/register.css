@@ -46,14 +46,14 @@ body {
     border-radius: 4px;
 }
 
-.form-group button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    .form-group button {
+        background-color: #ee4d2d;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
 .form-group button:hover {
     background-color: #45a049;

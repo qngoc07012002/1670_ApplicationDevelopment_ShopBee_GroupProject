@@ -18,8 +18,8 @@ namespace ShopBee.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<Store> Stores { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }  
-
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
 
     }
 }

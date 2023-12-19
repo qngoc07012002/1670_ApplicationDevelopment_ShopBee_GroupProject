@@ -1,0 +1,74 @@
+﻿@model User
+<link rel="stylesheet" href="~/css/customer/editprofile.css">
+
+<div class="body_editprofile">
+    
+    <form action="#" method="post" enctype="multipart/form-data" id="profileForm">
+       
+        <input asp-for="@Model.Email" hidden type="text">
+        <input asp-for="@Model.Id" hidden />
+        <input asp-for="@Model.avtURL" hidden />
+  
+        <h2>Change Information</h2>
+        <div class="avatar-container" id="avatarContainer">
+            <img id="currentAvatar" src="@Model.avtURL" alt="Avatar">
+        </div>
+
+        <div class="upload-btn-wrapper">
+            <button class="btn-image">Chọn ảnh mới</button>
+            <input type="file" name="file" accept="image/*" id="file" onchange="updateAvatar()">
+        </div>
+     
+   
+
+        <label for="name">Tên:</label>
+        <input asp-for="@Model.Name" required>
+
+        <label for="gender">Giới tính:</label>
+        <select id="gender" name="gender" required>
+            @{
+                if (Model.Gender == ShopBee.Models.User.GenderType.Male)
+                {
+                    <option value="0" selected>Male</option>
+                    <option value="1">Female</option>
+                } else
+                {
+                    <option value="0">Male</option>
+                    <option value="1" selected>Female</option>
+                }
+            }
+
+        </select>
+    
+
+
+        <label for="phone">Số điện thoại:</label>
+        <input asp-for="@Model.Phone" type="tel" required>
+
+        <label for="address">Địa chỉ:</label>
+        <textarea asp-for="@Model.Adress" rows="3" required></textarea>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" name="password" required>
+
+        <input type="submit" value="Lưu thay đổi">
+    </form>
+
+    <script>    
+        function updateAvatar() {
+            var input = document.getElementById('file');
+            var container = document.getElementById('avatarContainer');
+            var currentAvatar = document.getElementById('currentAvatar');
+
+            var file = input.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    currentAvatar.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+</div>

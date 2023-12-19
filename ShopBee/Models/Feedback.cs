@@ -11,10 +11,18 @@ namespace ShopBee.Models
         public int Id { get; set; }
         [Required]
 
-        public string BookId { get; set; }
+        public int? BookId { get; set; }
         [ForeignKey("BookId")]
         [ValidateNever]
         public Book Book { get; set; }
+        public int? UserId { get; set; }
+        [ForeignKey("UserId")]
+        [ValidateNever]
+        public User User { get; set; }
+        public int? OrderId { get; set; }
+        [ForeignKey("OrderId")]
+        [ValidateNever]
+        public Order Order { get; set; }
         public string? Content { get; set; }
         public int? Rating { get; set; }
         public string? Response {  get; set; }
