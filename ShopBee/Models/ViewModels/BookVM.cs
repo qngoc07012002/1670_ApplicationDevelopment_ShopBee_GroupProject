@@ -12,5 +12,6 @@ namespace ShopBee.Models.ViewModels
         public IEnumerable<SelectListItem> MyCategories { get; set; }
         [ValidateNever]
         public IEnumerable<SelectListItem> MyStores { get; set; }
+        public int NumberOfBooks { get; set; }
     }
 }

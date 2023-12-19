@@ -10,7 +10,7 @@ namespace ShopBee.Models
         [Required]
         [MaxLength(100, ErrorMessage = "Name must be 100 Characters ")]
         [DisplayName("Category Name")]
-        public string? Name { get; set; }
-        public int? Status { get; set; }
+        public string Name { get; set; }
+        public int Status { get; set; }
     }
 }

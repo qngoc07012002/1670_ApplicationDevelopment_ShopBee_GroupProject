@@ -36,7 +36,7 @@ namespace ShopBee.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal DiscountPrice { get; set; }
 
-        public int? Stock {  get; set; }
+        public int Stock {  get; set; }
 
         [Required]
         [DisplayName("Author")]

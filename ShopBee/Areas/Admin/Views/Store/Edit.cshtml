@@ -1,6 +1,8 @@
-﻿@model Store
+﻿@model StoreVM
 <form method="POST">
-    <input asp-for="Id" hidden />
+    
+    <input asp-for="Store.Id" hidden />
+    <input asp-for="Store.CreateDate" hidden />
     <div class="boder p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary">Edit Store</h2>
@@ -8,9 +10,14 @@
         </div>
         <div class="p-0" asp-validation-summary="All"></div>
         <div class="mb-3 row p-1">
-            <label asp-for="Name" class="p-0"></label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <label asp-for="Store.Name" class="p-0"></label>
+            <input asp-for="Store.Name" class="form-control" />
+            <span asp-validation-for="Store.Name" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Store.User"></label>
+            <select asp-for="@Model.Store.UserId" asp-items="@Model.MyUsers" class="form-select form-control "></select>
+
         </div>
         <div class="row">
             <button type="submit" class="btn btn-outline-primary form-control" style="width:150px">Update</button>

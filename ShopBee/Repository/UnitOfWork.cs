@@ -2,6 +2,7 @@
 using ShopBee.Repository.IRepository;
 using ShopBee.Repository;
 using ShopBee.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShopBee.Repository
 {
@@ -38,5 +39,6 @@ namespace ShopBee.Repository
         {
             _db.SaveChanges();
         }
+       
     }
 }

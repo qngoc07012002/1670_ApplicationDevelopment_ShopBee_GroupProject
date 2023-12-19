@@ -22,6 +22,6 @@ namespace ShopBee.Models
         public Book? Book { get; set; }
 
         [Required]
-        int? Quantity { get; set; }
+        int Quantity { get; set; }
     }
 }

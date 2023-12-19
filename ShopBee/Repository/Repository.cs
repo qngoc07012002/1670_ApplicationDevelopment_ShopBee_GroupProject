@@ -65,5 +65,21 @@ namespace ShopBee.Repository
         {
             dbSet.Update(entity);
         }
+        public int GetNumberOfBooks()
+        {
+            return _db.Books.Count();
+        }
+        public int GetNumberOfUsers()
+        {
+            return _db.Users.Count();
+        }
+        public int GetNumberOfOrders()
+        {
+            return _db.Orders.Count();
+        }
+        public int GetNumberOfStores()
+        {
+            return _db.Stores.Count();
+        }
     }
 }

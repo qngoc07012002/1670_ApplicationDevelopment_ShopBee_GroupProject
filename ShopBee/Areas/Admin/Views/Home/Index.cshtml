@@ -1,94 +1,197 @@
 ﻿
+@{
+    var bookModel = ViewBag.BookModel as BookVM;
+    var userModel = ViewBag.UserModel as UserVM;
+    var orderModel = ViewBag.OrderModel as OrderVM;
+    var storeModel = ViewBag.StoreModel as StoreVM;
+}
+<!-- dashboard inner -->
+<div class="dashboard">
 
-<div class="row column2 graph margin_bottom_30">
-    <div class="col-md-l2 col-lg-12">
-        <div class="white_shd full">
-            <div class="full graph_head">
-                <div class="heading1 margin_0">
-                    <h2>Extra Area Chart</h2>
+
+    <div class="container-fluid">
+        <div class="row column_title">
+            <div class="col-md-12">
+                <div class="page_title">
+                    <h2>Dashboard</h2>
                 </div>
             </div>
-            <div class="full graph_revenue">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content">
-                            <div class="area_chart">
-                                <canvas height="120" id="canvas"></canvas>
+        </div>
+        <div class="row column1">
+        
+            <div class="col-md-6 col-lg-3">
+                <div class="full counter_section margin_bottom_30">
+                    <div class="couter_icon">
+                            <div>
+                                <i class="fa-solid fa-user fa-xl" style="color: #f2cd18;"></i>
+                            </div>
+                    </div>
+                    <div class="counter_no">
+                        <div>
+                            <h5 style="padding: 25px;">User: @userModel.NumberOfUsers</h5>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="full counter_section margin_bottom_30">
+                    <div class="couter_icon">
+                        <div>
+                            <i class="fa-solid fa-book fa-xl" style="color: #ff9500;"></i>
+                        </div>
+                    </div>
+                    <div class="counter_no">
+                        <div>
+                            <h5 style ="padding: 25px;">Books:  @bookModel.NumberOfBooks</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="full counter_section margin_bottom_30">
+                    <div class="couter_icon">
+                        <div>
+                            <i class="fa-solid fa-cart-shopping" style="color: #d40808;"></i>
+                        </div>
+                    </div>
+                    <div class="counter_no">
+                        <div>
+                            <h5 style="padding:25px 10px;">Orders:  @orderModel.NumberOfOrders</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="full counter_section margin_bottom_30">
+                    <div class="couter_icon">
+                        <div>
+                            <i class="fa-solid fa-store fa-xl" style="color: #00ff4c;"></i>
+                        </div>
+                    </div>
+                    <div class="counter_no">
+                        <div>
+                            <h5 style="padding:25px 10px;">Stores:  @storeModel.NumberOfStores</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- graph -->
+        <div class="row column2 graph margin_bottom_30">
+            <div class="col-md-l2 col-lg-12">
+                <div class="white_shd full">
+                    <div class="full graph_head">
+                        <div class="heading1 margin_0">
+                            <h2>Biểu đồ hiện thị số liệu mua hàng</h2>
+                           
+                        </div>
+                    </div>
+                    <div class="full graph_revenue">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <div class="area_chart">
+                                        <canvas height="120" id="myChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end graph -->
+   
     </div>
 </div>
-<!-- Banner section -->
-<div class="main-content">
+<script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
 
-    <div class="midde_cont">
-        <div class="container-fluid">
-            <div class="row column_title">
-                <div class="col-md-12">
-                    <div class="page_title">
-                        <h2>Chart</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row column1">
-                <div class="col-lg-6">
-                    <div class="white_shd full margin_bottom_30">
-                        <div class="full graph_head">
-                            <div class="heading1 margin_0">
-                                <h2>Line Chart</h2>
-                            </div>
-                        </div>
-                        <div class="map_section padding_infor_info">
-                            <canvas id="line_chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="white_shd full margin_bottom_30">
-                        <div class="full graph_head">
-                            <div class="heading1 margin_0">
-                                <h2>Line Chart</h2>
-                            </div>
-                        </div>
-                        <div class="map_section padding_infor_info">
-                            <canvas id="bar_chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="white_shd full margin_bottom_30">
-                        <div class="full graph_head">
-                            <div class="heading1 margin_0">
-                                <h2>Radar Chart</h2>
-                            </div>
-                        </div>
-                        <div class="map_section padding_infor_info">
-                            <canvas id="radar_chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="white_shd full margin_bottom_30">
-                        <div class="full graph_head">
-                            <div class="heading1 margin_0">
-                                <h2>Pie Chart</h2>
-                            </div>
-                        </div>
-                        <div class="map_section padding_infor_info">
-                            <canvas id="pie_chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end row -->
-        </div>
-
-    </div>
+    let massPopChart = new Chart(myChart, {
+        type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data: {
+            labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+            datasets: [{
+                label: 'Population',
+                data: [
+                    617594,
+                    181045,
+                    153060,
+                    106519,
+                    105162,
+                    95072
+                ],
+                //backgroundColor:'green',
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                    'rgba(255, 99, 132, 0.6)'
+                ],
+                borderWidth: 1,
+                borderColor: '#777',
+                hoverBorderWidth: 3,
+                hoverBorderColor: '#000'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Largest Cities In Massachusetts',
+                fontSize: 25
+            },
+            legend: {
+                display: true,
+                position: 'right',
+                labels: {
+                    fontColor: '#000'
+                }
+            },
+            layout: {
+                padding: {
+                    left: 50,
+                    right: 0,
+                    bottom: 0,
+                    top: 0
+                }
+            },
+            tooltips: {
+                enabled: true
+            }
+        }
+    });
+</script>
 
 
-</div>
+<!-- jQuery -->
+    <script src="~/js/admin/jquery.min.js"></script>
+    <script src="~/js/admin/popper.min.js"></script>
+    <script src="~/js/admin/bootstrap.min.js"></script>
+    <!-- chart js -->
+    <script src="~/js/admin/Chart.min.js"></script>
+    <script src="~/js/admin/Chart.bundle.min.js"></script>
+    <script src="~/js/admin/utils.js"></script>
+    <script src="~/js/admin/analyser.js"></script>
+    <!-- wow animation -->
+    <script src="~/js/admin/animate.js"></script>
+    <!-- select country -->
+    <script src="~/js/admin/bootstrap-select.js"></script>
+    <!-- owl carousel -->
+    <script src="~/js/admin/owl.carousel.js"></script>
+    <!-- nice scrollbar -->
+    <script src="~/js/admin/perfect-scrollbar.min.js"></script>
+    <!-- sidebar -->
+    <script>
+        var ps = new PerfectScrollbar('#sidebar');
+    </script>
+    <!-- custom js -->
+    <script src="~/js/admin/custom.js"></script>

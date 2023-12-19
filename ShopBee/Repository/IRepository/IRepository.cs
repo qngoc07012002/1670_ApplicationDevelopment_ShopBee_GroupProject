@@ -12,5 +12,9 @@ namespace ShopBee.Repository.IRepository
         void RemoveRange(IEnumerable<T> entities);
 
         void Update(T entity);
+        int GetNumberOfBooks();
+        int GetNumberOfUsers();
+        int GetNumberOfOrders();
+        int GetNumberOfStores();
     }
 }

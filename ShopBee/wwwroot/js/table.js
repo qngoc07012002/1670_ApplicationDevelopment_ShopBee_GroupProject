@@ -34,11 +34,13 @@ function loadDataTable() {
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
+            { data: 'user.name', "width": "60%" },
+            { data: 'createDate', "width": "60%" },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="store/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
+                    <a href="/admin/store/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
                     <a onClick=Delete('/admin/store/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }

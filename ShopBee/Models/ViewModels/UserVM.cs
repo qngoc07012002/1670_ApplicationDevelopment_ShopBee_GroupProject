@@ -15,6 +15,7 @@ namespace ShopBee.Models.ViewModels
 
         [ValidateNever]
         public IEnumerable<SelectListItem > MyUsersRoles { get; set; }
+        public int NumberOfUsers { get; set; }
 
-}
+    }
 }

@@ -1038,6 +1038,7 @@ a[data-toggle="collapse"] {
 #sidebar.active .logo_section a {
     width: 100%;
     display: flex;
+    background: #15283c;
     justify-content: center;
 }
 
@@ -1106,7 +1107,7 @@ a[data-toggle="collapse"] {
     display: block;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border: 0px solid #e7e7e7;
-    padding: 30px 35px;
+    padding: 25px;
     background: #fff;
     border-radius: 5px;
     min-height: 125px;
@@ -1147,11 +1148,9 @@ a[data-toggle="collapse"] {
 
 .couter_icon>div {
     border-right: solid rgba(255, 255, 255, 0.3) 1px;
-    padding-right: 35px;
 }
 
 .counter_no {
-    padding: 0 12px;
     align-content: center;
     align-items: center;
     float: right;
