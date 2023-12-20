@@ -30,7 +30,6 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Customer\Data\" />
     <Folder Include="Areas\Customer\Models\" />
-    <Folder Include="Areas\Store\Controllers\" />
     <Folder Include="Areas\Store\Data\" />
     <Folder Include="Areas\Store\Models\" />
     <Folder Include="Controllers\" />
