@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wlR+aqaKXiyE25ZsyO9ivn/5Qmu+d+lMHh9s94Q9cwo=",
+  "Hash": "GTkFhe+dvf7UDHVcW0uvafYYaRMkbo1Xf4ekZQ5Mz4Y=",
   "Source": "ShopBee",
   "BasePath": "_content/ShopBee",
   "Mode": "Default",
@@ -2297,6 +2297,25 @@
       "OriginalItemSpec": "wwwroot\\img\\customer\\user.png"
     },
     {
+      "Identity": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\63852330-7da2-4d4f-824c-f11e2452db2b.jpg",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "img/userAvt/63852330-7da2-4d4f-824c-f11e2452db2b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\userAvt\\63852330-7da2-4d4f-824c-f11e2452db2b.jpg"
+    },
+    {
       "Identity": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\64b550d9-fd3e-4677-8727-b3c6295d4fc2.jpg",
       "SourceId": "ShopBee",
       "SourceType": "Discovered",
@@ -2371,25 +2390,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\userAvt\\c3e4d103-9ddd-4898-9cce-cee80f5463c0.jpg"
-    },
-    {
-      "Identity": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\d3a60b1a-948d-489b-b001-5607a22e6e37.jpg",
-      "SourceId": "ShopBee",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
-      "BasePath": "_content/ShopBee",
-      "RelativePath": "img/userAvt/d3a60b1a-948d-489b-b001-5607a22e6e37.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\userAvt\\d3a60b1a-948d-489b-b001-5607a22e6e37.jpg"
     },
     {
       "Identity": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\bootstrap.min.js",

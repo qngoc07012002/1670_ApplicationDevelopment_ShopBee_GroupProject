@@ -474,7 +474,7 @@ border-color: red green blue yellow */
 
 .header__search-input-wrap {
     flex: 1;
-    height: 100%;
+    height: 40%;
     position: relative;
 }
 
@@ -829,6 +829,8 @@ border-color: red green blue yellow */
     align-items: center;
     font-size: 1.4rem;
     color: var(--text-color);
+    
+    border-bottom: 1px solid #ddd;
     padding: 8px 0;
 }
 
@@ -1090,21 +1092,24 @@ border-color: red green blue yellow */
 
 .home-product-item__img {
     padding-top: 100%;
+    padding-bottom: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .home-product-item__info {
-    padding: 10px;
+    padding: 5px;
 }
 
 .home-product-item__name {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
     color: var(--text-color);
     line-height: 1.4rem;
-    margin: 0 0 20px;
+    margin: 0 0 5px;
     height: 2.8rem;
     overflow: hidden;
     display: block;
@@ -1125,10 +1130,14 @@ border-color: red green blue yellow */
     color: #999;
     text-decoration: line-through;
 }
-
+.author-name {
+    font-size: 0.9rem;
+    color: #999;
+}
 .home-product-item__price-new {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 550;
     color: var(--primary-color);
     margin-right: auto;
     margin-left: 5px;
@@ -1232,7 +1241,7 @@ border-color: red green blue yellow */
 
 .home-product-item__sale-off-value {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 

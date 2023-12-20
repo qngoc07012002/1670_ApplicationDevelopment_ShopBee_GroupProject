@@ -216,3 +216,11 @@ body {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
+}
+
+.store-name {
+    font-size: 2px;
+    font-weight: 100;
+    
+    margin-bottom: 10px;
+}
