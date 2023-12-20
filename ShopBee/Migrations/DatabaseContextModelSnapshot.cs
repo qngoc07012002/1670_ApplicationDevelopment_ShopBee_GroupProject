@@ -59,7 +59,7 @@ namespace ShopBee.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Stock")
+                    b.Property<int?>("Stock")
                         .HasColumnType("int");
 
                     b.Property<int>("StoreID")
@@ -112,7 +112,7 @@ namespace ShopBee.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Status")
+                    b.Property<int?>("Status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -135,8 +135,8 @@ namespace ShopBee.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly?>("CreateDate")
+                        .HasColumnType("date");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -212,8 +212,8 @@ namespace ShopBee.Migrations
                     b.Property<int?>("BookId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly?>("Date")
+                        .HasColumnType("date");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -262,7 +262,6 @@ namespace ShopBee.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UserId")
