@@ -30,7 +30,6 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Customer\Data\" />
     <Folder Include="Areas\Customer\Models\" />
-    <Folder Include="Areas\Store\Controllers\" />
     <Folder Include="Areas\Store\Data\" />
     <Folder Include="Areas\Store\Models\" />
     <Folder Include="Controllers\" />
@@ -40,6 +39,11 @@
     <Folder Include="wwwroot\img\userAvt\" />
     <Folder Include="wwwroot\shared\" />
     <Folder Include="wwwroot\store\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Store\Views\_ViewImports.cshtml" />
+    <None Include="Areas\Store\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

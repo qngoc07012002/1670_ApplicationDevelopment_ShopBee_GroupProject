@@ -32,7 +32,7 @@ namespace ShopBee.Areas.Admin.Controllers
                  }),
 
 
-                Store = new Store()
+                Store = new ShopBee.Models.Store()
 
             };
             return View(storeVM);
@@ -80,7 +80,7 @@ namespace ShopBee.Areas.Admin.Controllers
                  }),
 
 
-                Store = new Store()
+                Store = new ShopBee.Models.Store()
 
             };
             storeVM.Store = _unitOfWork.Store.Get(store => store.Id == id);
@@ -110,7 +110,7 @@ namespace ShopBee.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Store> obj = _unitOfWork.Store.GetAll(includeProperties: "User").ToList();
+            List<ShopBee.Models.Store> obj = _unitOfWork.Store.GetAll(includeProperties: "User").ToList();
             return Json(new { data = obj });
         }
 
