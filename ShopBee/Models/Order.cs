@@ -8,6 +8,9 @@ namespace ShopBee.Models
     {
         [Key] 
         public int Id { get; set; }
+        public int StoreId { get; set; }
+        [ForeignKey("StoreId")]
+        public Store Store { get; set; }
 
         public int UserId { get; set; }
         [ForeignKey("UserId")]

@@ -55,5 +55,10 @@ namespace ShopBee.Repository
             }
             else return true;
         }
+
+        public int GetNumberOfUsers()
+        {
+            return _db.Users.Count();
+        }
     }
 }
