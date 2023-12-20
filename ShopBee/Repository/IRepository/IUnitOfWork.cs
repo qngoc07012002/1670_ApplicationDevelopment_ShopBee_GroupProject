@@ -4,14 +4,19 @@ namespace ShopBee.Repository.IRepository
 {
     public interface IUnitOfWork
     {
-        public IRepository<Category> Category { get; }
-        public IRepository<Book> Book { get; }
-        public IRepository<Store> Store { get; }
-        public IRepository<Order> Order { get; }
-        public IRepository<Role> Role { get; }
-        public IRepository<UserRole> UserRole { get; }
-        public IUserRepository User { get; }
+        ICategoryRepository Category { get; }
+        IBookRepository Book { get; }
+        IStoreRepository Store { get; }
+        IOrderRepository Order { get; }
+        IRoleRepository Role { get; }
+        IUserRoleRepository UserRole{ get; }
+        IUserRepository User { get; }
 
+        ICartRepository Cart { get; }
+
+        IFeedbackRepository Feedback{ get; }
+
+        IOrderDetailRepository OrderDetail {  get; }
         void Save();
 
     }

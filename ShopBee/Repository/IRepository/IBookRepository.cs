@@ -1,6 +1,9 @@
-﻿namespace ShopBee.Repository.IRepository
+﻿using ShopBee.Models;
+
+namespace ShopBee.Repository.IRepository
 {
-    public interface IBookRepository
+    public interface IBookRepository : IRepository<Book>
     {
+        int GetNumberOfBooks();
     }
 }
