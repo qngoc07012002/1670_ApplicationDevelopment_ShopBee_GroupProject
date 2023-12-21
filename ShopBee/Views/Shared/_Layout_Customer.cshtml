@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="~/css/customer/responsive.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
    
 
 </head>
@@ -107,40 +108,22 @@
                         </a>
                     </div>
                     <input type="checkbox" id="mobile-search" class="header__search-check" hidden>
+                 
+                    
                     <div class="header__search">
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="Tìm kiếm trên Shoppee">
-                            <div class="header__search-history">
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="#">Combo 30 điểm đại học khối A</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Combo 30 điểm đại học khối D</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Mỹ phẩm cho người yêu</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Bí kíp tán crush auto đổ</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Iphone 13 Pro Max giá rẻ</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Người yêu đẹp trai như LTP</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <form asp-area="Customer" asp-action="Index" asp-controller="Home">
+                            <input name="searchString" type="text" class="header__search-input" placeholder="Search on Shoppee (Name, Author)">
+                                
+                            </form>
                         </div>
-                        <button class="btn header__search-btn">
-                            <i class="header__search-btn-icon fas fa-search"></i>
-                        </button>
+                       
                     </div>
+                   
                     <!-- header__cart--no-cart --><!-- header__cart--has-cart -->
                     <div class="header__cart header__cart--has-cart">
                         <i class="header__cart-icon fas fa-shopping-cart"></i>
-                        <div class="header__cart-count">4</div>
+                        <div class="header__cart-count">10</div>
 
                        
                     </div>

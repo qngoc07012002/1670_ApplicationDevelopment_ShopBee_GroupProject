@@ -1,4 +1,5 @@
-﻿@model BookVM
+﻿@using ShopBee.Models.ViewModels
+@model BookVM
 
 <h1> @(Model.Book.Id == 0 ? "Create" : "Edit") a Book</h1>
 <form method="post" enctype="multipart/form-data">

@@ -30,7 +30,7 @@ namespace ShopBee.Areas.Store.Controllers
             int.TryParse(UserIdGet, out int storeOwnerId);
             ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
             List<int> bookIds = _unitOfWork.Book.GetAll().Where(u => u.StoreID == store.Id).Select(b => b.Id).ToList();
-            List<Feedback> feedbacks = _unitOfWork.Feedback.GetAll(includeProperties: "Book").Where(u=> bookIds.Contains((int)u.BookId)).ToList();
+            List<Feedback> feedbacks = _unitOfWork.Feedback.GetAll(includeProperties: "Book").Where(u => bookIds.Contains((int)u.BookId)).ToList();
 
             return Json(new { data = feedbacks });
         }

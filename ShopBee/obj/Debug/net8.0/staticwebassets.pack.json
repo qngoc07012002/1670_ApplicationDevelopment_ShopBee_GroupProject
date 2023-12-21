@@ -1,739 +1,739 @@
 {
   "Files": [
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\animate.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\animate.css",
       "PackagePath": "staticwebassets\\css\\admin\\animate.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\baguetteBox.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\baguetteBox.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\baguetteBox.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-select.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap-select.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap-select.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\admin\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\calendar.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\calendar.css",
       "PackagePath": "staticwebassets\\css\\admin\\calendar.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\calendar.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\calendar.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\calendar.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\color_2.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\color_2.css",
       "PackagePath": "staticwebassets\\css\\admin\\color_2.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\custom.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\custom.css",
       "PackagePath": "staticwebassets\\css\\admin\\custom.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\flaticon.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\flaticon.css",
       "PackagePath": "staticwebassets\\css\\admin\\flaticon.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\font-awesome.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\font-awesome.css",
       "PackagePath": "staticwebassets\\css\\admin\\font-awesome.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\font-awesome.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\font-awesome.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\jquery.fancybox.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\jquery.fancybox.css",
       "PackagePath": "staticwebassets\\css\\admin\\jquery.fancybox.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\jquery.fancybox.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\jquery.fancybox.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\owl.carousel.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\owl.carousel.css",
       "PackagePath": "staticwebassets\\css\\admin\\owl.carousel.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\perfect-scrollbar.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\perfect-scrollbar.css",
       "PackagePath": "staticwebassets\\css\\admin\\perfect-scrollbar.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\responsive.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\responsive.css",
       "PackagePath": "staticwebassets\\css\\admin\\responsive.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\semantic.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\semantic.min.css",
       "PackagePath": "staticwebassets\\css\\admin\\semantic.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\style.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\admin\\style.css",
       "PackagePath": "staticwebassets\\css\\admin\\style.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\custom.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\base.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\base.css",
       "PackagePath": "staticwebassets\\css\\customer\\base.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\changepassword.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\changepassword.css",
       "PackagePath": "staticwebassets\\css\\customer\\changepassword.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\editprofile.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\editprofile.css",
       "PackagePath": "staticwebassets\\css\\customer\\editprofile.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\grid.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\grid.css",
       "PackagePath": "staticwebassets\\css\\customer\\grid.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\productdetail.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\productdetail.css",
       "PackagePath": "staticwebassets\\css\\customer\\productdetail.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\responsive.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\responsive.css",
       "PackagePath": "staticwebassets\\css\\customer\\responsive.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\style.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\style.css",
       "PackagePath": "staticwebassets\\css\\customer\\style.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\login.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css",
       "PackagePath": "staticwebassets\\css\\normalize.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\normalize.min.css.map",
       "PackagePath": "staticwebassets\\css\\normalize.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\register.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\site.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\favicon.ico",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\admin\\logo-shobee.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\admin\\logo-shobee.png",
       "PackagePath": "staticwebassets\\img\\admin\\logo-shobee.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\admin\\logo.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\admin\\logo.png",
       "PackagePath": "staticwebassets\\img\\admin\\logo.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\0d081cda-4ac7-4a12-97fa-ed9a203218ea.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\0d081cda-4ac7-4a12-97fa-ed9a203218ea.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\0d081cda-4ac7-4a12-97fa-ed9a203218ea.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\10a6eec1-e49e-4cb8-bb53-c627db3a5e3d.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\10a6eec1-e49e-4cb8-bb53-c627db3a5e3d.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\10a6eec1-e49e-4cb8-bb53-c627db3a5e3d.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\478c2d38-99b1-49f1-9d33-067e2af302bc.jpeg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\478c2d38-99b1-49f1-9d33-067e2af302bc.jpeg",
       "PackagePath": "staticwebassets\\img\\bookImg\\478c2d38-99b1-49f1-9d33-067e2af302bc.jpeg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\65071ea7-2950-4340-bcbd-333c2c608cd0.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\65071ea7-2950-4340-bcbd-333c2c608cd0.png",
       "PackagePath": "staticwebassets\\img\\bookImg\\65071ea7-2950-4340-bcbd-333c2c608cd0.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\8b7d40ca-7675-4134-bb23-12a3981f1860.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\8b7d40ca-7675-4134-bb23-12a3981f1860.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\8b7d40ca-7675-4134-bb23-12a3981f1860.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\d759eb6d-b9b2-4e11-aa44-fcb27521f044.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\d759eb6d-b9b2-4e11-aa44-fcb27521f044.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\d759eb6d-b9b2-4e11-aa44-fcb27521f044.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\1.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\1.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\1.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\2.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\2.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\2.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\3.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\3.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\3.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\4.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\4.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\4.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\5.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\5.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\5.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\6.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\6.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\6.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\7.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\7.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\7.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\8.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\buy\\8.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\buy\\8.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\1.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\1.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\1.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\10.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\10.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\10.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\11.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\11.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\11.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\12.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\12.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\12.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\13.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\13.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\13.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\14.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\14.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\14.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\15.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\15.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\15.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\16.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\16.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\16.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\17.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\17.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\17.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\18.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\18.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\18.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\19.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\19.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\19.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\2.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\2.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\2.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\20.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\20.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\20.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\21.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\21.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\21.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\22.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\22.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\22.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\23.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\23.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\23.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\24.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\24.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\24.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\25.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\25.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\25.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\3.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\3.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\3.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\4.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\4.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\4.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\5.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\5.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\5.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\6.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\6.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\6.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\7.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\7.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\7.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\8.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\8.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\8.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\9.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\home\\9.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\home\\9.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo.png",
       "PackagePath": "staticwebassets\\img\\customer\\logo.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\Shopee logo.svg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\Shopee logo.svg",
       "PackagePath": "staticwebassets\\img\\customer\\logo\\Shopee logo.svg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\Shopee.svg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\Shopee.svg",
       "PackagePath": "staticwebassets\\img\\customer\\logo\\Shopee.svg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\logo-full-white.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\logo-full-white.png",
       "PackagePath": "staticwebassets\\img\\customer\\logo\\logo-full-white.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\shopee-logo.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\logo\\shopee-logo.png",
       "PackagePath": "staticwebassets\\img\\customer\\logo\\shopee-logo.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\1.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\1.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\pay\\1.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\2.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\2.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\pay\\2.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\3.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\3.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\pay\\3.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\4.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\4.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\pay\\4.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\5.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\pay\\5.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\pay\\5.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\app-gallery.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\app-gallery.png",
       "PackagePath": "staticwebassets\\img\\customer\\qr\\app-gallery.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\app-store.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\app-store.png",
       "PackagePath": "staticwebassets\\img\\customer\\qr\\app-store.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\gg-play.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\gg-play.png",
       "PackagePath": "staticwebassets\\img\\customer\\qr\\gg-play.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\ltp-img.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\ltp-img.png",
       "PackagePath": "staticwebassets\\img\\customer\\qr\\ltp-img.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\qr-code.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\qr\\qr-code.png",
       "PackagePath": "staticwebassets\\img\\customer\\qr\\qr-code.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\1.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\1.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\1.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\2.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\2.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\2.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\3.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\3.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\3.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\4.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\4.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\4.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\5.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\5.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\5.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\6.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\6.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\6.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\7.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\7.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\7.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\8.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\8.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\8.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\9.PNG",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\ship\\9.PNG",
       "PackagePath": "staticwebassets\\img\\customer\\ship\\9.PNG"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\casio.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\casio.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\casio.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\iphone.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\iphone.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\iphone.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\iphone2.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\iphone2.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\iphone2.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\laptop.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\laptop.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\laptop.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\laptop2.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\laptop2.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\laptop2.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\no-cart.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\sp\\no-cart.png",
       "PackagePath": "staticwebassets\\img\\customer\\sp\\no-cart.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\user.png",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\customer\\user.png",
       "PackagePath": "staticwebassets\\img\\customer\\user.png"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\64b550d9-fd3e-4677-8727-b3c6295d4fc2.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\63852330-7da2-4d4f-824c-f11e2452db2b.jpg",
+      "PackagePath": "staticwebassets\\img\\userAvt\\63852330-7da2-4d4f-824c-f11e2452db2b.jpg"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\64b550d9-fd3e-4677-8727-b3c6295d4fc2.jpg",
       "PackagePath": "staticwebassets\\img\\userAvt\\64b550d9-fd3e-4677-8727-b3c6295d4fc2.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\656591e1-0ff9-4d9d-9309-3faa46ab1a95.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\656591e1-0ff9-4d9d-9309-3faa46ab1a95.jpg",
       "PackagePath": "staticwebassets\\img\\userAvt\\656591e1-0ff9-4d9d-9309-3faa46ab1a95.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\866c503b-e8b1-4d8c-a38f-86033e95dc83.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\866c503b-e8b1-4d8c-a38f-86033e95dc83.jpg",
       "PackagePath": "staticwebassets\\img\\userAvt\\866c503b-e8b1-4d8c-a38f-86033e95dc83.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\c3e4d103-9ddd-4898-9cce-cee80f5463c0.jpg",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\c3e4d103-9ddd-4898-9cce-cee80f5463c0.jpg",
       "PackagePath": "staticwebassets\\img\\userAvt\\c3e4d103-9ddd-4898-9cce-cee80f5463c0.jpg"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\userAvt\\d3a60b1a-948d-489b-b001-5607a22e6e37.jpg",
-      "PackagePath": "staticwebassets\\img\\userAvt\\d3a60b1a-948d-489b-b001-5607a22e6e37.jpg"
-    },
-    {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\homepage_product.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\homepage_product.js",
       "PackagePath": "staticwebassets\\js\\homepage_product.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\jquery.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\jquery.js",
       "PackagePath": "staticwebassets\\js\\jquery.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\table.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\js\\table.js",
       "PackagePath": "staticwebassets\\js\\table.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

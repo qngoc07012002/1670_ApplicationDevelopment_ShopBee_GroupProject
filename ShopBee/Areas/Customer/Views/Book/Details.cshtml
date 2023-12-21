@@ -1,0 +1,101 @@
+﻿@using ShopBee.Models.ViewModels
+@model BookDetailVM;
+<head>
+    <link rel="stylesheet" href="~/css/customer/productdetail.css">
+</head>
+<div class="section">
+
+    <div class="image-container">
+        <img src="@Model.book.ImgUrl" alt="Product Image" class="product-image">
+    </div>
+    <div class="product-info">
+        <h1>@Model.book.Name</h1>
+        <p class="store-name">Store: @Model.book.Store.Name</p>
+        @{
+            if (Model.book.Stock == 0)
+            {
+                <p class="product-status-outofstock">Out of Stock</p>
+            } else
+            {
+                <p class="product-status-available">Available</p>
+            }
+        }
+        <p class="author-name">Author: @Model.book.Author</p>
+        <p class="category">Category: @Model.book.Category.Name</p>
+        <p>@Model.book.Description</p>
+        <div class="actual-price">$@Model.book.ActualPrice</div>
+        <p> </p>
+        <div class="discount-price">$@Model.book.DiscountPrice</div>
+        <div class="quantity">
+            <label for="quantity">Quantity:</label>
+            <button id="decrease">-</button>
+            @{
+                if (Model.book.Stock == 0)
+                {
+                    <input type="text" id="quantity" value="0" readonly>
+                } else
+                {
+                    <input type="text" id="quantity" value="1" readonly>
+                }
+            }
+            <button id="increase">+</button>
+        </div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('increase').addEventListener('click', function () {
+        var quantityInput = document.getElementById('quantity');
+        var currentQuantity = parseInt(quantityInput.value);
+        var maxStock = parseInt(@Model.book.Stock); // Lấy giá trị Stock từ Model
+        if (currentQuantity < maxStock) {
+            quantityInput.value = currentQuantity + 1;
+        }
+    });
+
+    document.getElementById('decrease').addEventListener('click', function () {
+        var quantityInput = document.getElementById('quantity');
+        var currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    });
+</script>
+
+<div class="section feedback-section">
+    <h1 class="feedback-header">FEEDBACK</h1>
+    <div class="feedback-components">
+        @{
+            foreach (Feedback feedback in Model.feedbacks)
+            {
+                <div class="feedback-item">
+                    <div class="user-avatar">
+                        <img src="@feedback.User.avtURL" alt="User 2 Avatar">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">@feedback.User.Name</div>
+                        <div class="user-rating">
+                            @{
+                                for (int i=0; i<feedback.Rating; i++)
+                                {
+                                    <i class="star-checked far fa-star"></i>
+                                }
+                                for (int i=0; i<5-feedback.Rating; i++)
+                                {
+                                    <i class="star-unchecked far fa-star"></i>
+                                }
+                            }
+                  
+                        </div>
+                        <div class="feedback-text">@feedback.Content</div>
+                        <div class="store-feedback">Store response: @feedback.Response</div>
+                    </div>
+                </div>
+            }
+        }
+        
+       
+    </div>
+    <!-- Add more feedback items as needed -->
+</div>
