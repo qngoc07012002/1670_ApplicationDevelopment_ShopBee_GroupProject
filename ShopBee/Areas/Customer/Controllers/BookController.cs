@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopBee.Models;
+using ShopBee.Models.ViewModels;
 using ShopBee.Repository.IRepository;
 
 namespace ShopBee.Areas.Customer.Controllers
@@ -24,8 +25,10 @@ namespace ShopBee.Areas.Customer.Controllers
             {
                 return NotFound();
             }
-            Book book = _unitOfWork.Book.Get(c=> c.Id == id);
-            return View(book);
+            BookDetailVM bookDetailVM = new BookDetailVM();
+            bookDetailVM.book = _unitOfWork.Book.Get(c=> c.Id == id,includeProperties: "Store,Category");
+            bookDetailVM.feedbacks = _unitOfWork.Feedback.GetFeedbackByBook(bookDetailVM.book.Id);
+            return View(bookDetailVM);
         }
     }
 }

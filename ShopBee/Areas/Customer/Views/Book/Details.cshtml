@@ -1,32 +1,43 @@
-﻿@model Book;
+﻿@using ShopBee.Models.ViewModels
+@model BookDetailVM;
 <head>
     <link rel="stylesheet" href="~/css/customer/productdetail.css">
 </head>
 <div class="section">
+
     <div class="image-container">
-        <img src="@Model.ImgUrl" alt="Product Image" class="product-image">
+        <img src="@Model.book.ImgUrl" alt="Product Image" class="product-image">
     </div>
     <div class="product-info">
-        <h1>@Model.Name</h1>
+        <h1>@Model.book.Name</h1>
+        <p class="store-name">Store: @Model.book.Store.Name</p>
         @{
-            if (Model.Stock == 0)
+            if (Model.book.Stock == 0)
             {
-                <p class="product-status">Status: Out of Stock</p>
+                <p class="product-status-outofstock">Out of Stock</p>
             } else
             {
-                <p class="product-status">Status: Available</p>
+                <p class="product-status-available">Available</p>
             }
         }
-        <p class="author-name">Author: @Model.Author</p>
-        <p class="store-name">Store: @Model.StoreID</p>
-        <p>@Model.Description</p>
-        <div class="actual-price">$@Model.ActualPrice</div>
+        <p class="author-name">Author: @Model.book.Author</p>
+        <p class="category">Category: @Model.book.Category.Name</p>
+        <p>@Model.book.Description</p>
+        <div class="actual-price">$@Model.book.ActualPrice</div>
         <p> </p>
-        <div class="discount-price">$@Model.DiscountPrice</div>
+        <div class="discount-price">$@Model.book.DiscountPrice</div>
         <div class="quantity">
             <label for="quantity">Quantity:</label>
             <button id="decrease">-</button>
-            <input type="text" id="quantity" value="1" readonly>
+            @{
+                if (Model.book.Stock == 0)
+                {
+                    <input type="text" id="quantity" value="0" readonly>
+                } else
+                {
+                    <input type="text" id="quantity" value="1" readonly>
+                }
+            }
             <button id="increase">+</button>
         </div>
         <a href="#" class="buy-button">Buy Now</a>
@@ -37,7 +48,10 @@
     document.getElementById('increase').addEventListener('click', function () {
         var quantityInput = document.getElementById('quantity');
         var currentQuantity = parseInt(quantityInput.value);
-        quantityInput.value = currentQuantity + 1;
+        var maxStock = parseInt(@Model.book.Stock); // Lấy giá trị Stock từ Model
+        if (currentQuantity < maxStock) {
+            quantityInput.value = currentQuantity + 1;
+        }
     });
 
     document.getElementById('decrease').addEventListener('click', function () {
@@ -48,60 +62,40 @@
         }
     });
 </script>
-<div class="section feedback-section">
 
+<div class="section feedback-section">
+    <h1 class="feedback-header">FEEDBACK</h1>
     <div class="feedback-components">
-        <div class="feedback-item">
-            <div class="user-avatar">
-                <img src="~/img/userAvt/4cc2377e-8594-43ee-9022-3f72815880dd.jpg" alt="User 1 Avatar">
-            </div>
-            <div class="user-info">
-                <div class="user-name">John Doe </div>
-                <div class="user-rating">
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-unchecked far fa-star"></i>
+        @{
+            foreach (Feedback feedback in Model.feedbacks)
+            {
+                <div class="feedback-item">
+                    <div class="user-avatar">
+                        <img src="@feedback.User.avtURL" alt="User 2 Avatar">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">@feedback.User.Name</div>
+                        <div class="user-rating">
+                            @{
+                                for (int i=0; i<feedback.Rating; i++)
+                                {
+                                    <i class="star-checked far fa-star"></i>
+                                }
+                                for (int i=0; i<5-feedback.Rating; i++)
+                                {
+                                    <i class="star-unchecked far fa-star"></i>
+                                }
+                            }
+                  
+                        </div>
+                        <div class="feedback-text">@feedback.Content</div>
+                        <div class="store-feedback">Store response: @feedback.Response</div>
+                    </div>
                 </div>
-                <div class="feedback-text">Great product! Fast delivery and good quality.</div>
-                <div class="store-feedback">-> Thank you for your positive feedback!</div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="user-avatar">
-                <img src="~/img/userAvt/4cc2377e-8594-43ee-9022-3f72815880dd.jpg" alt="User 2 Avatar">
-            </div>
-            <div class="user-info">
-                <div class="user-name">Jane Smith</div>
-                <div class="user-rating">
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-unchecked far fa-star"></i>
-                    <i class="star-unchecked far fa-star"></i>
-                </div>
-                <div class="feedback-text">I love it! The product exceeded my expectations.</div>
-                <div class="store-feedback">Store response: We're glad to hear that! Thank you for choosing our product.</div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="user-avatar">
-                <img src="~/img/userAvt/4cc2377e-8594-43ee-9022-3f72815880dd.jpg" alt="User 2 Avatar">
-            </div>
-            <div class="user-info">
-                <div class="user-name">Jane Smith</div>
-                <div class="user-rating">
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-checked far fa-star"></i>
-                    <i class="star-unchecked far fa-star"></i>
-                </div>
-                <div class="feedback-text">I love it! The product exceeded my expectations.</div>
-                <div class="store-feedback">Store response: We're glad to hear that! Thank you for choosing our product.</div>
-            </div>
-        </div>
+            }
+        }
+        
+       
     </div>
     <!-- Add more feedback items as needed -->
 </div>

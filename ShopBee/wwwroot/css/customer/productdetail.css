@@ -129,7 +129,7 @@ body {
 
 .feedback-section {
     width: 200%;
-    margin-top: 30px;
+    margin-top: 10px;
     flex-direction: column;
 }
 
@@ -137,9 +137,10 @@ body {
 .feedback-components {
     display: flex;
     flex-direction: column; 
-    align-items: flex-start; 
+    align-items: center; 
     border-bottom: 1px solid #ddd;
-    padding: 20px 0;
+   
+ 
 }
 .feedback-item {
     display: flex;
@@ -175,12 +176,12 @@ body {
 
         .feedback-item .user-info .feedback-text {
             color: #666;
-            font-size: 10px;
+            font-size: 12px;
         }
 
 .store-feedback {
     font-style: italic;
-    font-size: 9px;
+    font-size: 11px;
     color: #888;
 }
 
@@ -205,11 +206,19 @@ body {
                 font-weight: unset;
             }
 
-.product-status {
+.product-info .product-status-available{
     font-size: 16px;
+    font-weight: 700;
     color: #4CAF50; /* Green color for available status */
     margin-bottom: 10px;
 }
+.product-info .product-status-outofstock {
+    font-size: 16px;
+    font-weight: 700;
+    color: red; /* Green color for available status */
+    margin-bottom: 10px;
+}
+
 
 .author-name {
     font-size: 18px;
@@ -218,9 +227,18 @@ body {
     margin-bottom: 10px;
 }
 
-.store-name {
-    font-size: 2px;
-    font-weight: 100;
-    
+.product-info p.store-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
     margin-bottom: 10px;
+}
+
+.product-info p.category {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.feedback-header {
+    color: #e44d26;
 }
