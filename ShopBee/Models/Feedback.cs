@@ -26,7 +26,7 @@ namespace ShopBee.Models
         public string? Content { get; set; }
         public int? Rating { get; set; }
         public string? Response {  get; set; }
-        public DateTime? CreateDate {  get; set; }
+        public DateTime CreateDate {  get; set; }
         
 
     }

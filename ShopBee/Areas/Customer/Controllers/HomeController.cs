@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopBee.Authentication;
 using ShopBee.Models;
+using ShopBee.Models.ViewModels;
 using ShopBee.Repository.IRepository;
 using System.Diagnostics;
 
@@ -16,36 +17,57 @@ namespace ShopBee.Areas.Customer.Controllers
             _unitOfWork = db;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string? searchString)
         {
-            /*var userRoles = HttpContext.Session.GetString("UserRoles");
-            if (userRoles == null)
+            HomeVM homeVM = new HomeVM();
+            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+        
+            if (string.IsNullOrEmpty(searchString))
             {
-                return RedirectToAction("Login", "User");
-            }
-
-            if (userRoles.Contains("Admin"))
+                homeVM.books = _unitOfWork.Book.GetAll().ToList();
+            } else
             {
-                return RedirectToAction("Index", "Home", new { area = "Admin" });
+                homeVM.books = _unitOfWork.Book.GetBookBySearch(searchString);
             }
-            else if (userRoles.Contains("Store"))
-            {
-                return RedirectToAction("Index", "Home", new { area = "Store" });
-            }
-            else if (userRoles.Contains("Customer"))
-            {
-                return RedirectToAction("Index", "Home", new { area = "Customer" });
-            }
-*/
-            // Người dùng không có vai trò hợp lệ, chuyển hướng về trang đăng nhập
-            return View();
+            return View(homeVM);
         }
 
+       
+
+        public IActionResult FilterByCategory(int? id)
+        {   
+            if (id == null || id == 0) {
+                return NotFound();
+            }
+            HomeVM homeVM = new HomeVM();
+            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+            
+            homeVM.books = _unitOfWork.Book.GetAllBookByCategory(id).ToList();
+            return View("Index", homeVM);
+        }
+        public IActionResult FilterByPrice(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            HomeVM homeVM = new HomeVM();
+            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+            homeVM.books = _unitOfWork.Book.GetAllBookSort(); 
+            if (id == 2)
+            {
+                homeVM.books.Reverse();
+            }
+       
+        
+            return View("Index", homeVM);
+        }
         [HttpGet]
         public IActionResult GetAllBook()
         {
             List<Book> obj = _unitOfWork.Book.GetAll().ToList();
             return Json(obj);
         }
+        
     }
 }

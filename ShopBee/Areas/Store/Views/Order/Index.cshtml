@@ -1,0 +1,30 @@
+﻿﻿@{
+    ViewData["Title"] = "Order Management";
+}
+@model List<Order>
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="py-2">Order Managment</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <table id="tblDataOrderAdmin" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>TotalPrice</th>
+                    <th>Method</th>
+                    <th>CreateDate</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/table.js"></script>
+}
