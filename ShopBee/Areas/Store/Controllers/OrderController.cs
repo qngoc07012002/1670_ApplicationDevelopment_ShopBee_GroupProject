@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using ShopBee.Authentication;
 using ShopBee.Models;
+using ShopBee.Models.ViewModels;
 using ShopBee.Repository.IRepository;
 
 namespace ShopBee.Areas.Store.Controllers
@@ -18,6 +21,22 @@ namespace ShopBee.Areas.Store.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Details(int orderId)
+        {
+            var orderDetails = _unitOfWork.OrderDetail.GetAll().Where(u => u.OrderId == orderId).ToList();
+            foreach (var orderDetail in orderDetails)
+            {
+                orderDetail.Book = _unitOfWork.Book.Get(b => b.Id == orderDetail.BookId);
+            }
+
+            OrderVM orderVM = new OrderVM()
+            {
+                DetailsOfOderList = orderDetails,
+                Order = _unitOfWork.Order.Get(u => u.Id == orderId, includeProperties:"User"),
+            };
+            return View(orderVM);
         }
 
         #region API CALLS

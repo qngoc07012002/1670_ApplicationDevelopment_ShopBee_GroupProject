@@ -12,13 +12,8 @@ using ShopBee.Data;
 namespace ShopBee.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-<<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
-    [Migration("20231220053518_CreateTable")]
-    partial class CreateTable
-========
     [Migration("20231221112958_updateCartTable")]
     partial class updateCartTable
->>>>>>>> master:ShopBee/Migrations/20231221112958_updateCartTable.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -156,13 +151,8 @@ namespace ShopBee.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
-                    b.Property<DateOnly?>("CreateDate")
-                        .HasColumnType("date");
-========
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
->>>>>>>> master:ShopBee/Migrations/20231221112958_updateCartTable.Designer.cs
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -237,9 +227,6 @@ namespace ShopBee.Migrations
 
                     b.Property<int?>("BookId")
                         .HasColumnType("int");
-
-                    b.Property<DateOnly?>("Date")
-                        .HasColumnType("date");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -409,29 +396,6 @@ namespace ShopBee.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Store");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ShopBee.Models.Feedback", b =>
-                {
-                    b.HasOne("ShopBee.Models.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ShopBee.Models.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId");
-
-                    b.HasOne("ShopBee.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Book");
-
-                    b.Navigation("Order");
 
                     b.Navigation("User");
                 });

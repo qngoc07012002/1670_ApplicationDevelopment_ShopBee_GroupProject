@@ -42,8 +42,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Areas\Store\Views\_ViewImports.cshtml" />
-    <None Include="Areas\Store\Views\_ViewStart.cshtml" />
+    <None Include="Areas\Store\Views\Book\CreateUpdate.cshtml" />
+    <None Include="Areas\Store\Views\Book\Index.cshtml" />
+    <None Include="Areas\Store\Views\Category\Index.cshtml" />
+    <None Include="Areas\Store\Views\Feedback\Index.cshtml" />
+    <None Include="Areas\Store\Views\Home\Index.cshtml" />
+    <None Include="Areas\Store\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Store\Views\Order\Index.cshtml" />
+    <None Include="wwwroot\css\store\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\store\icon-set\fonts\The-Icon-of.bin" />
+    <None Include="wwwroot\css\store\icon-set\fonts\The-Icon-of.svg" />
+    <None Include="wwwroot\js\store\hs-navbar-vertical-aside-mini-cache.js" />
+    <None Include="wwwroot\js\store\order.js" />
   </ItemGroup>
 
   <ItemGroup>

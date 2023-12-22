@@ -1,0 +1,11 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+
+/** ADD YOUR AWESOME CODES HERE **/
+.avatar img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto; 
+    height: auto;
+}

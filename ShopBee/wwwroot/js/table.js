@@ -125,46 +125,6 @@ function loadDataTable() {
             },
         ]
     });
-    dataTable = $('#tblDataBookStoreOwner').DataTable({
-        "ajax": { url: '/Store/Book/getall' },
-        "columns": [
-            { data: 'id', "width": "20%" },
-            { data: 'name', "width": "60%" },
-            { data: 'category.name', "width": "60%" },
-            { data: 'actualPrice', "width": "60%" },
-            { data: 'discountPrice', "width": "60%" },
-            { data: 'stock', "width": "60%" },
-            { data: 'author', "width": "60%" },
-            { data: 'description', "width": "60%" },
-            {
-                data: 'id', "width": "20%",
-                "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/store/book/CreateUpdate?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
-                    <a onClick=Delete('/store/Book/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div >`
-                }
-            },
-        ]
-    });
-    dataTable = $('#tblDataFeedbackStoreOwner').DataTable({
-        "ajax": { url: '/Store/Feedback/getall' },
-        "columns": [
-            { data: 'book.name', "width": "20%" },
-            { data: 'content', "width": "20%" },
-            { data: 'rating', "width": "10%" },
-            { data: 'response', "width": "20%" },
-            { data: 'createDate', "width": "20%" },
-            {
-                data: 'id', "width": "20%",
-                "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/store/book/CreateUpdate?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a>
-                    </div >`
-                }
-            },
-        ]
-    });
 }
 
 
