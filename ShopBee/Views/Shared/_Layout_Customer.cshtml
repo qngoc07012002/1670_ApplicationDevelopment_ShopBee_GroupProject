@@ -77,7 +77,7 @@
                                     <a href="#" class="header__nav-item-link header__nav-item--bold">@userName</a>
                                     <ul class="header__nav-user-menu">
                                         <li class="header__nav-user-item">
-                                            <a href="#">Order</a>
+                                            <a asp-area="Customer" asp-controller="Order" asp-action="Index">Order</a>
                                         </li>
                                         <li class="header__nav-user-item">
                                             <a asp-area="Customer" asp-controller="User" asp-action="EditProfile">My Account</a>
@@ -122,10 +122,14 @@
                    
                     <!-- header__cart--no-cart --><!-- header__cart--has-cart -->
                     <div class="header__cart header__cart--has-cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
-                        <div class="header__cart-count">10</div>
+                        <a asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                        <i  class="header__cart-icon fas fa-shopping-cart"></i>
+                        @{
+                            var cart = Accessor.HttpContext.Session.GetString("Cart");
+                        }
+                        <div class="header__cart-count">@cart</div>
 
-                       
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,112 @@
+﻿@using ShopBee.Models.ViewModels
+@model OrderUserVM
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/customer/order.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<div class="container">
+    <h2 class="text-center mb-4">Order Management</h2>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" id="pending-tab" data-toggle="tab" href="#pending">Pending Orders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="successful-tab" data-toggle="tab" href="#successful">Successful Orders</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="pending">
+            <div class="order-list">
+                @{
+                    foreach(Order item in Model.orders)
+                    {
+                        if (item.Status == "Pending")
+                        {
+                            <div class="order-item">
+                                <ul class="product-list">
+                                    @{
+                                        List<OrderDetail> orderDetails = Model.ordersDetail[Model.orders.IndexOf(item)];
+                                        foreach (OrderDetail orderDetail in orderDetails)
+                                        {
+                                            <li class="product-list-item">
+                                                <div class="product-info">
+                                                    <div>
+                                                        <img src="@orderDetail.Book.ImgUrl" alt="Product 2" class="img-fluid product-image">
+                                                        <span class="ml-3">@orderDetail.Book.Name</span>
+                                                        <span class="quantity">x @orderDetail.Quantity</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                                <p class="store-name">@item.Store.Name</p>
+                                <p class="total">Total: $@item.TotalPrice</p>
+                                <button class="review-button">Pending</button>
+                            </div>
+                        }
+                    }
+                }
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="successful">
+            <div class="order-list">
+                @{
+                    foreach (Order item in Model.orders)
+                    {
+                        if (item.Status == "Successful")
+                        {
+                            <div class="order-item">
+                                <ul class="product-list">
+                                    @{
+                                        List<OrderDetail> orderDetails = Model.ordersDetail[Model.orders.IndexOf(item)];
+                                        foreach (OrderDetail orderDetail in orderDetails)
+                                        {
+                                            <li class="product-list-item">
+                                                <div class="product-info">
+                                                    <div>
+                                                        <img src="@orderDetail.Book.ImgUrl" alt="Product 2" class="img-fluid product-image">
+                                                        <span class="ml-3">@orderDetail.Book.Name</span>
+                                                        <span class="quantity">x @orderDetail.Quantity</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                                <p class="store-name">@item.Store.Name</p>
+                                <p class="total">Total: $@item.TotalPrice</p>
+                                <button class="review-button">Feedback</button>
+                            </div>
+                        }
+                    }
+                }
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {      
+        $('#pending-tab').on('click', function () {
+            $('#successful-tab').removeClass('active');
+            $(this).addClass('active');
+            $('#successful').removeClass('show active');
+            $('#pending').addClass('show active');
+        });
+
+        $('#successful-tab').on('click', function () {
+            $('#pending-tab').removeClass('active');
+            $(this).addClass('active');
+            $('#pending').removeClass('show active');
+            $('#successful').addClass('show active');
+        });
+    });
+</script>

@@ -4,6 +4,10 @@ namespace ShopBee.Repository.IRepository
 {
     public interface IOrderRepository : IRepository<Order>
     {
-        int GetNumberOfOrders();
+        public int GetNumberOfOrders();
+
+        public int CreateOrder(Order order);
+
+        public List<Order> GetOrderByUser(int userId);
     }
 }

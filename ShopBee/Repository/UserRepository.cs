@@ -22,7 +22,8 @@ namespace ShopBee.Repository
 
         public void Register(User user)
         {
-            throw new NotImplementedException();
+            _db.Add(user);
+            
         }
 
         public bool CheckRole(int userId, int roleId)

@@ -1,0 +1,109 @@
+header.header {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header__nav-list {
+    padding-top: 10px;
+}        
+
+
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: #ee4d2d;
+        }
+
+        .order-list {
+            margin-top: 20px;
+        }
+
+        .order-item {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .product-image {
+            max-width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .quantity {
+            color: #555;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .product-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .total {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ee4d2d;
+        }
+
+        .review-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: #ee4d2d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .store-name {
+            font-size: 18px;
+            color: gray;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .nav-tabs {
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            cursor: pointer;
+            color: #555;
+        }
+
+        .nav-link.active {
+            color: #ee4d2d;
+            font-weight: bold;
+        }
