@@ -1,4 +1,4 @@
-﻿@model Store
+﻿@model StoreVM
 <form method="POST">
     <div class="boder p-3 mt-4">
         <div class="row pb-2">
@@ -7,15 +7,15 @@
         </div>
         <div class="p-0" asp-validation-summary="All"></div>
         <div class="mb-3 row p-1">
-            <label asp-for="Name" class="p-0"></label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <label asp-for="Store.Name" class="p-0"></label>
+            <input asp-for="Store.Name" class="form-control" />
+            <span asp-validation-for="Store.Name" class="text-danger"></span>
         </div>
         <div class="row mb-3">
-            <label for="eventDate">Select date:</label>
-            <input asp-for="CreateDate" type="date" id="eventDate" name="eventDate" class="text-danger" required>
+            <label asp-for="Store.User"></label>
+            <select asp-for="@Model.Store.UserId" asp-items="@Model.MyUsers" class="form-select form-control "></select>
+
         </div>
-        
         <div class="row">
             <button type="submit" class="btn btn-outline-primary form-control" style="width:150px">Create</button>
             <div class ="col-6 col-md-3">

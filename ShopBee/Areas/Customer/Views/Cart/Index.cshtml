@@ -1,0 +1,43 @@
+﻿@using ShopBee.Models.ViewModels
+@model CartVM
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/customer/cart.css">
+</head>
+<div class="container">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <h2 class="text-center mb-4">Shobee Cart</h2>
+    <ul class="list-group">
+        @{
+            foreach (Cart cart in Model.carts)
+            {
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="@cart.Book.ImgUrl" alt="Product 1" class="img-fluid product-image">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="product-details">
+                                <div class="product-info">
+                                    <p class="product-name">@cart.Book.Name</p>
+                                    <p class="product-price">Price: $@cart.Book.DiscountPrice</p>
+                                    <p class="product-quantity">Quantity: @cart.Quantity</p>
+                                </div>
+                                <div class="text-right">
+                                    <a asp-area="Customer" asp-controller="Cart" asp-action="RemoveBookToCart" asp-route-id="@cart.Id" class="remove-btn">&times;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            }
+        }
+
+
+    </ul>
+    <div class="text-right mt-4">
+        <p class="font-weight-bold total-amount">Total: $@Model.totalPrice</p>
+        <a asp-area="Customer" asp-controller="Order" asp-action="Checkout" class="btn checkout-btn">Checkout</a>
+    </div>
+</div>
+

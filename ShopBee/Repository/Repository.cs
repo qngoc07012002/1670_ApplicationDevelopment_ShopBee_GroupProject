@@ -70,10 +70,7 @@ namespace ShopBee.Repository
             return _db.Books.Count();
         }
       
-        public int GetNumberOfOrders()
-        {
-            return _db.Orders.Count();
-        }
+    
         public int GetNumberOfStores()
         {
             return _db.Stores.Count();
