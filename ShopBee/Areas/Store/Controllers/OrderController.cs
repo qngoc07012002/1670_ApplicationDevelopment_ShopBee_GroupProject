@@ -43,7 +43,10 @@ namespace ShopBee.Areas.Store.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Order> obj = _unitOfWork.Order.GetAll(includeProperties: "User").ToList();
+            var UserIdGet = HttpContext.Session.GetString("UserId");
+            int.TryParse(UserIdGet, out int storeOwnerId);
+            ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
+            List<Order> obj = _unitOfWork.Order.GetAll(includeProperties: "User").Where(u=> u.StoreId == store.Id).ToList();
             return Json(new { data = obj });
         }
 
@@ -51,11 +54,16 @@ namespace ShopBee.Areas.Store.Controllers
         public IActionResult Delete(int id)
         {
             var OrderDelete = _unitOfWork.Order.Get(u => u.Id == id);
+            var OrderDetailsDelete = _unitOfWork.OrderDetail.GetAll().Where(u => u.OrderId == id);
             if (OrderDelete == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
-
+            
+            foreach (var orderDetail in OrderDetailsDelete)
+            {
+                _unitOfWork.OrderDetail.Remove(orderDetail);
+            }
             _unitOfWork.Order.Remove(OrderDelete); _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }

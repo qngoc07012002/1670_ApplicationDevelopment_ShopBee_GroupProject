@@ -34,7 +34,6 @@
     <Folder Include="Areas\Store\Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Migrations\" />
-    <Folder Include="wwwroot\img\bookImg\" />
     <Folder Include="wwwroot\img\store\" />
     <Folder Include="wwwroot\img\userAvt\" />
     <Folder Include="wwwroot\shared\" />
