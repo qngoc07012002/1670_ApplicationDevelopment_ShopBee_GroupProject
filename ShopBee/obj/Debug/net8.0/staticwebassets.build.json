@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sKiVExriVrm68xljggsUFQM7JNMRb56fTOA/gbU9T04=",
+  "Hash": "s7ImswY3O15GStqFJodKkF7OUyRb/zt2jw+0K7l7yF4=",
   "Source": "ShopBee",
   "BasePath": "_content/ShopBee",
   "Mode": "Default",
@@ -1383,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\bookImg\\d759eb6d-b9b2-4e11-aa44-fcb27521f044.jpg"
+    },
+    {
+      "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\dd80f728-e576-45f4-b2db-ff0c67eca3e0.jpg",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "img/bookImg/dd80f728-e576-45f4-b2db-ff0c67eca3e0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bookImg\\dd80f728-e576-45f4-b2db-ff0c67eca3e0.jpg"
     },
     {
       "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg",
