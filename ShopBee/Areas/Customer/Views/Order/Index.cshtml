@@ -1,5 +1,5 @@
 ﻿@using ShopBee.Models.ViewModels
-
+@model OrderUserVM
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/customer/order.css">
@@ -10,7 +10,6 @@
 <div class="container">
     <h2 class="text-center mb-4">Order Management</h2>
 
-    <!-- Tabs để chuyển đổi giữa đơn hàng đang chờ và đơn hàng thành công -->
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" id="pending-tab" data-toggle="tab" href="#pending">Pending Orders</a>
@@ -22,65 +21,80 @@
 
     <div class="tab-content">
         <div class="tab-pane fade show active" id="pending">
-            <!-- Nội dung cho đơn hàng đang chờ -->
             <div class="order-list">
-                <div class="order-item">
-                    <ul class="product-list">
-                        <!-- ... (thêm nội dung đơn hàng đang chờ) ... -->
-                    </ul>
-                    <p class="store-name">Cửa Hàng XYZ</p>
-                    <p class="total">Total: $29.99</p>
-                    <button class="review-button">Đánh Giá Đơn Hàng</button>
-                </div>
-                <!-- Thêm các đơn hàng đang chờ khác nếu cần -->
+                @{
+                    foreach(Order item in Model.orders)
+                    {
+                        if (item.Status == "Pending")
+                        {
+                            <div class="order-item">
+                                <ul class="product-list">
+                                    @{
+                                        List<OrderDetail> orderDetails = Model.ordersDetail[Model.orders.IndexOf(item)];
+                                        foreach (OrderDetail orderDetail in orderDetails)
+                                        {
+                                            <li class="product-list-item">
+                                                <div class="product-info">
+                                                    <div>
+                                                        <img src="@orderDetail.Book.ImgUrl" alt="Product 2" class="img-fluid product-image">
+                                                        <span class="ml-3">@orderDetail.Book.Name</span>
+                                                        <span class="quantity">x @orderDetail.Quantity</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                                <p class="store-name">@item.Store.Name</p>
+                                <p class="total">Total: $@item.TotalPrice</p>
+                                <button class="review-button">Pending</button>
+                            </div>
+                        }
+                    }
+                }
+
             </div>
         </div>
         <div class="tab-pane fade" id="successful">
-            <!-- Nội dung cho đơn hàng thành công -->
             <div class="order-list">
-                <div class="order-item">
-                    <ul class="product-list">
-                        <li class="product-list-item">
-                            <div class="product-info">
-                                <div>
-                                    <img src="D:\dacnhantam.jpg" alt="Product 2" class="img-fluid product-image">
-                                    <span class="ml-3">Product 2</span>
-                                    <span class="quantity">x 1</span>
-                                </div>
+                @{
+                    foreach (Order item in Model.orders)
+                    {
+                        if (item.Status == "Successful")
+                        {
+                            <div class="order-item">
+                                <ul class="product-list">
+                                    @{
+                                        List<OrderDetail> orderDetails = Model.ordersDetail[Model.orders.IndexOf(item)];
+                                        foreach (OrderDetail orderDetail in orderDetails)
+                                        {
+                                            <li class="product-list-item">
+                                                <div class="product-info">
+                                                    <div>
+                                                        <img src="@orderDetail.Book.ImgUrl" alt="Product 2" class="img-fluid product-image">
+                                                        <span class="ml-3">@orderDetail.Book.Name</span>
+                                                        <span class="quantity">x @orderDetail.Quantity</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                                <p class="store-name">@item.Store.Name</p>
+                                <p class="total">Total: $@item.TotalPrice</p>
+                                <button class="review-button">Feedback</button>
                             </div>
-                        </li>
-                        <li class="product-list-item">
-                            <div class="product-info">
-                                <div>
-                                    <img src="D:\dacnhantam.jpg" alt="Product 2" class="img-fluid product-image">
-                                    <span class="ml-3">Product 2</span>
-                                    <span class="quantity">x 1</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-list-item">
-                            <div class="product-info">
-                                <div>
-                                    <img src="D:\dacnhantam.jpg" alt="Product 2" class="img-fluid product-image">
-                                    <span class="ml-3">Product 2</span>
-                                    <span class="quantity">x 1</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="store-name">Cửa Hàng XYZ</p>
-                    <p class="total">Total: $29.99</p>
-                    <button class="review-button">Đánh Giá Đơn Hàng</button>
-                </div>
-                <!-- Thêm các đơn hàng thành công khác nếu cần -->
+                        }
+                    }
+                }
+              
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    $(document).ready(function () {
-        // Khi click vào tab, thay đổi nội dung hiển thị
+    $(document).ready(function () {      
         $('#pending-tab').on('click', function () {
             $('#successful-tab').removeClass('active');
             $(this).addClass('active');

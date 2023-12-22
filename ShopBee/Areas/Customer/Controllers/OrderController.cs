@@ -18,7 +18,15 @@ namespace ShopBee.Areas.Customer.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            int userId = int.Parse(HttpContext.Session.GetString("UserId"));
+            OrderUserVM vm = new OrderUserVM();
+            vm.orders = _unitOfWork.Order.GetOrderByUser(userId);
+            foreach (Order order in vm.orders)
+            {
+                List<OrderDetail> orderDetails = _unitOfWork.OrderDetail.GetOrderDetailsByOrder(order.Id);
+                vm.ordersDetail.Add(orderDetails);
+            }
+            return View(vm);
         }
         
         public IActionResult Checkout()
