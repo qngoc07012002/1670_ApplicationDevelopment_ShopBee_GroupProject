@@ -86,6 +86,17 @@ namespace ShopBee.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<int?>("Quantity")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("StoreID")
+                        .IsRequired()
+                        .HasColumnType("int");
+
                     b.Property<int?>("UserID")
                         .IsRequired()
                         .HasColumnType("int");
@@ -93,6 +104,8 @@ namespace ShopBee.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BookID");
+
+                    b.HasIndex("StoreID");
 
                     b.HasIndex("UserID");
 
@@ -135,8 +148,8 @@ namespace ShopBee.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly?>("CreateDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -211,9 +224,6 @@ namespace ShopBee.Migrations
 
                     b.Property<int?>("BookId")
                         .HasColumnType("int");
-
-                    b.Property<DateOnly?>("Date")
-                        .HasColumnType("date");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -368,6 +378,12 @@ namespace ShopBee.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("ShopBee.Models.Store", "Store")
+                        .WithMany()
+                        .HasForeignKey("StoreID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("ShopBee.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserID")
@@ -375,6 +391,8 @@ namespace ShopBee.Migrations
                         .IsRequired();
 
                     b.Navigation("Book");
+
+                    b.Navigation("Store");
 
                     b.Navigation("User");
                 });

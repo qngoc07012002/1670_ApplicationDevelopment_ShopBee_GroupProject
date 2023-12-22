@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\css\\customer\\base.css"
     },
     {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\cart.css",
+      "PackagePath": "staticwebassets\\css\\customer\\cart.css"
+    },
+    {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\changepassword.css",
       "PackagePath": "staticwebassets\\css\\customer\\changepassword.css"
     },
@@ -139,6 +143,10 @@
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\grid.css",
       "PackagePath": "staticwebassets\\css\\customer\\grid.css"
+    },
+    {
+      "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\order.css",
+      "PackagePath": "staticwebassets\\css\\customer\\order.css"
     },
     {
       "Id": "D:\\Learning\\IT_ApplicationDevelopment_1670\\Project\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\wwwroot\\css\\customer\\productdetail.css",

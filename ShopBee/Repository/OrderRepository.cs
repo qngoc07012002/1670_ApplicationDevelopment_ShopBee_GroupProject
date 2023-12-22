@@ -11,6 +11,20 @@ namespace ShopBee.Repository
         {
             _db = db;
         }
+       
 
+        public int CreateOrder(Order order)
+        {
+            _db.Orders.Add(order);
+            _db.SaveChanges();
+            return order.Id;
+        }
+
+        public int GetNumberOfOrders()
+        {
+            return _db.Orders.Count();
+        }
+
+      
     }
 }

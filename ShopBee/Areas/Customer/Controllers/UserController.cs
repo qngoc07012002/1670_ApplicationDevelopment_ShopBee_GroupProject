@@ -37,6 +37,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 HttpContext.Session.SetString("UserAvt", user.avtURL);
                 var userRoles = _unitOfWork.User.GetUserRoles(user.Id);
                 HttpContext.Session.SetString("UserRoles", userRoles);
+                HttpContext.Session.SetString("Cart", _unitOfWork.Cart.GetNumbersOfItems(user.Id).ToString());
                 return RedirectToAction("Index", "Home", new { area = "Customer" });
             }
             else
@@ -97,15 +98,17 @@ namespace ShopBee.Areas.Customer.Controllers
             HttpContext.Session.Remove("UserName");
             HttpContext.Session.Remove("UserRoles");
             HttpContext.Session.Remove("UserAvt");
+            HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index", "Home", new { area = "Customer" });
         }
-
+        
         public IActionResult EditProfile()
         {
             int userId = int.Parse(HttpContext.Session.GetString("UserId"));
             User user = _unitOfWork.User.Get(b => b.Id == userId);
             return View(user);
         }
+
         [HttpPost]
         public IActionResult EditProfile(IFormFile? file, int gender, User user, string password)
         {
@@ -149,11 +152,12 @@ namespace ShopBee.Areas.Customer.Controllers
             
             return View(user);
         }
-
+        
         public IActionResult ChangePassword()
         {
             return View();
         }
+      
         [HttpPost]
         public IActionResult ChangePassword(string currentPassword,string newPassword, string confirmNewPassword)
         {

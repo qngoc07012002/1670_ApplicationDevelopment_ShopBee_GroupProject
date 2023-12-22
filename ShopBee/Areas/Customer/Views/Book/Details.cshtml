@@ -26,21 +26,27 @@
         <div class="actual-price">$@Model.book.ActualPrice</div>
         <p> </p>
         <div class="discount-price">$@Model.book.DiscountPrice</div>
-        <div class="quantity">
-            <label for="quantity">Quantity:</label>
-            <button id="decrease">-</button>
-            @{
-                if (Model.book.Stock == 0)
-                {
-                    <input type="text" id="quantity" value="0" readonly>
-                } else
-                {
-                    <input type="text" id="quantity" value="1" readonly>
+        <form method="post">
+            <input name="storeId" value="@Model.book.StoreID" hidden />
+            <input name="bookId" value="@Model.book.Id" hidden />
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <button id="decrease">-</button>
+                @{
+                    if (Model.book.Stock == 0)
+                    {
+                        <input type="text" name="quantity" id="quantity" value="0" readonly>
+                    }
+                    else
+                    {
+                        <input type="text" name="quantity" id="quantity" value="1" readonly>
+                    }
                 }
-            }
-            <button id="increase">+</button>
-        </div>
-        <a href="#" class="buy-button">Buy Now</a>
+                <button type="button" id="increase">+</button>
+            </div>
+            <button type="submit" class="buy-button">Add To Cart</button>
+        </form>
+      
     </div>
 </div>
 
@@ -93,6 +99,22 @@
                     </div>
                 </div>
             }
+            <div class="feedback-item">
+                <div class="user-avatar">
+                    <img src="~/img/userAvt/64b550d9-fd3e-4677-8727-b3c6295d4fc2.jpg" alt="User 1 Avatar">
+                </div>
+                <div class="user-info">
+                    <div class="user-name">John Doe </div>
+                    <div class="user-rating">
+                        <i class="star-checked far fa-star"></i>
+                        <i class="star-checked far fa-star"></i>
+                        <i class="star-checked far fa-star"></i>
+                        <i class="star-checked far fa-star"></i>
+                        <i class="star-unchecked far fa-star"></i>
+                    </div>
+                   
+                </div>
+            </div>
         }
         
        
