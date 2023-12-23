@@ -9,13 +9,12 @@ namespace ShopBee.Authentication
 {
     public class AdminAuthentication : ActionFilterAttribute
     {
-        private readonly IUnitOfWork _unitOfWork;
         public AdminAuthentication()
         {
          
         }
 
-        public override void OnActionExecuted(ActionExecutedContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
             var userRoles = context.HttpContext.Session.GetString("UserRoles");
             if (userRoles == null || !userRoles.Contains("ADMIN"))

@@ -31,7 +31,7 @@
             <input name="bookId" value="@Model.book.Id" hidden />
             <div class="quantity">
                 <label for="quantity">Quantity:</label>
-                <button id="decrease">-</button>
+                <button type="button" id="decrease">-</button>
                 @{
                     if (Model.book.Stock == 0)
                     {

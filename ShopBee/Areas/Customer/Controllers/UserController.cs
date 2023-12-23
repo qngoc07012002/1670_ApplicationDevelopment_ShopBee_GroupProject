@@ -12,7 +12,7 @@ namespace ShopBee.Areas.Customer.Controllers
 {
 
     [Area("Customer")]
-    //[RoleAuthentication()]
+    
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -45,11 +45,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 TempData["error"] = "Invalid Account";
                 return View();
             }
-            /*else if (email.ToLower() == "customer" && password.ToLower() == "customer")
-            {
-                HttpContext.Session.SetString("UserRoles", "Customer");
 
-            }*/
            ;
         }
 
@@ -83,7 +79,7 @@ namespace ShopBee.Areas.Customer.Controllers
             {
                 user.Gender = Models.User.GenderType.Female;
             }
-            _unitOfWork.User.Add(user);
+            _unitOfWork.User.Register(user);
             TempData["success"] = "Account created succesfully";
 
 
@@ -101,14 +97,14 @@ namespace ShopBee.Areas.Customer.Controllers
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index", "Home", new { area = "Customer" });
         }
-        
+        [CustomerAuthentication()]
         public IActionResult EditProfile()
         {
             int userId = int.Parse(HttpContext.Session.GetString("UserId"));
             User user = _unitOfWork.User.Get(b => b.Id == userId);
             return View(user);
         }
-
+        [CustomerAuthentication()]
         [HttpPost]
         public IActionResult EditProfile(IFormFile? file, int gender, User user, string password)
         {
@@ -152,12 +148,12 @@ namespace ShopBee.Areas.Customer.Controllers
             
             return View(user);
         }
-        
+        [CustomerAuthentication()]
         public IActionResult ChangePassword()
         {
             return View();
         }
-      
+        [CustomerAuthentication()]
         [HttpPost]
         public IActionResult ChangePassword(string currentPassword,string newPassword, string confirmNewPassword)
         {
