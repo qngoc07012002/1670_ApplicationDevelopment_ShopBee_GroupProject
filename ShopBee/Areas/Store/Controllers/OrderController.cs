@@ -41,12 +41,24 @@ namespace ShopBee.Areas.Store.Controllers
 
         #region API CALLS
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll(string status)
         {
             var UserIdGet = HttpContext.Session.GetString("UserId");
             int.TryParse(UserIdGet, out int storeOwnerId);
             ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
-            List<Order> obj = _unitOfWork.Order.GetAll(includeProperties: "User").Where(u=> u.StoreId == store.Id).ToList();
+            List<Order> obj;
+            if (status == "Pending")
+            {
+                obj = _unitOfWork.Order.GetAll(includeProperties: "User").Where(u => u.StoreId == store.Id && u.Status== "Pending").ToList();
+            }
+            else if (status == "Successful")
+            {
+                obj = _unitOfWork.Order.GetAll(includeProperties: "User").Where(u => u.StoreId == store.Id && u.Status == "Successful").ToList();
+            }
+            else
+            {
+                obj = _unitOfWork.Order.GetAll(includeProperties: "User").Where(u => u.StoreId == store.Id).ToList();
+            }
             return Json(new { data = obj });
         }
 

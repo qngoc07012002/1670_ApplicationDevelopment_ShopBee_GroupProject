@@ -12,21 +12,78 @@
             </div>
         </div>
     </div>
-    <div class="card-body p-4">
-        <table id="tblDataOrderStoreOwner" class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>User</th>
-                    <th>TotalPrice</th>
-                    <th>Method</th>
-                    <th>CreateDate</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-        </table>
+    <div id="myTab" class="tab">
+        <button  class="tablinks" onclick="openCity(event, 'All')">All</button>
+        <button class="tablinks" onclick="openCity(event, 'Pending')">Pending</button>
+        <button class="tablinks" onclick="openCity(event, 'Successful')">Successful</button>
+    </div>
+    <div id="All" class="tabcontent">
+        <br />
+        <div class="card-body p-4">
+            <table id="tblDataOrderStoreOwner" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>TotalPrice</th>
+                        <th>Method</th>
+                        <th>CreateDate</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div id="Pending" class="tabcontent">
+        <br />
+        <div class="card-body p-4">
+            <table id="tblDataOrderStoreOwnerPending" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>TotalPrice</th>
+                        <th>Method</th>
+                        <th>CreateDate</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div id="Successful" class="tabcontent">
+        <br />
+        <div class="card-body p-4">
+            <table id="tblDataOrderStoreOwnerSuccessful" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>TotalPrice</th>
+                        <th>Method</th>
+                        <th>CreateDate</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </div>
 </div>
 @section Scripts {
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
     <script src="~/js/table.js"></script>
 }

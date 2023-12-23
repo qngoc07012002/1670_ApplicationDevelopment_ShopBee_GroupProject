@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hhTo4Zder3riVTe1Nm/MkalUpuV0AF5XzV4FYse8L1lMD6btDvuGTteko0Zx9wX5hYiHuEMdoxQt2DhHrxctvQ==",
+  "dgSpecHash": "xZ7I3qUcIFMC3vLkZ47v3hyJQhh/EL+p8d1r8ZxqO+GSP0eVZm5VvgPPmb9XJ3AjSHoIu89UphbW2Moxh3ZZxQ==",
   "success": true,
-  "projectFilePath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\ShopBee\\ShopBee.csproj",
+  "projectFilePath": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\ShopBee.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phucc\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\phucc\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

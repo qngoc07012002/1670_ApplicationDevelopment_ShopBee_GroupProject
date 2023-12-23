@@ -46,7 +46,6 @@
     <None Include="Areas\Store\Views\Category\Index.cshtml" />
     <None Include="Areas\Store\Views\Feedback\Index.cshtml" />
     <None Include="Areas\Store\Views\Home\Index.cshtml" />
-    <None Include="Areas\Store\Views\Order\Edit.cshtml" />
     <None Include="Areas\Store\Views\Order\Index.cshtml" />
     <None Include="wwwroot\css\store\bootstrap.min.css.map" />
     <None Include="wwwroot\css\store\icon-set\fonts\The-Icon-of.bin" />
