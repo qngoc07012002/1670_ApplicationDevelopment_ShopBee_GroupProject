@@ -629,8 +629,16 @@
       "PackagePath": "staticwebassets\\js\\store\\hs-navbar-vertical-aside-mini-cache.js"
     },
     {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\hs.chartjs-matrix.js",
+      "PackagePath": "staticwebassets\\js\\store\\hs.chartjs-matrix.js"
+    },
+    {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\order.js",
       "PackagePath": "staticwebassets\\js\\store\\order.js"
+    },
+    {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\theme.min.js",
+      "PackagePath": "staticwebassets\\js\\store\\theme.min.js"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\table.js",

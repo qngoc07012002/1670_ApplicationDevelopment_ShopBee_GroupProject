@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vwnOdDPVoTSLrQEtgWxEMxJ/qB46LJESVWp8BNKb8FI=",
+  "Hash": "qq4PhLh3KnQmLTg8h6DAfpHLsSxN43koE+k2lIDGQWU=",
   "Source": "ShopBee",
   "BasePath": "_content/ShopBee",
   "Mode": "Default",
@@ -3038,6 +3038,25 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+      "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\hs.chartjs-matrix.js",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "js/store/hs.chartjs-matrix.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\store\\hs.chartjs-matrix.js"
+    },
+    {
       "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\hs-navbar-vertical-aside-mini-cache.js",
       "SourceId": "ShopBee",
       "SourceType": "Discovered",
@@ -3074,6 +3093,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\store\\order.js"
+    },
+    {
+      "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\store\\theme.min.js",
+      "SourceId": "ShopBee",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\",
+      "BasePath": "_content/ShopBee",
+      "RelativePath": "js/store/theme.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\store\\theme.min.js"
     },
     {
       "Identity": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\js\\table.js",

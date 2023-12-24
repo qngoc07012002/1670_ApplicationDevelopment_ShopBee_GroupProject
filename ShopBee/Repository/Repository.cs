@@ -75,5 +75,9 @@ namespace ShopBee.Repository
         {
             return _db.Stores.Count();
         }
+        public int Count<T>() where T : class
+        {
+            return _db.Set<T>().Count();
+        }
     }
 }

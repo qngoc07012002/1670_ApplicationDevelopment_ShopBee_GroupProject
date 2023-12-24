@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using ShopBee.Authentication;
 using ShopBee.Models;
 using ShopBee.Models.ViewModels;
+using ShopBee.Repository;
 using ShopBee.Repository.IRepository;
 
 namespace ShopBee.Areas.Store.Controllers
@@ -41,7 +42,7 @@ namespace ShopBee.Areas.Store.Controllers
 
         #region API CALLS
         [HttpGet]
-        public IActionResult GetAll(string status)
+        public IActionResult GetAll(string? status)
         {
             var UserIdGet = HttpContext.Session.GetString("UserId");
             int.TryParse(UserIdGet, out int storeOwnerId);
@@ -61,6 +62,20 @@ namespace ShopBee.Areas.Store.Controllers
             }
             return Json(new { data = obj });
         }
+
+        public IActionResult Confirm(int id) 
+        {
+			var OrderConfirm = _unitOfWork.Order.Get(u => u.Id == id);
+			
+			if (OrderConfirm == null)
+			{
+				return Json(new { success = false, message = "Error while Comfirming" });
+			}
+            OrderConfirm.Status = "Successful";
+			_unitOfWork.Order.Update(OrderConfirm);
+			_unitOfWork.Save();
+			return Json(new { success = true, message = "Confirm Successful" });
+		}
 
         [HttpDelete]
         public IActionResult Delete(int id)

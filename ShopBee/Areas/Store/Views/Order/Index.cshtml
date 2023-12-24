@@ -13,9 +13,9 @@
         </div>
     </div>
     <div id="myTab" class="tab">
-        <button  class="tablinks" onclick="openCity(event, 'All')">All</button>
-        <button class="tablinks" onclick="openCity(event, 'Pending')">Pending</button>
-        <button class="tablinks" onclick="openCity(event, 'Successful')">Successful</button>
+        <button  class="tablinks" onclick="opentab(event, 'All')">All</button>
+        <button class="tablinks" onclick="opentab(event, 'Pending')">Pending</button>
+        <button class="tablinks" onclick="opentab(event, 'Successful')">Successful</button>
     </div>
     <div id="All" class="tabcontent">
         <br />
@@ -71,7 +71,7 @@
 </div>
 @section Scripts {
     <script>
-        function openCity(evt, cityName) {
+        function opentab(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {

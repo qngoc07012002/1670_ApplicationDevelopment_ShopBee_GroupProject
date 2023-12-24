@@ -57,7 +57,14 @@ function loadDataTable() {
             { data: 'stock', "width": "20%" },
             { data: 'author', "width": "30%" },
             { data: 'description', "width": "60%" },
-            { data: 'createDate', "width": "60%" },
+            {
+                data: 'createDate', "width": "10%",
+                "render": function (data) {
+                    const date = new Date(data);
+                    const formattedDate = date.toLocaleDateString('en-GB');
+                    return formattedDate;
+                }
+            },
             { data: 'modifyDate', "width": "60%" },
             {
                 data: 'id', "width": "20%",
@@ -154,7 +161,14 @@ function loadDataTable() {
             { data: 'content', "width": "20%" },
             { data: 'rating', "width": "10%" },
             { data: 'response', "width": "20%" },
-            { data: 'createDate', "width": "20%" },
+            {
+                data: 'createDate', "width": "10%",
+                "render": function (data) {
+                    const date = new Date(data);
+                    const formattedDate = date.toLocaleDateString('en-GB');
+                    return formattedDate;
+                }
+            },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
@@ -171,19 +185,34 @@ function loadDataTable() {
             { data: 'user.name', "width": "30%" },
             { data: 'totalPrice', "width": "20%" },
             { data: 'method', "width": "10%" },
-            { data: 'createDate', "width": "10%" },
+            {
+                data: 'createDate', "width": "10%",
+                "render": function (data) {
+                    const date = new Date(data);
+                    const formattedDate = date.toLocaleDateString('en-GB');
+                    return formattedDate;
+                }
+            },
             { data: 'status', "width": "20%" },
-
             {
                 data: 'id', "width": "20%",
-                "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/Store/Order/details?orderId=${data}" class="view-detail" data-order-id="1">View Detail</a>
-                    <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div >`
+                "render": function (data, type, row) {
+                    if (row.status === "Pending") {
+                        return `<div class="w-25 btn-group" role="group"> 
+                        <a href="/Store/Order/details?orderId=${data}" class="view-detail btn btn-success mx-2" data-order-id="${data}"><i class="bi bi-check-square"></i></a>
+                        <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                    </div>`;
+                    } else if (row.status === "Successful") {
+                        return `<div class="w-25 btn-group" role="group"> 
+                        <a href="/Store/Order/details?orderId=${data}" class="view-detail" data-order-id="${data}">View Detail</a>
+                    </div>`;
+                    } else {
+                        return '';
+                    }
                 }
             },
         ]
+
     });
     dataTable = $('#tblDataOrderStoreOwnerPending').DataTable({
         "ajax": { url: '/Store/Order/getall?status=Pending'},
@@ -191,14 +220,20 @@ function loadDataTable() {
             { data: 'user.name', "width": "30%" },
             { data: 'totalPrice', "width": "20%" },
             { data: 'method', "width": "10%" },
-            { data: 'createDate', "width": "10%" },
+            {
+                data: 'createDate', "width": "10%",
+                "render": function (data) {
+                    const date = new Date(data);
+                    const formattedDate = date.toLocaleDateString('en-GB');
+                    return formattedDate;
+                }
+            },
             { data: 'status', "width": "20%" },
-
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/Store/Order/details?orderId=${data}" class="view-detail" data-order-id="1">View Detail</a>
+                    <a href="/Store/Order/details?orderId=${data}" class="view-detail btn btn-success mx-2" data-order-id="1"><i class="bi bi-check-square"></i></a>
                     <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }
@@ -211,15 +246,22 @@ function loadDataTable() {
             { data: 'user.name', "width": "30%" },
             { data: 'totalPrice', "width": "20%" },
             { data: 'method', "width": "10%" },
-            { data: 'createDate', "width": "10%" },
+            {
+                data: 'createDate', "width": "10%",
+                "render": function (data) {
+                        const date = new Date(data);
+                        const formattedDate = date.toLocaleDateString('en-GB');
+                        return formattedDate;
+                }
+            },
             { data: 'status', "width": "20%" },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/Store/Order/details?orderId=${data}" class="view-detail" data-order-id="1">View Detail</a>
-                    <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div >`
+                    return `<div class="w-25 btn-group" role="group"> 
+                    <a href="/Store/Order/details?orderId=${data}" class="view-detail" data-order-id="${data}">View Detail</a>
+                    </div>`;
+
                 }
             },
         ]

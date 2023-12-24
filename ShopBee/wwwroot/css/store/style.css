@@ -59,13 +59,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 
-/*------------------------------------------------------------------
-    2. import files
--------------------------------------------------------------------*/
-
-@import url(css/animate.css);
-@import url(css/flaticon.css);
-@import url(css/font-awesome.min.css);
 
 /*------------------------------------------------------------------
     3. basic
@@ -1959,22 +1952,22 @@ button.main_bt {
 -------------------------------------------------------------------*/
 
 .footer {
+    position: fixed;
     min-height: 65px;
-    background: #fff;
+    bottom: 0;
+    white-space: nowrap;
+    line-height: 60px;
     margin-top: 30px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     width: 100%;
+    text-align: center;
 }
 
     .footer p {
         margin: 0;
         line-height: normal;
-        text-align: center;
         font-size: 14px;
         font-weight: 300;
-        color: #214162;
-        padding: 25px 15px;
     }
 
 
