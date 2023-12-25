@@ -72,7 +72,7 @@ namespace ShopBee.Areas.Admin.Controllers
 					if (!string.IsNullOrEmpty(bookVM.Book.ImgUrl))
 					{
 						//Delete old image
-						var oldImagePath = Path.Combine(wwwRootPath, bookVM.Book.ImgUrl.TrimStart('\\'));
+						var oldImagePath = Path.Combine(wwwRootPath, bookVM.Book.ImgUrl.TrimStart('/'));
 						if (System.IO.File.Exists(oldImagePath))
 						{
 							System.IO.File.Delete(oldImagePath);

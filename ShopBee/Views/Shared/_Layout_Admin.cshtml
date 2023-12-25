@@ -31,6 +31,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="~/css/admin/custom.css" />
 
+    <!-- Thư viện toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -186,6 +189,7 @@
     <script>
         var ps = new PerfectScrollbar('#sidebar');
     </script>
+
     <!-- custom js -->
     @await RenderSectionAsync("Scripts", required: false)
     <script type="text/javascript">

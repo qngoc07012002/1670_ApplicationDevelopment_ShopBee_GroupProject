@@ -19,6 +19,7 @@ namespace ShopBee.Areas.Admin.Controllers
             List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
             return View(objCategoryList);
         }
+       
         public IActionResult Create()
         {
             return View();
@@ -64,7 +65,8 @@ namespace ShopBee.Areas.Admin.Controllers
             }
             return View();
         }
-        
+
+
 
         #region API CALLS
         [HttpGet]
@@ -86,6 +88,20 @@ namespace ShopBee.Areas.Admin.Controllers
             _unitOfWork.Category.Remove(categoryDelete); _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
-        #endregion 
+        public IActionResult Confirm(int id)
+        {
+            var CategoryConfirm = _unitOfWork.Category.Get(u => u.Id == id);
+
+            if (CategoryConfirm == null)
+            {
+                return Json(new { success = false, message = "Error while Comfirming" });
+            }
+            CategoryConfirm.Status = 1;
+            _unitOfWork.Category.Update(CategoryConfirm);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Confirm Successful" });
+        }
+
+        #endregion
     }
 }

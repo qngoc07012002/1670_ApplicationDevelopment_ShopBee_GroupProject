@@ -1,46 +1,87 @@
-var dataTable;
+﻿var dataTable;
 $(document).ready(function () {
     loadDataTable();
 });
 function loadDataTable() {
-    dataTable = $('#tblDataCategory').DataTable({
+    dataTable = $('#tblPendingCategory').DataTable({
         "ajax": { url: '/Admin/Category/getall' },
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "30%" },
-            { data: 'status', "width": "30%",
-                "render": function (data) {
-                    if (data === 0) {
-                        return 'Pending';
-                    } else if (data === 1) {
-                        return 'Active';
+            {
+                data: 'id', "width": "20%",
+                "render": function (data, type, row) {
+                    if (row.status === 0) { // chỉ hiển thị khi status là Pending
+                        return `<div class="w-25 btn-group"  role="group">
+                        <a onClick=ConfirmCategory('/admin/category/confirm/${data}') class="btn btn-success mx-2 accept-button"> <i class="bi bi-check-square"></i>Accept</a>
+                        <a onClick=Delete('/admin/category/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+
+                        
+                    </div >`;
                     } else {
                         return null;
                     }
                 }
             },
-            {data: 'id', "width": "20%",
-                "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="category/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
-                    <a onClick=Delete('/admin/category/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div >`
+        ],
+        "paging": false, // Tắt chức năng phân trang
+        "info": false, // Tắt thông tin số dòng và trang
+        "drawCallback": function (settings) {
+            // Ẩn toàn bộ các dòng có status là Active
+            var api = this.api();
+            var rows = api.rows({ search: 'applied' }).nodes();
+            rows.each(function (row) {
+                var data = api.row(row).data();
+                if (data.status === 1) {
+                    $(row).hide();
+                }
+            });
+        }
+    });
+    
+
+    dataTable = $('#tblActiveCategory').DataTable({
+        "ajax": { url: '/Admin/Category/getall' },
+        "columns": [
+            { data: 'id', "width": "20%" },
+            { data: 'name', "width": "30%" },
+            
+            {
+                data: 'id', "width": "20%",
+                "render": function (data, type, row) {
+                    if (row.status === 1) { // chỉ hiển thị khi status là Active
+                        return `<div class="w-25 btn-group"  role="group"> 
+                            <a href="category/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
+                            <a onClick=Delete('/admin/category/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                        </div >`;
+                    } else {
+                        return null;
+                    }
                 }
             },
-        ]
+        ],
+        "drawCallback": function (settings) {
+            // Ẩn các dòng có status là Pending
+            var api = this.api();
+            var rows = api.rows({ search: 'applied' }).nodes();
+            rows.each(function (row) {
+                var data = api.row(row).data();
+                if (data.status === 0) {
+                    $(row).hide();
+                }
+            });
+        }
     });
     dataTable = $('#tblDataStoreAdmin').DataTable({
         "ajax": { url: '/Admin/Store/getall' },
         "columns": [
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
-            { data: 'user.name', "width": "60%" },
-            { data: 'createDate', "width": "60%" },
             {
                 data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/admin/store/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
+                    <a href="store/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
                     <a onClick=Delete('/admin/store/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }
@@ -145,10 +186,50 @@ function Delete(url) {
                 url: url,
                 type: 'DELETE',
                 success: function (data) {
-                    dataTable.ajax.reload();
-                    toastr.success(data.message);
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: data.message,
+                        icon: "success",
+                        timer: 2000,
+                        timerProgressBar: true,
+                        showConfirmButton: false
+                    }).then(() => {
+                        // Sau khi xóa thành công, làm mới trang
+                        location.reload();
+                    });
                 }
-            })
+            });
+        }
+    });
+}
+function ConfirmCategory(url) {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to accept this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, confirm it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: url,
+                type: 'POST',
+                success: function (data) {
+                    Swal.fire({
+                        title: "Confirmed!",
+                        text: data.message,
+                        icon: "success",
+                        timer: 2000,
+                        timerProgressBar: true,
+                        showConfirmButton: false
+                    }).then(() => {
+                        
+                        location.reload();
+                    });
+                }
+            });
         }
     });
 }
