@@ -64,7 +64,7 @@ namespace ShopBee.Areas.Admin.Controllers
                     if (!string.IsNullOrEmpty(userVM.User.avtURL))
                     {
                         //Delete old image
-                        var oldImagePath = Path.Combine(wwwRootPath, userVM.User.avtURL.TrimStart('\\'));
+                        var oldImagePath = Path.Combine(wwwRootPath, userVM.User.avtURL.TrimStart('/'));
                         if (System.IO.File.Exists(oldImagePath))
                         {
                             System.IO.File.Delete(oldImagePath);
@@ -80,14 +80,29 @@ namespace ShopBee.Areas.Admin.Controllers
                 {
                     userVM.User.CreateDate = DateTime.Today.Date;
                     userVM.User.ModifyDate = DateTime.Today.Date;
-                    _unitOfWork.User.Register(userVM.User);
-                    TempData["success"] = "User created succesfully";
+                    if (!_unitOfWork.User.CheckEmail(userVM.User))
+                    {
+                        TempData["error"] = "Email Already Used";
+                        return RedirectToAction("Index");
+                    } else
+                    {
+                        _unitOfWork.User.Register(userVM.User);
+                        TempData["success"] = "User created succesfully";
+                    }
                 }
                 else
                 {
                     userVM.User.ModifyDate = DateTime.Today.Date;
-                    _unitOfWork.User.Update(userVM.User);
-                    TempData["success"] = "User updated succesfully";
+                    if (!_unitOfWork.User.CheckEmail(userVM.User))
+                    {
+                        TempData["error"] = "Email Already Used";
+                        return RedirectToAction("Index");
+                    } else
+                    {
+                        _unitOfWork.User.Update(userVM.User);
+                        TempData["success"] = "User updated succesfully";
+                    }
+                  
                 }
                 _unitOfWork.Save();
                 return RedirectToAction("Index");

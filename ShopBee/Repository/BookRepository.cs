@@ -14,13 +14,13 @@ namespace ShopBee.Repository
 
         public List<Book> GetAllBookByCategory(int? categoryId)
         {
-            var query = _db.Books.Where(c => c.CategoryId == categoryId || c.IsDeleted != 1);
+            var query = _db.Books.Where(c => c.CategoryId == categoryId );
             return query.ToList();
         }
 
         public List<Book> GetBookBySearch(string searchString)
         {
-            var query = _db.Books.Where(c => c.Name.Contains(searchString) || c.Author.Contains(searchString) || c.IsDeleted != 1);
+            var query = _db.Books.Where(c => c.Name.Contains(searchString) || c.Author.Contains(searchString));
             return query.ToList();
         }
 
@@ -33,7 +33,7 @@ namespace ShopBee.Repository
 
         public int GetNumberOfBooks()
         {
-            return _db.Books.Count(c=> c.IsDeleted != 1);
+            return _db.Books.Count();
         }
     }
 }
