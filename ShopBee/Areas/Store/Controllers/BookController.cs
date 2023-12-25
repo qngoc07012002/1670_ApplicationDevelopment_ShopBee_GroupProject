@@ -26,7 +26,7 @@ namespace ShopBee.Areas.Store.Controllers
             var UserIdGet = HttpContext.Session.GetString("UserId");
             int.TryParse(UserIdGet, out int storeOwnerId);
             ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
-            List<Book> books = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u => u.StoreID == store.Id && u.IsDeleted == 1).ToList();
+            List<Book> books = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u => u.StoreID == store.Id && u.IsDeleted !=1).ToList();
             return View(books);
         }
         public IActionResult CreateUpdate(int? id)
