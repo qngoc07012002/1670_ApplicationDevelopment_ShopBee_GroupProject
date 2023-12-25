@@ -65,5 +65,18 @@ namespace ShopBee.Repository
         {
             return _db.Users.Count();
         }
+
+        public bool CheckEmail(User user)
+        {
+            bool check = true;
+            var query = _db.Users.FirstOrDefault(m=> m.Email == user.Email && m.Id != user.Id); 
+            if (query == null)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
     }
 }

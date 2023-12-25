@@ -57,35 +57,42 @@ namespace ShopBee.Areas.Customer.Controllers
         public IActionResult Register(User user, int gender, IFormFile file)
         {
             string wwwRootPath = _webhost.WebRootPath;
-            if (file != null)
+            if (_unitOfWork.User.CheckEmail(user) == false)
             {
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                string avtPath = Path.Combine(wwwRootPath, "img/userAvt");
-
-                using (var fileStream = new FileStream(Path.Combine(avtPath, fileName), FileMode.Create))
+                TempData["error"] = "Email Already Used";
+                return Register();
+            } else
+            {
+                if (file != null)
                 {
-                    file.CopyTo(fileStream);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string avtPath = Path.Combine(wwwRootPath, "img/userAvt");
+
+                    using (var fileStream = new FileStream(Path.Combine(avtPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    user.avtURL = @"/img/userAvt/" + fileName;
                 }
-                user.avtURL = @"/img/userAvt/" + fileName;
-            }
-            //user.avtURL = "4cc2377e-8594-43ee-9022-3f72815880dd.jpg";
-            user.CreateDate = DateTime.Now;
-            user.ModifyDate = DateTime.Now;
-            if (gender == 0)
-            {
-                user.Gender = Models.User.GenderType.Male;
-            }
-            else if (gender == 1)
-            {
-                user.Gender = Models.User.GenderType.Female;
-            }
-            _unitOfWork.User.Register(user);
-            TempData["success"] = "Account created succesfully";
+                //user.avtURL = "4cc2377e-8594-43ee-9022-3f72815880dd.jpg";
+                user.CreateDate = DateTime.Now;
+                user.ModifyDate = DateTime.Now;
+                if (gender == 0)
+                {
+                    user.Gender = Models.User.GenderType.Male;
+                }
+                else if (gender == 1)
+                {
+                    user.Gender = Models.User.GenderType.Female;
+                }
+                _unitOfWork.User.Register(user);
+                TempData["success"] = "Account created succesfully";
 
 
-            _unitOfWork.Save();
-            return RedirectToAction("Login");
-
+                _unitOfWork.Save();
+                return RedirectToAction("Login");
+            }
+ 
         }
 
         public IActionResult Logout()

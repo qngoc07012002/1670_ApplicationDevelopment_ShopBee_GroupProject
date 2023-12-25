@@ -1,0 +1,118 @@
+header.header {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header__nav-list {
+    padding-top: 10px;
+}        
+   
+
+.container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        h2 {
+            color: #ee4d2d;
+        }
+
+        .review-form {
+            margin-top: 20px;
+			
+        }
+
+        .product-review {
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            margin-top: 10px;
+        }
+		/* Thêm vào phần style của bạn */
+			.product-review {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+
+			.product-image {
+				max-width: 100%;
+				height: auto;
+				margin-top: 10px;
+				border-radius: 8px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			}
+/* Thêm vào phần style của bạn */
+.product-review {
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-image {
+    max-width: 100px; /* Điều chỉnh kích thước ảnh theo mong muốn */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.product-review {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.review-content {
+    flex: 1;
+
+    margin-left: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+hr .feedback{
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.feedback-button {
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}

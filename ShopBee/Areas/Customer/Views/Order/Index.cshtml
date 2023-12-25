@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="~/css/customer/order.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 
 </head>
 <div class="container">
@@ -47,7 +48,7 @@
                                 </ul>
                                 <p class="store-name">@item.Store.Name</p>
                                 <p class="total">Total: $@item.TotalPrice</p>
-                                <button class="review-button">Pending</button>
+                                <button class="pending-button">Pending</button>
                             </div>
                         }
                     }
@@ -82,7 +83,7 @@
                                 </ul>
                                 <p class="store-name">@item.Store.Name</p>
                                 <p class="total">Total: $@item.TotalPrice</p>
-                                <button class="review-button">Feedback</button>
+                                <a class="review-button" asp-area="Customer" asp-controller="Feedback" asp-action="Index" asp-route-id="@item.Id">Feedback</a>
                             </div>
                         }
                     }

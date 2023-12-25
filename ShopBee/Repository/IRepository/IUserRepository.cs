@@ -12,6 +12,8 @@ namespace ShopBee.Repository.IRepository
         string GetUserRoles(int userId);
         bool CheckPassword(int userId, string password);
 
+        bool CheckEmail(User user);
+
         int GetNumberOfUsers();
     }
 }

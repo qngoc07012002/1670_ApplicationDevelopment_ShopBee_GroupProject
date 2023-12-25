@@ -6,6 +6,6 @@ namespace ShopBee.Repository.IRepository
     {
         int GetNumberOfStores();
 
-        public void BecomeASeller(int userId);
+        public void BecomeASeller(Store store);
     }
 }
