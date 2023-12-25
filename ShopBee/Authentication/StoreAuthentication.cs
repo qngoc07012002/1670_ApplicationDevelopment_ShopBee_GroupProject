@@ -7,12 +7,11 @@ namespace ShopBee.Authentication
 {
     public class StoreAuthentication : ActionFilterAttribute
     {
-        private readonly UnitOfWork _unitOfWork;
         public StoreAuthentication()
         {
            
         }
-        public override void OnActionExecuted(ActionExecutedContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
 /*            var userId = context.HttpContext.Session.GetInt32("UserId");
             if (userId == null || !_unitOfWork.User.CheckRole((int)userId, 3))

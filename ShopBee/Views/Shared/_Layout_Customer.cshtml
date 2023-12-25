@@ -31,7 +31,7 @@
                             <a asp-area="Store" asp-controller="Home" asp-action="Index" class="header__nav-item header__nav-item--hover header__nav-item--separate">Store Chanel</a>
                         </li>
                         <li>
-                            <a asp-area="Store" asp-controller="Home" asp-action="Index" class="header__nav-item header__nav-item--hover header__nav-item--separate">Become a Seller</a>
+                            <a asp-area="Customer" asp-controller="Store" asp-action="BecomeASeller" class="header__nav-item header__nav-item--hover header__nav-item--separate">Become a Seller</a>
                         </li>
 
                         @{
@@ -163,10 +163,10 @@
             <div class="grid wide">
                 <div class="row sm-gutter main-footer-info">
                     <div class="col l-2-4 m-4 c-6">
-                        <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <h3 class="footer__heading">CUSTOMER SERVICE</h3>
                         <ul class="footer-list">
                             <li>
-                                <a href="#" class="footer-item-link">Trung Tâm Trợ Giúp</a>
+                                <a href="#" class="footer-item-link">Help Centre</a>
                             </li>
                             <li>
                                 <a href="#" class="footer-item-link">Shopee Blog</a>
@@ -175,57 +175,57 @@
                                 <a href="#" class="footer-item-link">Shopee Mall</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                                <a href="#" class="footer-item-link">How To Buy</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                                <a href="#" class="footer-item-link">How To Sell</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Thanh Toán</a>
+                                <a href="#" class="footer-item-link">Payment</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Shopee Xu</a>
+                                <a href="#" class="footer-item-link">Shopee Coin</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Vận Chuyển</a>
+                                <a href="#" class="footer-item-link">Shipping</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Trả Hàng & Hoàn Tiền</a>
+                                <a href="#" class="footer-item-link">Return & Refund</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Chăm Sóc Khách Hàng</a>
+                                <a href="#" class="footer-item-link">Contact Us</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Chính Sách Bảo Hành</a>
+                                <a href="#" class="footer-item-link">Warranty Policy</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col l-2-4 m-4 c-6">
-                        <h3 class="footer__heading">VỀ SHOPEE</h3>
+                        <h3 class="footer__heading">ABOUT SHOPEE</h3>
                         <ul class="footer-list">
                             <li>
-                                <a href="#" class="footer-item-link">Giới Thiệu Về Shopee Việt Nam</a>
+                                <a href="#" class="footer-item-link">About Us</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Tuyển Dụng</a>
+                                <a href="#" class="footer-item-link">Shopee Careers</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Điều Khoản Shopee</a>
+                                <a href="#" class="footer-item-link">Shopee Policies</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Chính Sách Bảo Mật</a>
+                                <a href="#" class="footer-item-link">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Chính Hãng</a>
+                                <a href="#" class="footer-item-link">Shopee Mall</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Kênh Người Bán</a>
+                                <a href="#" class="footer-item-link">Seller Centre</a>
                             </li>
                             <li>
                                 <a href="#" class="footer-item-link">Flash Sales</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-item-link">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                                <a href="#" class="footer-item-link">Shopee Ambassador Programme</a>
                             </li>
                             <li>
                                 <a href="#" class="footer-item-link">Liên Hệ Với Truyền Thông</a>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="col l-2-4 m-4 c-12 pay-and-ship">
                         <div>
-                            <h3 class="footer__heading">THANH TOÁN</h3>
+                            <h3 class="footer__heading">PAYMENT</h3>
                             <div class="footer-sale-ship">
                                 <img src="~/img/customer/pay/1.PNG" class="footer-item-sale-ship">
                                 <img src="~/img/customer/pay/2.PNG" class="footer-item-sale-ship">
@@ -244,7 +244,7 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="footer__heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+                            <h3 class="footer__heading">LOGISTICS</h3>
                             <div class="footer-sale-ship">
                                 <img src="~/img/customer/ship/1.PNG" class="footer-item-sale-ship">
                                 <img src="~/img/customer/ship/2.PNG" class="footer-item-sale-ship">
@@ -259,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col l-2-4 m-4 c-6">
-                        <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
+                        <h3 class="footer__heading">FOLLOW US</h3>
                         <ul class="footer-list">
                             <li>
                                 <a href="#" class="footer-item-link footer-item-link-fb">
@@ -282,7 +282,7 @@
                         </ul>
                     </div>
                     <div class="col l-2-4 m-8 c-6">
-                        <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE</h3>
+                        <h3 class="footer__heading">SHOPEE APP DOWNLOAD</h3>
                         <div class="footer-download">
                             <a href="#" class="footer-download-link">
                                 <img src="~/img/customer/qr/qr-code.png" class="footer-download-qr">
@@ -308,7 +308,7 @@
                 <div class="row">
                     <div class="grid">
                         <p class="copyright-title">
-                            © 2021 Shopee copyright - Công ty TNHH CRF - Product by LTP
+                            © 2023 Shopee. All Rights Reserved .
                         </p>
                     </div>
                 </div>
@@ -320,22 +320,22 @@
                 <div class="row other-footer-heading">
                     <div class="col l-2">
                         <a href="#" class="other-footer-link">
-                            CHÍNH SÁCH BẢO MẬT
+                            PRIVACY POLICY
                         </a>
                     </div>
                     <div class="col l-2">
                         <a href="#" class="other-footer-link">
-                            QUY CHẾ HOẠT ĐỘNG
+                            TERM OF SERVICE
                         </a>
                     </div>
                     <div class="col l-2">
                         <a href="#" class="other-footer-link">
-                            CHÍNH SÁCH VẬN CHUYỂN
+                            SHIPPING POLICY
                         </a>
                     </div>
                     <div class="col l-2">
                         <a href="#" class="other-footer-link">
-                            TRẢ HÀNG VÀ HOÀN TIỀN
+                            VIOLATION
                         </a>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ using ShopBee.Repository.IRepository;
 namespace ShopBee.Areas.Customer.Controllers
 {
     [Area("Customer")]
-   // [CustomerAuthentication()]
+    [CustomerAuthentication()]
     public class OrderController : Controller
     {
 

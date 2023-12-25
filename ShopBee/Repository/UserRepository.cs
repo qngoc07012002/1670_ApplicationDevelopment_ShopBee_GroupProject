@@ -23,7 +23,11 @@ namespace ShopBee.Repository
         public void Register(User user)
         {
             _db.Add(user);
-            
+            _db.SaveChanges();
+            UserRole userRole = new UserRole();
+            userRole.UserId = user.Id;
+            userRole.RoleId = 1;
+            _db.UserRoles.Add(userRole);
         }
 
         public bool CheckRole(int userId, int roleId)

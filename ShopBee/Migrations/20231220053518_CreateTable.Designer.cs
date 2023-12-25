@@ -13,8 +13,13 @@ namespace ShopBee.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
 <<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
+<<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
     [Migration("20231220053518_CreateTable")]
     partial class CreateTable
+========
+    [Migration("20231221112958_updateCartTable")]
+    partial class updateCartTable
+>>>>>>>> master:ShopBee/Migrations/20231221112958_updateCartTable.Designer.cs
 ========
     [Migration("20231221112958_updateCartTable")]
     partial class updateCartTable
@@ -157,8 +162,13 @@ namespace ShopBee.Migrations
                         .HasColumnType("nvarchar(max)");
 
 <<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
+<<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
                     b.Property<DateOnly?>("CreateDate")
                         .HasColumnType("date");
+========
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+>>>>>>>> master:ShopBee/Migrations/20231221112958_updateCartTable.Designer.cs
 ========
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -433,6 +443,7 @@ namespace ShopBee.Migrations
 
                     b.Navigation("Order");
 
+<<<<<<<< HEAD:ShopBee/Migrations/20231220053518_CreateTable.Designer.cs
                     b.Navigation("User");
                 });
 
@@ -456,6 +467,8 @@ namespace ShopBee.Migrations
 
                     b.Navigation("Order");
 
+========
+>>>>>>>> master:ShopBee/Migrations/20231221112958_updateCartTable.Designer.cs
                     b.Navigation("User");
                 });
 
