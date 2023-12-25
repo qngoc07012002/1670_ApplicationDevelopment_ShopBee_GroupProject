@@ -23,7 +23,11 @@ namespace ShopBee.Areas.Store.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var UserIdGet = HttpContext.Session.GetString("UserId");
+            int.TryParse(UserIdGet, out int storeOwnerId);
+            ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
+            List<Book> books = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u => u.StoreID == store.Id && u.IsDeleted !=1).ToList();
+            return View(books);
         }
         public IActionResult CreateUpdate(int? id)
         {
@@ -73,7 +77,7 @@ namespace ShopBee.Areas.Store.Controllers
                     if (!string.IsNullOrEmpty(bookVM.Book.ImgUrl))
                     {
                         //Delete old image
-                        var oldImagePath = Path.Combine(wwwRootPath, bookVM.Book.ImgUrl.TrimStart('\\'));
+                        var oldImagePath = Path.Combine(wwwRootPath, bookVM.Book.ImgUrl.TrimStart('/'));
                         if (System.IO.File.Exists(oldImagePath))
                         {
                             System.IO.File.Delete(oldImagePath);
@@ -84,6 +88,12 @@ namespace ShopBee.Areas.Store.Controllers
                         file.CopyTo(fileStream);
                     }
                     bookVM.Book.ImgUrl = @"/img/bookImg/" + fileName;
+                }
+                else
+                {
+                    BookVM bookVM2 = new();
+                    bookVM2.Book = _unitOfWork.Book.Get(u => u.Id == bookVM.Book.Id);
+                    bookVM.Book.ImgUrl = bookVM2.Book.ImgUrl;
                 }
                 if (bookVM.Book.Id == 0)
                 {
@@ -134,7 +144,7 @@ namespace ShopBee.Areas.Store.Controllers
             var UserIdGet = HttpContext.Session.GetString("UserId");
             int.TryParse(UserIdGet, out int storeOwnerId);
             ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
-            List<Book> books = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u => u.StoreID == store.Id).ToList();
+            List<Book> books = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u => u.StoreID == store.Id && u.IsDeleted == 1).ToList();
 
             return Json(new { data = books });
         }
@@ -147,8 +157,10 @@ namespace ShopBee.Areas.Store.Controllers
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
-
-            _unitOfWork.Book.Remove(bookDelete); _unitOfWork.Save();
+            bookDelete.IsDeleted = 1;
+            bookDelete.Stock = 0;
+            _unitOfWork.Book.Update(bookDelete);
+            _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
         #endregion

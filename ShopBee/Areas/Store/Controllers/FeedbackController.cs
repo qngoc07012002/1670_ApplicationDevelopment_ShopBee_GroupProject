@@ -34,6 +34,23 @@ namespace ShopBee.Areas.Store.Controllers
 
             return Json(new { data = feedbacks });
         }
+
+        [HttpPost]
+        public IActionResult Update(int id, string? response)
+        {
+            Feedback feedback = _unitOfWork.Feedback.Get(u => u.Id == id);
+            if (feedback != null)
+            {
+                feedback.Response = response;
+                _unitOfWork.Feedback.Update(feedback);
+                _unitOfWork.Save();
+                return Json(new { success = true, message = "Update Response Successful" });
+            }
+            else
+            {
+                return Json(new { success = false, message = "Error while Update" });
+            }
+        }
         #endregion
 
     }
