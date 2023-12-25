@@ -7,7 +7,6 @@ namespace ShopBee.Authentication
 {
     public class StoreAuthentication : ActionFilterAttribute
     {
-        private readonly UnitOfWork _unitOfWork;
         public StoreAuthentication()
         {
            

@@ -261,12 +261,20 @@
       "PackagePath": "staticwebassets\\img\\bookImg\\0d081cda-4ac7-4a12-97fa-ed9a203218ea.jpg"
     },
     {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\0fe4fd0f-166e-4f3c-a97e-008a81987c3f.jpg",
+      "PackagePath": "staticwebassets\\img\\bookImg\\0fe4fd0f-166e-4f3c-a97e-008a81987c3f.jpg"
+    },
+    {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\10a6eec1-e49e-4cb8-bb53-c627db3a5e3d.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\10a6eec1-e49e-4cb8-bb53-c627db3a5e3d.jpg"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\1f315e7c-b655-44c9-b08f-1f895b7c2a83.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\1f315e7c-b655-44c9-b08f-1f895b7c2a83.jpg"
+    },
+    {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\1f4ab207-a70e-4ac4-a0e0-df4fd6644943.jpg",
+      "PackagePath": "staticwebassets\\img\\bookImg\\1f4ab207-a70e-4ac4-a0e0-df4fd6644943.jpg"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\23bfaa58-8d56-4783-be73-f216fb8f7714.jpg",
@@ -289,6 +297,10 @@
       "PackagePath": "staticwebassets\\img\\bookImg\\53e6fd1b-5cc8-4002-9ab5-ab18efc7ee82.jpg"
     },
     {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\5470c8e8-7ffb-47cd-b792-40bf2e8e10ea.jpg",
+      "PackagePath": "staticwebassets\\img\\bookImg\\5470c8e8-7ffb-47cd-b792-40bf2e8e10ea.jpg"
+    },
+    {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\567c40b9-4590-4b9f-9eda-d7b5911a8407.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\567c40b9-4590-4b9f-9eda-d7b5911a8407.jpg"
     },
@@ -303,6 +315,10 @@
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\65071ea7-2950-4340-bcbd-333c2c608cd0.png",
       "PackagePath": "staticwebassets\\img\\bookImg\\65071ea7-2950-4340-bcbd-333c2c608cd0.png"
+    },
+    {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\6acf8ec5-cbfd-47e4-b9b9-b6d7437a1521.jpg",
+      "PackagePath": "staticwebassets\\img\\bookImg\\6acf8ec5-cbfd-47e4-b9b9-b6d7437a1521.jpg"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\7543b1b9-58cf-471b-96aa-394f3433a466.jpg",
@@ -327,6 +343,10 @@
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg",
       "PackagePath": "staticwebassets\\img\\bookImg\\f27f54ab-01a1-4718-a2d5-8400b1714a6c.jpg"
+    },
+    {
+      "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\bookImg\\f8b374d1-67ef-46e8-a4ff-5e37710c556f.jpg",
+      "PackagePath": "staticwebassets\\img\\bookImg\\f8b374d1-67ef-46e8-a4ff-5e37710c556f.jpg"
     },
     {
       "Id": "E:\\PHUC\\APP_DEV\\1670_ApplicationDevelopment_ShopBee_GroupProject\\Shopbee\\wwwroot\\img\\customer\\buy\\1.PNG",

@@ -52,5 +52,7 @@ namespace ShopBee.Models
 
         public DateTime? ModifyDate { get; set; }
         
+        public int? IsDeleted { get; set; }
+        
     }
 }

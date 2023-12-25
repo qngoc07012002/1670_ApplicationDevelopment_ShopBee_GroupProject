@@ -36,6 +36,22 @@
         .tab button.active {
             background-color: #ccc;
         }
+.home-product-item__price-old {
+    margin: 0;
+    color: #999;
+    text-decoration: line-through;
+}
+.custom-col {
+width: fit-content;
+min-width: 242px;
+}
+#bookImg {
+    width: 242px;
+    min-width: 242px;
+    min-height: 290px;
+    height: 290px;
+    object-fit: cover;
+}
 
 #q-graph {
     display: flex;
@@ -176,3 +192,23 @@
         top: -0.8em;
         margin: 0 0 0 0.5em;
     }
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.star-checked {
+    color: yellow;
+    font-weight: 900;
+}
+
+.star-unchecked {
+    color: #ddd;
+    font-weight: unset;
+}

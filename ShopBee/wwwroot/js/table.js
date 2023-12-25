@@ -159,8 +159,32 @@ function loadDataTable() {
         "columns": [
             { data: 'book.name', "width": "20%" },
             { data: 'content', "width": "20%" },
-            { data: 'rating', "width": "10%" },
-            { data: 'response', "width": "20%" },
+            {
+                data: 'rating',
+                "width": "20%",
+                "render": function (data) {
+                    let stars = '';
+                    for (let i = 0; i < data; i++) {
+                        stars += '<i class="star-checked fa-solid fa-star"></i>';
+                    }
+                    for (let i = data; i < 5; i++) {
+                        stars += '<i class="star-unchecked far fa-star"></i>'
+                    }
+                    return stars;
+                }
+            },
+            {
+                data: 'response',
+                width: '20%',
+                render: function (data, type, rowData) {
+                    if (!data) {
+                        return '<input type="text" class="responseInput" data-id="' + rowData.id + '" name="respone" placeholder="Enter your comment">';
+                    } else {
+                        return data;
+                    }
+                }
+            },
+
             {
                 data: 'createDate', "width": "10%",
                 "render": function (data) {
@@ -168,15 +192,7 @@ function loadDataTable() {
                     const formattedDate = date.toLocaleDateString('en-GB');
                     return formattedDate;
                 }
-            },
-            {
-                data: 'id', "width": "20%",
-                "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/store/book/CreateUpdate?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a>
-                    </div >`
-                }
-            },
+            }
         ]
     });
     dataTable = $('#tblDataOrderStoreOwner').DataTable({
@@ -268,6 +284,42 @@ function loadDataTable() {
     });
 }
 
+$('#tblDataFeedbackStoreOwner').on('keyup', '.responseInput', function (e) {
+    if (e.key === 'Enter') {
+        const id = $(this).data('id');
+        const response = $(this).val();
+        Swal.fire({
+            title: "Are you sure?",
+            text: "The response can't change after !",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Do it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: '/store/feedback/update/' + id,
+                    type: 'POST',
+                    data: { response: response },
+                    success: function (data) {
+                        Swal.fire({
+                            title: "Done!",
+                            text: data.message,
+                            icon: "success",
+                            timer: 2000,
+                            timerProgressBar: true,
+                            showConfirmButton: false
+                        }).then(() => {
+                            location.reload();
+                        });
+                    }
+                });
+            }
+        });
+
+    }
+});
 
 function Delete(url) {
     Swal.fire({
@@ -284,10 +336,18 @@ function Delete(url) {
                 url: url,
                 type: 'DELETE',
                 success: function (data) {
-                    dataTable.ajax.reload();
-                    toastr.success(data.message);
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: data.message,
+                        icon: "success",
+                        timer: 2000,
+                        timerProgressBar: true,
+                        showConfirmButton: false
+                    }).then(() => {
+                        location.reload();
+                    });
                 }
-            })
+            });
         }
     });
 }
