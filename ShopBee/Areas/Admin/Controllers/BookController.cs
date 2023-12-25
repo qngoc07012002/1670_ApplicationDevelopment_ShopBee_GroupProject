@@ -28,7 +28,7 @@ namespace ShopBee.Areas.Admin.Controllers
         {
             BookVM bookVM = new BookVM()
             {
-                MyCategories = _unitOfWork.Category.GetAll().
+                MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1).
                 Select(u => new SelectListItem
                 {
                     Text = u.Name,
@@ -103,7 +103,7 @@ namespace ShopBee.Areas.Admin.Controllers
             else
             {
 
-                bookVM.MyCategories = _unitOfWork.Category.GetAll().
+                bookVM.MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1).
                             Select(u => new SelectListItem
                             {
                                 Text = u.Name,

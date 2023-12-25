@@ -3,7 +3,7 @@
 <form method="POST" enctype="multipart/form-data">
     <div class="boder p-3 mt-4" style="padding-bottom:100px">
         <input asp-for="User.Id" hidden />
-
+        <input asp-for="User.avtURL" hidden/>
         <div class="row pb-2">
             <h1> @(Model.User.Id == 0 ? "Create" : "Edit") a User</h1>
         </div>

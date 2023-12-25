@@ -8,7 +8,6 @@ using System.Diagnostics;
 namespace ShopBee.Areas.Customer.Controllers
 {
     [Area("Customer")]
-    //[RoleAuthentication()]
     public class HomeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -24,10 +23,10 @@ namespace ShopBee.Areas.Customer.Controllers
         
             if (string.IsNullOrEmpty(searchString))
             {
-                homeVM.books = _unitOfWork.Book.GetAll().ToList();
+                homeVM.books = _unitOfWork.Book.GetAll().Where(c => c.IsDeleted != 1).ToList();
             } else
             {
-                homeVM.books = _unitOfWork.Book.GetBookBySearch(searchString);
+                homeVM.books = _unitOfWork.Book.GetBookBySearch(searchString).Where(c => c.IsDeleted != 1).ToList();
             }
             return View(homeVM);
         }
@@ -42,7 +41,7 @@ namespace ShopBee.Areas.Customer.Controllers
             HomeVM homeVM = new HomeVM();
             homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
             
-            homeVM.books = _unitOfWork.Book.GetAllBookByCategory(id).ToList();
+            homeVM.books = _unitOfWork.Book.GetAllBookByCategory(id).Where(c => c.IsDeleted != 1).ToList();
             return View("Index", homeVM);
         }
         public IActionResult FilterByPrice(int? id)
@@ -53,7 +52,7 @@ namespace ShopBee.Areas.Customer.Controllers
             }
             HomeVM homeVM = new HomeVM();
             homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
-            homeVM.books = _unitOfWork.Book.GetAllBookSort(); 
+            homeVM.books = _unitOfWork.Book.GetAllBookSort().Where(c => c.IsDeleted != 1).ToList(); 
             if (id == 2)
             {
                 homeVM.books.Reverse();
@@ -62,12 +61,7 @@ namespace ShopBee.Areas.Customer.Controllers
         
             return View("Index", homeVM);
         }
-        [HttpGet]
-        public IActionResult GetAllBook()
-        {
-            List<Book> obj = _unitOfWork.Book.GetAll().ToList();
-            return Json(obj);
-        }
+ 
         
     }
 }
