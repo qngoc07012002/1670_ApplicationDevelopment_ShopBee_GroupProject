@@ -61,7 +61,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 cart.UserID = userId;
                 cart.Quantity = quantity;
 
-                _unitOfWork.Cart.Add(cart);
+                _unitOfWork.Cart.AddBookToCart(cart);
                 _unitOfWork.Save();
 
 

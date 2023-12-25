@@ -20,7 +20,7 @@ namespace ShopBee.Areas.Customer.Controllers
         public IActionResult Index(string? searchString)
         {
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
         
             if (string.IsNullOrEmpty(searchString))
             {
@@ -40,7 +40,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 return NotFound();
             }
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
             
             homeVM.books = _unitOfWork.Book.GetAllBookByCategory(id).ToList();
             return View("Index", homeVM);
@@ -52,7 +52,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 return NotFound();
             }
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAll().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
             homeVM.books = _unitOfWork.Book.GetAllBookSort(); 
             if (id == 2)
             {

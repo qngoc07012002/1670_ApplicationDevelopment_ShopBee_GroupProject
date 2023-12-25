@@ -50,9 +50,15 @@ namespace ShopBee.Areas.Customer.Controllers
                 order.TotalPrice = 0;
                 foreach (Cart cart in listcart)
                 {
+                    if (cart.Book.Stock - cart.Quantity < 0)
+                    {
+                        TempData["error"] = "Book  \"" + cart.Book.Name + "\"Out of Stock";
+              
+                        return RedirectToAction("Index", "Cart", new { area = "Customer" });
+                    }
                     order.StoreId = (int)cart.StoreID;
                     order.TotalPrice = (decimal)(order.TotalPrice + (cart.Quantity * cart.Book.DiscountPrice));
-                    _unitOfWork.Cart.Remove(cart);
+                    
                 }
                 order.Method = "Paypal";
                 order.Status = "Pending";
@@ -68,15 +74,14 @@ namespace ShopBee.Areas.Customer.Controllers
 
                     Book book = _unitOfWork.Book.Get(c => c.Id == cart.BookID);
                     book.Stock = book.Stock - cart.Quantity;
+                    _unitOfWork.Cart.Remove(cart);
                     _unitOfWork.Book.Update(book);
 
                     _unitOfWork.OrderDetail.Add(orderDetail);
                 }
             }
-
-            HttpContext.Session.SetString("Cart", _unitOfWork.Cart.GetNumbersOfItems(userId).ToString());
-           
             _unitOfWork.Save();
+            HttpContext.Session.SetString("Cart", _unitOfWork.Cart.GetNumbersOfItems(userId).ToString());
             return RedirectToAction("Index");
         }
     }
