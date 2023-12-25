@@ -34,7 +34,11 @@ namespace ShopBee.Repository
             {
                 query = query.Include(includeProp);
             }
+        
+            
             return query.ToList();
         }
+
+  
     }
 }

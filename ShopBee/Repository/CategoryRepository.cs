@@ -11,6 +11,10 @@ namespace ShopBee.Repository
         {
             _db = db;
         }
-
+        public List<Category> GetAllCategory()
+        {
+            var query = _db.Categories.Where(c => c.Status != 0);
+            return query.ToList();
+        }
     }
 }

@@ -80,7 +80,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 {
                     userVM.User.CreateDate = DateTime.Today.Date;
                     userVM.User.ModifyDate = DateTime.Today.Date;
-                    _unitOfWork.User.Add(userVM.User);
+                    _unitOfWork.User.Register(userVM.User);
                     TempData["success"] = "User created succesfully";
                 }
                 else

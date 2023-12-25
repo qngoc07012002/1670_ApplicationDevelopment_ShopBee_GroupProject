@@ -7,6 +7,7 @@ namespace ShopBee.Repository.IRepository
         public int GetNumbersOfItems(int userId);
         public List<Cart> GetCartByUser(int userId);
 
+        public void AddBookToCart(Cart cart);
         
     }
 }

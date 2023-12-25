@@ -12,5 +12,18 @@ namespace ShopBee.Repository
             _db = db;
         }
 
+        public void BecomeASeller(Store store)
+        {
+            UserRole userRole = new UserRole();
+            userRole.UserId = store.UserId;
+            userRole.RoleId = 3;
+            _db.UserRoles.Add(userRole);
+            _db.Stores.Add(store);
+        }
+
+        public int GetNumberOfStores()
+        {
+            return _db.Stores.Count();
+        }
     }
 }

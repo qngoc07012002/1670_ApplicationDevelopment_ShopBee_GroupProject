@@ -15,16 +15,16 @@
         </div>
 
         <div class="upload-btn-wrapper">
-            <button class="btn-image">Chọn ảnh mới</button>
+            <button class="btn-image">Choose New Image</button>
             <input type="file" name="file" accept="image/*" id="file" onchange="updateAvatar()">
         </div>
      
    
 
-        <label for="name">Tên:</label>
+        <label for="name">Name:</label>
         <input asp-for="@Model.Name" required>
 
-        <label for="gender">Giới tính:</label>
+        <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
             @{
                 if (Model.Gender == ShopBee.Models.User.GenderType.Male)
@@ -42,16 +42,16 @@
     
 
 
-        <label for="phone">Số điện thoại:</label>
+        <label for="phone">Phone:</label>
         <input asp-for="@Model.Phone" type="tel" required>
 
-        <label for="address">Địa chỉ:</label>
+        <label for="address">Address:</label>
         <textarea asp-for="@Model.Adress" rows="3" required></textarea>
 
-        <label for="password">Mật khẩu:</label>
+        <label for="password">Password:</label>
         <input type="password" name="password" required>
 
-        <input type="submit" value="Lưu thay đổi">
+        <input type="submit" value="Save">
     </form>
 
     <script>    
