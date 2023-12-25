@@ -20,5 +20,10 @@ namespace ShopBee.Repository
             _db.UserRoles.Add(userRole);
             _db.Stores.Add(store);
         }
+
+        public int GetNumberOfStores()
+        {
+            return _db.Stores.Count();
+        }
     }
 }

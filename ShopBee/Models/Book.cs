@@ -54,5 +54,7 @@ namespace ShopBee.Models
 
        
         
+        public int? IsDeleted { get; set; }
+        
     }
 }

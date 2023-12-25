@@ -1,0 +1,214 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+
+/** ADD YOUR AWESOME CODES HERE **/
+.avatar img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto; 
+    height: auto;
+}
+#myTab .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+.home-product-item__price-old {
+    margin: 0;
+    color: #999;
+    text-decoration: line-through;
+}
+.custom-col {
+width: fit-content;
+min-width: 242px;
+}
+#bookImg {
+    width: 242px;
+    min-width: 242px;
+    min-height: 290px;
+    height: 290px;
+    object-fit: cover;
+}
+
+#q-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* fixes layout wonkiness in FF1.5 */
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 1.1em 0 0;
+    padding: 0;
+    background: transparent;
+    font-size: 11px;
+}
+
+    #q-graph caption {
+        caption-side: top;
+        width: 600px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        top: -40px;
+        position: relative;
+        z-index: 10;
+        font-weight: bold;
+    }
+
+    #q-graph tr, #q-graph th, #q-graph td {
+        position: absolute;
+        bottom: 0;
+        width: 150px;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #q-graph td {
+        transition: all 0.3s ease;
+    }
+
+        #q-graph td:hover {
+            background-color: #4d4d4d;
+            opacity: 0.9;
+            color: white;
+        }
+
+    #q-graph thead tr {
+        left: 100%;
+        top: 50%;
+        bottom: auto;
+        margin: -2.5em 0 0 5em;
+    }
+
+    #q-graph thead th {
+        width: 7.5em;
+        height: auto;
+        padding: 0.5em 1em;
+    }
+
+        #q-graph thead th.sent {
+            top: 0;
+            left: 0;
+            line-height: 2;
+        }
+
+        #q-graph thead th.paid {
+            top: 2.75em;
+            line-height: 2;
+            left: 0;
+        }
+
+    #q-graph tbody tr {
+        height: 296px;
+        padding-top: 2px;
+        border-right: 1px dotted #C4C4C4;
+        color: #AAA;
+    }
+
+    #q-graph #q1 {
+        left: 0;
+    }
+
+    #q-graph #q2 {
+        left: 150px;
+    }
+
+    #q-graph #q3 {
+        left: 300px;
+    }
+
+    #q-graph #q4 {
+        left: 450px;
+        border-right: none;
+    }
+
+    #q-graph tbody th {
+        bottom: -1.75em;
+        vertical-align: top;
+        font-weight: normal;
+        color: #333;
+    }
+
+    #q-graph .bar {
+        width: 60px;
+        border: 1px solid;
+        border-bottom: none;
+        color: #000;
+    }
+
+        #q-graph .bar p {
+            margin: 5px 0 0;
+            padding: 0;
+            opacity: 0.4;
+        }
+
+    #q-graph .sent {
+        left: 13px;
+        background-color: #39cccc;
+        border-color: transparent;
+    }
+
+    #q-graph .paid {
+        left: 77px;
+        background-color: #7fdbff;
+        border-color: transparent;
+    }
+
+#ticks .tick {
+    position: relative;
+    border-bottom: 1px dotted #C4C4C4;
+    width: 600px;
+}
+
+    #ticks .tick p {
+        position: absolute;
+        left: -5em;
+        top: -0.8em;
+        margin: 0 0 0 0.5em;
+    }
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.star-checked {
+    color: yellow;
+    font-weight: 900;
+}
+
+.star-unchecked {
+    color: #ddd;
+    font-weight: unset;
+}

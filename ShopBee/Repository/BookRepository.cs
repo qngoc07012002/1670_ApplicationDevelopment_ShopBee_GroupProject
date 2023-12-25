@@ -14,7 +14,7 @@ namespace ShopBee.Repository
 
         public List<Book> GetAllBookByCategory(int? categoryId)
         {
-            var query = _db.Books.Where(c => c.CategoryId == categoryId);
+            var query = _db.Books.Where(c => c.CategoryId == categoryId );
             return query.ToList();
         }
 
@@ -26,8 +26,14 @@ namespace ShopBee.Repository
 
         public List<Book> GetAllBookSort()
         {
-            var query = _db.Books.OrderByDescending(c => c.DiscountPrice);
+
+            var query = _db.Books.Where(c => c.IsDeleted != 1).OrderByDescending(c => c.DiscountPrice);
             return query.ToList();
+        }
+
+        public int GetNumberOfBooks()
+        {
+            return _db.Books.Count();
         }
     }
 }
