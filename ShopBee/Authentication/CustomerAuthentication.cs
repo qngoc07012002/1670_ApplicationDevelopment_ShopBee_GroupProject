@@ -7,28 +7,13 @@ namespace ShopBee.Authentication
 {
     public class CustomerAuthentication : ActionFilterAttribute
     {
-        private readonly IUnitOfWork _unitOfWork;
         public CustomerAuthentication()
         {
             
         }
-        public CustomerAuthentication(IUnitOfWork db)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
-            _unitOfWork = db;
-        }
-        public override void OnActionExecuted(ActionExecutedContext context)
-        {
-  /*          var userId = context.HttpContext.Session.GetInt32("UserId");
-            if (userId == null || !_unitOfWork.User.CheckRole((int)userId, 1))
-            {
-                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new
-                {
-                    area = "Customer",
-                    controller = "User",
-                    action = "AccessDenied",
-                }));
-            }*/
-              var userRoles = context.HttpContext.Session.GetString("UserRoles");
+            var userRoles = context.HttpContext.Session.GetString("UserRoles");
             if (userRoles == null || !userRoles.Contains("CUSTOMER"))
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary(new

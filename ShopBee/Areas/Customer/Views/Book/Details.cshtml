@@ -31,9 +31,9 @@
             <input name="bookId" value="@Model.book.Id" hidden />
             <div class="quantity">
                 <label for="quantity">Quantity:</label>
-                <button id="decrease">-</button>
+                <button type="button" id="decrease">-</button>
                 @{
-                    if (Model.book.Stock == 0)
+                    if (Model.book.Stock <= 0)
                     {
                         <input type="text" name="quantity" id="quantity" value="0" readonly>
                     }
@@ -95,7 +95,12 @@
                   
                         </div>
                         <div class="feedback-text">@feedback.Content</div>
-                        <div class="store-feedback">Store response: @feedback.Response</div>
+                        @{
+                            if (!string.IsNullOrEmpty(feedback.Response))
+                            {
+                                <div class="store-feedback">Store response: @feedback.Response</div>
+                            }
+                        }
                     </div>
                 </div>
             }

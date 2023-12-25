@@ -23,7 +23,11 @@ namespace ShopBee.Repository
         public void Register(User user)
         {
             _db.Add(user);
-            
+            _db.SaveChanges();
+            UserRole userRole = new UserRole();
+            userRole.UserId = user.Id;
+            userRole.RoleId = 1;
+            _db.UserRoles.Add(userRole);
         }
 
         public bool CheckRole(int userId, int roleId)
@@ -60,6 +64,19 @@ namespace ShopBee.Repository
         public int GetNumberOfUsers()
         {
             return _db.Users.Count();
+        }
+
+        public bool CheckEmail(User user)
+        {
+            bool check = true;
+            var query = _db.Users.FirstOrDefault(m=> m.Email == user.Email && m.Id != user.Id); 
+            if (query == null)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
     }
 }

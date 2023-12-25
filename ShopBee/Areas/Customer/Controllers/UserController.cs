@@ -12,7 +12,7 @@ namespace ShopBee.Areas.Customer.Controllers
 {
 
     [Area("Customer")]
-    //[RoleAuthentication()]
+    
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -45,11 +45,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 TempData["error"] = "Invalid Account";
                 return View();
             }
-            /*else if (email.ToLower() == "customer" && password.ToLower() == "customer")
-            {
-                HttpContext.Session.SetString("UserRoles", "Customer");
 
-            }*/
            ;
         }
 
@@ -61,35 +57,42 @@ namespace ShopBee.Areas.Customer.Controllers
         public IActionResult Register(User user, int gender, IFormFile file)
         {
             string wwwRootPath = _webhost.WebRootPath;
-            if (file != null)
+            if (_unitOfWork.User.CheckEmail(user) == false)
             {
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                string avtPath = Path.Combine(wwwRootPath, "img/userAvt");
-
-                using (var fileStream = new FileStream(Path.Combine(avtPath, fileName), FileMode.Create))
+                TempData["error"] = "Email Already Used";
+                return Register();
+            } else
+            {
+                if (file != null)
                 {
-                    file.CopyTo(fileStream);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string avtPath = Path.Combine(wwwRootPath, "img/userAvt");
+
+                    using (var fileStream = new FileStream(Path.Combine(avtPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    user.avtURL = @"/img/userAvt/" + fileName;
                 }
-                user.avtURL = @"/img/userAvt/" + fileName;
-            }
-            //user.avtURL = "4cc2377e-8594-43ee-9022-3f72815880dd.jpg";
-            user.CreateDate = DateTime.Now;
-            user.ModifyDate = DateTime.Now;
-            if (gender == 0)
-            {
-                user.Gender = Models.User.GenderType.Male;
-            }
-            else if (gender == 1)
-            {
-                user.Gender = Models.User.GenderType.Female;
-            }
-            _unitOfWork.User.Add(user);
-            TempData["success"] = "Account created succesfully";
+                //user.avtURL = "4cc2377e-8594-43ee-9022-3f72815880dd.jpg";
+                user.CreateDate = DateTime.Now;
+                user.ModifyDate = DateTime.Now;
+                if (gender == 0)
+                {
+                    user.Gender = Models.User.GenderType.Male;
+                }
+                else if (gender == 1)
+                {
+                    user.Gender = Models.User.GenderType.Female;
+                }
+                _unitOfWork.User.Register(user);
+                TempData["success"] = "Account created succesfully";
 
 
-            _unitOfWork.Save();
-            return RedirectToAction("Login");
-
+                _unitOfWork.Save();
+                return RedirectToAction("Login");
+            }
+ 
         }
 
         public IActionResult Logout()
@@ -101,14 +104,14 @@ namespace ShopBee.Areas.Customer.Controllers
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index", "Home", new { area = "Customer" });
         }
-        
+        [CustomerAuthentication()]
         public IActionResult EditProfile()
         {
             int userId = int.Parse(HttpContext.Session.GetString("UserId"));
             User user = _unitOfWork.User.Get(b => b.Id == userId);
             return View(user);
         }
-
+        [CustomerAuthentication()]
         [HttpPost]
         public IActionResult EditProfile(IFormFile? file, int gender, User user, string password)
         {
@@ -152,12 +155,12 @@ namespace ShopBee.Areas.Customer.Controllers
             
             return View(user);
         }
-        
+        [CustomerAuthentication()]
         public IActionResult ChangePassword()
         {
             return View();
         }
-      
+        [CustomerAuthentication()]
         [HttpPost]
         public IActionResult ChangePassword(string currentPassword,string newPassword, string confirmNewPassword)
         {

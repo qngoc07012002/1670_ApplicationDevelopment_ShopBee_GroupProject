@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Category Management";
 }
 @model List<Category>
@@ -19,8 +19,10 @@
                     <i class="bi bi-plus-circle"></i>  Create New Category
                 </a>
             </div>
+
         </div>
-        <table id="tblDataCategory" class="table table-bordered table-striped">
+        
+        <table id="tblActiveCategory" class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -28,7 +30,38 @@
                         Category Name
                     </th>
                     <th>
-                        Status
+                        Action
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="py-2">Request Category</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="Create" asp-controller="Category" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i>  Create New Category
+                </a>
+            </div>
+
+        </div>
+        <table id="tblPendingCategory" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>
+                        Category Name
                     </th>
                     <th>
                         Action

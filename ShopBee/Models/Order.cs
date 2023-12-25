@@ -11,13 +11,17 @@ namespace ShopBee.Models
         public int StoreId { get; set; }
         [ForeignKey("StoreId")]
         public Store Store { get; set; }
+
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public User User { get; set; }
+
         public int Quantity { get; set; }
+
         [DisplayName("Price $")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalPrice { get; set; }
+
         public string Method { get; set; }
         public string Status { get; set; }
         public DateTime CreateDate { get; set; }

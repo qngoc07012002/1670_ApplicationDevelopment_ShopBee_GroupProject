@@ -27,7 +27,7 @@ namespace ShopBee.Models
         public Store? Store { get; set; }
 
         [Required]
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
         public string? Status { get; set; }
 
     }

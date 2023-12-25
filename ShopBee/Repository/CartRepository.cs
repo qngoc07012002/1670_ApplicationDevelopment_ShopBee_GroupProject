@@ -28,6 +28,18 @@ namespace ShopBee.Repository
             return query.ToList();
         }
 
+        public void AddBookToCart(Cart cart)
+        {
+            Cart? oldCart = _db.Carts.FirstOrDefault(c => c.UserID == cart.UserID && c.BookID == cart.BookID);
+            if (oldCart == null)
+            {
+                _db.Carts.Add(cart);
+            } else
+            {
+                oldCart.Quantity = oldCart.Quantity + cart.Quantity;
+                _db.Carts.Update(oldCart);
+            }
+        }
      
     }
 }
