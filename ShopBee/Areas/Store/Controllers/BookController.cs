@@ -113,7 +113,7 @@ namespace ShopBee.Areas.Store.Controllers
             else
             {
 
-                bookVM.MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1).
+                bookVM.MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1 && c.IsDeleted != 1).
 
                             Select(u => new SelectListItem
                             {

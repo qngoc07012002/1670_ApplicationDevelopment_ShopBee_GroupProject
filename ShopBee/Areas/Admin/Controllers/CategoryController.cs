@@ -16,7 +16,7 @@ namespace ShopBee.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
+            List<Category> objCategoryList = _unitOfWork.Category.GetAll().Where(u=>u.IsDeleted !=1).ToList();
             return View(objCategoryList);
         }
 

@@ -39,7 +39,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 return NotFound();
             }
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().Where(u=>u.IsDeleted !=1).ToList();
             
             homeVM.books = _unitOfWork.Book.GetAllBookByCategory(id).Where(c => c.IsDeleted != 1).ToList();
             return View("Index", homeVM);
@@ -51,7 +51,7 @@ namespace ShopBee.Areas.Customer.Controllers
                 return NotFound();
             }
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().Where(u => u.IsDeleted != 1).ToList();
             homeVM.books = _unitOfWork.Book.GetAllBookSort().Where(c => c.IsDeleted != 1).ToList(); 
             if (id == 2)
             {

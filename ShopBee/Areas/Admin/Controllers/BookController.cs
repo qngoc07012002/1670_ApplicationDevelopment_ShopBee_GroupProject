@@ -28,7 +28,7 @@ namespace ShopBee.Areas.Admin.Controllers
         {
             BookVM bookVM = new BookVM()
             {
-                MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1).
+                MyCategories = _unitOfWork.Category.GetAll().Where(c => c.Status == 1 && c.IsDeleted != 1).
                 Select(u => new SelectListItem
                 {
                     Text = u.Name,
@@ -124,7 +124,7 @@ namespace ShopBee.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Book> obj = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").ToList();
+            List<Book> obj = _unitOfWork.Book.GetAll(includeProperties: "Category,Store").Where(u=>u.IsDeleted != 1).ToList();
             return Json(new { data = obj });
         }
 
