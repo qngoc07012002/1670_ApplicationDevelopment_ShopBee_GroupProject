@@ -137,7 +137,10 @@ namespace ShopBee.Areas.Admin.Controllers
                 return Json(new { success = false, message = "Error while deleting" });
             }
 
-            _unitOfWork.Book.Remove(bookDelete); _unitOfWork.Save();
+            bookDelete.IsDeleted = 1;
+            bookDelete.Stock = 0;
+            _unitOfWork.Book.Update(bookDelete);
+            _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
 
