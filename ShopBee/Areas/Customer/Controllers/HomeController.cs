@@ -19,7 +19,7 @@ namespace ShopBee.Areas.Customer.Controllers
         public IActionResult Index(string? searchString)
         {
             HomeVM homeVM = new HomeVM();
-            homeVM.categories = _unitOfWork.Category.GetAllCategory().ToList();
+            homeVM.categories = _unitOfWork.Category.GetAllCategory().Where(u=>u.IsDeleted!=1).ToList();
         
             if (string.IsNullOrEmpty(searchString))
             {
