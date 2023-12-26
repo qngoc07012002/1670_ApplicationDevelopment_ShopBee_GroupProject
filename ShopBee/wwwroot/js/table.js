@@ -78,12 +78,11 @@ function loadDataTable() {
             { data: 'id', "width": "20%" },
             { data: 'name', "width": "60%" },
             {
-                data: 'id', "width": "20%",
+                data: 'createDate', "width": "20%",
                 "render": function (data) {
-                    return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="store/edit?id=${data}" class="btn btn-primary mx-2" > <i class="bi bi-pencil-square"></i></a >
-                    <a onClick=Delete('/admin/store/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
-                    </div >`
+                    const date = new Date(data);
+                    const formattedDate = date.toLocaleDateString('en-GB');
+                    return formattedDate;
                 }
             },
         ]
@@ -229,7 +228,8 @@ function loadDataTable() {
                 "render": function (data, type, row) {
                     if (row.status === "Pending") {
                         return `<div class="w-25 btn-group" role="group"> 
-                        <a href="/Store/Order/details?orderId=${data}" class="view-detail btn btn-success mx-2" data-order-id="${data}"><i class="bi bi-check-square"></i></a>
+                        <a href="/Store/Order/details?orderId=${data}" class="btn btn-success mx-2" data-order-id="${data}"><i class="fa-solid fa-circle-info"></i></a>
+                        <a onClick=ConfirmOrder('/Store/Order/Confirm/${data}') class="view-detail btn btn-success mx-2" data-order-id="1"><i class="bi bi-check-square"></i></a>
                         <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div>`;
                     } else if (row.status === "Successful") {
@@ -263,7 +263,8 @@ function loadDataTable() {
                 data: 'id', "width": "20%",
                 "render": function (data) {
                     return `<div class="w-25 btn-group"  role="group"> 
-                    <a href="/Store/Order/details?orderId=${data}" class="view-detail btn btn-success mx-2" data-order-id="1"><i class="bi bi-check-square"></i></a>
+                    <a href="/Store/Order/details?orderId=${data}" class="btn btn-success mx-2" data-order-id="${data}"><i class="fa-solid fa-circle-info"></i></a>
+                    <a onClick=ConfirmOrder('/Store/Order/Confirm/${data}') class="btn btn-success mx-2" data-order-id="1"><i class="bi bi-check-square"></i></a>
                     <a onClick=Delete('/store/order/delete/${data}') class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
                     </div >`
                 }
@@ -357,6 +358,36 @@ function Delete(url) {
                         text: data.message,
                         icon: "success",
                         timer: 2000,
+                        timerProgressBar: true,
+                        showConfirmButton: false
+                    }).then(() => {
+
+                        location.reload();
+                    });
+                }
+            });
+        }
+    });
+}
+function ConfirmOrder(url) {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Confirm it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: url,
+                success: function (data) {
+                    Swal.fire({
+                        title: "Done!",
+                        text: data.message,
+                        icon: "success",
+                        timer: 1000,
                         timerProgressBar: true,
                         showConfirmButton: false
                     }).then(() => {

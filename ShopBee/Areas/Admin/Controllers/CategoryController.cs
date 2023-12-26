@@ -72,7 +72,7 @@ namespace ShopBee.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Category> obj = _unitOfWork.Category.GetAll().ToList();
+            List<Category> obj = _unitOfWork.Category.GetAll().Where(u=> u.IsDeleted != 1).ToList();
             return Json(new { data = obj });
         }
 
@@ -84,8 +84,15 @@ namespace ShopBee.Areas.Admin.Controllers
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
-
-            _unitOfWork.Category.Remove(categoryDelete); _unitOfWork.Save();
+            categoryDelete.IsDeleted = 1;
+            var ListBook = _unitOfWork.Book.GetAll().Where(u => u.CategoryId == id).ToList();
+            foreach (var book in ListBook)
+            {
+                book.IsDeleted = 1;
+                _unitOfWork.Book.Update(book);
+            }
+            _unitOfWork.Category.Update(categoryDelete);
+            _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
         }
         public IActionResult Confirm(int id)

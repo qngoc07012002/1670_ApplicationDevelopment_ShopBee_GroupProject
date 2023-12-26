@@ -86,6 +86,7 @@ namespace ShopBee.Areas.Admin.Controllers
                 }
                 if (bookVM.Book.Id == 0)
                 {
+                    bookVM.Book.IsDeleted = 0;
                     bookVM.Book.CreateDate = DateTime.Today.Date;
                     bookVM.Book.ModifyDate = DateTime.Today.Date;
                     _unitOfWork.Book.Add(bookVM.Book);

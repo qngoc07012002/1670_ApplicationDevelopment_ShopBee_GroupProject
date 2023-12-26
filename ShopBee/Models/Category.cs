@@ -12,5 +12,6 @@ namespace ShopBee.Models
         [DisplayName("Category Name")]
         public string? Name { get; set; }
         public int? Status { get; set; }
+        public int IsDeleted { get; set; }
     }
 }

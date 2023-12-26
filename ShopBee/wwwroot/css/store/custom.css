@@ -196,6 +196,12 @@ min-width: 242px;
     display: flex;
     justify-content: center;
 }
+.text-title-ellipsis {
+    overflow: hidden;
+    text-overflow: revert;
+    white-space: nowrap;
+    max-width: 200px;
+}
 .text-ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;

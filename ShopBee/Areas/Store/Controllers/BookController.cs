@@ -89,18 +89,13 @@ namespace ShopBee.Areas.Store.Controllers
                     }
                     bookVM.Book.ImgUrl = @"/img/bookImg/" + fileName;
                 }
-                else
-                {
-                    BookVM bookVM2 = new();
-                    bookVM2.Book = _unitOfWork.Book.Get(u => u.Id == bookVM.Book.Id);
-                    bookVM.Book.ImgUrl = bookVM2.Book.ImgUrl;
-                }
                 if (bookVM.Book.Id == 0)
                 {
                     var UserIdGet = HttpContext.Session.GetString("UserId");
                     int.TryParse(UserIdGet, out int storeOwnerId);
                     ShopBee.Models.Store store = _unitOfWork.Store.Get(u => u.UserId == storeOwnerId);
                     bookVM.Book.StoreID = store.Id;
+                    bookVM.Book.IsDeleted = 0;
                     bookVM.Book.CreateDate = DateTime.Today;
                     bookVM.Book.ModifyDate = DateTime.Today;
                     _unitOfWork.Book.Add(bookVM.Book);
@@ -108,7 +103,6 @@ namespace ShopBee.Areas.Store.Controllers
                 }
                 else
                 {
-
                     bookVM.Book.ModifyDate = DateTime.Today;
                     _unitOfWork.Book.Update(bookVM.Book);
                     TempData["success"] = "Book updated succesfully";
