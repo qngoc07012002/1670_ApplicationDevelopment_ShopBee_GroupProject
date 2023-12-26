@@ -34,6 +34,7 @@ namespace ShopBee.Areas.Customer.Controllers
             int userId = int.Parse(HttpContext.Session.GetString("UserId"));
             store.Name = storeName;
             store.UserId = userId;
+            store.CreateDate = DateTime.Now;
             _unitOfWork.Store.BecomeASeller(store);
             _unitOfWork.Save();
             var userRoles = _unitOfWork.User.GetUserRoles(userId);
