@@ -2,7 +2,7 @@
 
 This is a project to build an e-commerce platform to sell books. Suppliers can sell their products here.
 
-The project is implemented in ASP .NET language
+The project is implemented in ASP .NET Core MVC language
 
 **Development Team:**
 - Nguyen Quang Ngoc ([Github](https://github.com/qngoc07012002))
